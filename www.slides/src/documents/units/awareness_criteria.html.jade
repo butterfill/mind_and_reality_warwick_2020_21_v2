@@ -1,0 +1,277 @@
+---cson
+layout: 'deck_unit'
+title: "Operationalising Visual Awareness"
+tags: []
+description: """
+  Psychologists distinguish between ‘subjective’ and ‘objective’ criteria for visual awareness.
+  Subjective criteria involve asking subjects what they are aware of.
+  Objective criteria typically involve measuring discriminatory capacities.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    .slide
+      +invert('.op')
+    .slide
+      +uninvert('.op')
+      +invert('.perceive')
+    .slide
+      p.hem-around blindsight:
+      p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    .slide
+      +highlight-row('.vision-criterion')
+      .notes: :t
+        This was the point of talking about simple seeing.
+    .slide
+      +unhighlight-row('.vision-criterion')
+      +uninvert('.perceive')
+    .slide
+      +invert('.conscious')
+    .slide
+      p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    .slide
+      +highlight-row('.awareness-criterion', 'red')
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    p.hem-around blindsight:
+    p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    +invert('.conscious')
+    p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    +highlight-row('.awareness-criterion', 'red')
+
+    
++slide_middle
+  .hem-around
+    +awarenessQ2
+  p.hem-around.sidis Yes : Sidis 
+  p.hem-around.blindsight Yes : blindsight
+    span.qqq ???
+  .slide
+    +highlight-row('.sidis', 'red')
+    .notes: :t
+      considerations just raised imply we should not consider Sidis as 
+      entirely compelling evidence.
+  .slide
+    +unhighlight-row('.sidis', 'red')
+    +blur('.sidis')
+  .slide
+    +highlight-row('.blindsight', 'yellow')
+    +show('.blindsight .qqq')
+    .notes: :t
+      What about blindsight? Should we consider this in the same way?
+
+
++slide({bkg:'blindsight/slide10.jpg'})
++slide
+  +img_clip('weiskrantz_1995_fig2.jpg')
+  +style('img', {filter:'invert(1) contrast(2)'})
+  p.source Weiskrantz et al, figure 2
+  .slide
+    +style('img', {filter:'invert(1) blur(3px)'})
+    +reset
+      +middle
+        p.overlay.center.huge-glow-50 Awareness makes no measurable difference to action.
+        .notes: :t
+          This conclusion is not entirely safe because we are relying on the subject’s reports.
+    .slide
+      +style('img', {filter:'invert(1) contrast(2)'})
+      +blur('.overlay', '5px')
+      .notes: :t
+        But wait ...
+
+
+//- +slide_middle
+//-   p: :t
+//-     Phillips on signal detection ... but \citet[pp.~9--11]{cowey:2010_blindsighta} offers a 
+//-     range of studies indicating that performance cannot be explained in this way!
+//-   p: :t
+//-     Phillips’ main point on blindsight is that it doesn’t invovle constancies.
+//-   p: :t
+//-     todo : check [done]
+//-     ‘It
+//-     is important to consider the possibility that blindsight in fact involves
+//-     abnormal and degraded, but nonetheless conscious, vision (Phillips 2016).’
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘the claim that blindsight involves unconscious perception is largely based 
+    on a dissociation between responding in a biased task and performance 
+    in an unbiased forced-choice task’
+  p.right Phillips, 2016 p. 435
+  .notes.handout.ctd  \citep[p.~435]{phillips:2016_consciousness}
++slide
+  .notes: :t
+    Looks like Philips is right ...
+  +img_clip('weiskrantz_1995_fig2.jpg')
+  +style('img', {filter:'invert(1) contrast(2)'})
+  p.source Weiskrantz et al, figure 2
++slide_middle
+  p.notes.handout.show: :t
+    ‘the claim that blindsight involves unconscious perception is largely based 
+    on a dissociation between responding in a biased task and performance 
+    in an unbiased forced-choice task’
+  p.right.grey-text Phillips, 2016 p. 435
+  .notes.handout.ctd  \citep[p.~435]{phillips:2016_consciousness}
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘He was insistently instructed, and frequently reminded, that he was to signal unaware only when he had absolutely no sensation or feeling or experience of the visual event, and he repeatedly confirmed his conformance with this instruction’
+    .notes.handout.ctd \citep[p.~6122]{weiskrantz:1995_parameters}
+    p.right.grey-text Weiskrantz et al, 1995 p. 6122
+  .slide
+    p.em-above: :t
+      Never trust a philosopher!
+
+
+    
++slide_middle
+  .hem-around
+    +awarenessQ2
+  p.hem-around.sidis Yes : Sidis 
+  p.hem-around.blindsight Yes : blindsight
+    span ???
+  +blur('.sidis')
+  +highlight-row('.blindsight', 'yellow')
+  .notes: :t
+    Status : unresolved whether blindsight is evidence for perception without awareness at this point.
+
+
+
+
++slide_middle
+  p.notes.handout.show
+    span ‘If psychologists can really identify something 
+    span that deserves to be called perception without awareness, they must have an 
+    span.op operational grasp
+    span  on not only 
+    span.perceive what it takes to perceive something
+    span , but on 
+    span.conscious what it takes to be conscious of it
+    span .
+  .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+  p.right.grey-text Dretske, 2006 p. 148
+  p.hem-around blindsight:
+  p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+  +invert('.conscious')
+  p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+  +highlight-row('.awareness-criterion', 'red')
+  .notes: :t
+    But our current concern is to find a test for perceptual awareness.
+    Can we make progress here?
+
+
++slide_middle({timer:true})
+  p.center ‘objective criteria’
+  .slide
+    p.notes.handout.show.em-above: :t
+      ‘According to ‘objective’ criteria, unaware perception
+      occurs when a subject’s performance in a forced-choice task is at chance’
+    .notes.handout.ctd \citep[p.~190]{pessoa:2005_what}
+    p.right.grey-text Pessoa et al, 2005 p. 190
+  .slide
+    p.em-above I.e. any discrimination is evidence for perceptual awareness.
+  +show-timer('timer1')
+    .notes: :t
+      Is this a good criterion?
+  +start-timer('timer1')
+  .slide
+    +hide('#timer1')
+    .notes: :t
+      Criticism of objective criterion
+      The objective criterion isn't s criterion for awareness, it is a criterion
+      for discrimination. We should only accept it if we this there's no
+      discrimination without awareness.
+    .notes: :t
+      More on the objective criterion: if there is perception it may trigger
+      action or shift. In attention or some further processing, and awareness of
+      this could be used to discriminate. So intentional, explicit discrimination
+      tasks are of course tests of awareness of some.kind : but they are not
+      tests of *perceptual* awareness.
+    .notes: :t
+        Support for this criticism of objective measures: 'they presuppose, unlike
+        subjective methods, that awareness of some information and (behavioral)
+        sensitivity to that same information involve the very same processes'
+        \citep[p.~22]{timmermans:2015_how}
+  .slide
+    p.em-above.notes.handout.show: :t
+      'Above-chance performance on a forced-choice task involving the masked
+      stimulus need not necessarily be due to conscious knowledge'
+    .notes.handout.ctd \citep[p.~27]{timmermans:2015_how}
+    p.right.grey-text Timmermans & Cleeremans, 2015 p. 27
+
++slide_middle
+  p.notes.handout.show: :t
+    'The challenge of measuring awareness based on behavioral measures, despite
+    the substantial progress achieved over the years, remains essentially
+    intact' 
+  .notes.handout.ctd \citep[p.~40]{timmermans:2015_how}
+  p.right.grey-text Timmermans & Cleeremans, 2015 p. 40
+
++slide_middle
+  p.em-above awareness : Dretske’s proposal
+  p.notes.handout.show: :t
+    ‘rTa: S is aware of X = S perceives X, and information about X is available
+    to S as a reason (justification) for doing what she wants (chooses,
+    decides) to do’
+
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    p.hem-around blindsight:
+    p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    +invert('.conscious')
+    p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    +highlight-row('.awareness-criterion', 'red')
+    .slide
+      +line-through('.awareness-criterion')
+      +unhighlight-row('.awareness-criterion', 'red')
+    .slide
+      p.hem-around.indent.dretske-criterion we infer lack of awareness from  information not being available to the subject as a reason  for action

@@ -1,0 +1,178 @@
+---cson
+layout: 'deck_unit'
+title: "Psychological Continuity and Fission"
+tags: []
+description: """
+  
+  """
+book: [
+  """Shoemaker, D. (2019). Personal Identity and Ethics. In Zalta, E. N., editor, The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University, winter 2019 edition."""
+]
+streamId:'aa6e65c8-8b2b-4c04-b32b-cfa06e472c88'
+  
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/lecture_mixins
+include ../../../../fragments/central_themes_mixins
+
+
+
+
+
+
+
+//- +slide_middle
+//-   p.center psychological continuity and 
+//-     span.fission fission
+//-   .slide
+//-     +invert('.fission')
+
+
++slide({bkg:'fission/slide01.jpg'})
++slide({bkg:'fission/slide02.jpg'})
++slide({bkg:'fission/slide03.jpg'})
+
+
++slide_rh_white({step:true, timer:true})
+  .notes.handout: :t
+    Inconsistent quartet, personal identity:
+    \begin{enumerate}
+    \item Beatrice is not identical to Caitlyn.
+    \item Ahmed is psychologically continuous with Beatrice.
+    \item Ahmed is psychologically continuous with Caitlyn.
+    \item The Psychological Continuity View of personal identity is true.
+    \end{enumerate}
+  +left_half
+    .hem-around-children
+      p.center numerical identity : inconsistent triad
+      p Beatrice is not identical to Caitlyn.
+      p Ahmed is identical to Beatrice.
+      p Ahmed is identical to Caitlyn.
+  .slide
+    +blur('.left-half')
+  +right_half({step:true})
+    .hem-around-children
+      p.center.title.hide personal identity : inconsistent quartet
+      p Beatrice is not identical to Caitlyn.
+      p Ahmed is psychologically continuous with Beatrice.
+      p Ahmed is psychologically continuous with Caitlyn.
+    .slide
+      p.hem-around The Psychological Continuity View of personal identity is true.
+    .slide
+      +show('.title')
+  +show-timer
+    .notes: :t
+      Work out what this quartet is inconsistent
+  +start-timer
+
++slide_middle
+  p so?
+  .slide
+    p.em-above 
+      span.if If
+      span   fission is possible, the Psychological Continuity View of personal identity is false. 
+  .slide
+    +highlight('.if', 'red')
+    .notes: :t
+      But is it possible?
+  
+
+
++slide_middle
+  .notes Following, roughly, \citet{johnston:1989_fission}.
+  p.step1 1. The removal of one brain hemisphere would not break psychological continuity.
+  .slide
+    +blur('.step1')
+  .step2
+    .slide
+      p 2a. You might have an identical twin whose brain had been removed.
+    .slide
+      p 2b. Your brain could be transplanted into the body of your debrained twin.
+    .slide
+      p 2c. Successfully transplanting your brain into your twin’s debrained body would ensure psychological continuity.
+    .slide
+      p.last 2d. The removal and destruction of one brain hemisphere followed by transplant of the other hemisphere would ensure psychological continuity.
+  .slide
+    +blur('.step2')
+  .slide
+    p 3. You could be psychologically continuous with two distinct future individuals.
+  .slide
+    +unblur('.step1')
+  .slide
+    +blur('.step1 p')
+    +unblur('.step2 p.last')
+  .slide
+    +unblur('*')
+
+
++slide_middle
+  p.center psychological continuity and 
+    span.fission fission
+  +invert('.fission', 0)
+  .slide
+    +uninvert('.fission')
+
++slide_middle
+  .question.hide
+    p
+      span.of [Olson’s formulation]  
+      span: :t
+        If a person exists at one time and something exists at another time, 
+        under what possible circumstances is it the case that the person is the thing?
+  .answer1.hide
+    p.em-above Answer 1: psychological continuity
+    p
+      span Under exactly those in which the 
+      span.person person
+      span  can, at the first time,  
+      span.remember remember
+      span  an experience the second mentioned thing has at the second time, or vice versa.  
+  .fission
+    p.em-above.step2.hide
+      span.if If
+      span   fission is possible, the Psychological Continuity View of personal identity is false. 
+    p.em-above
+      span Fission is possible.
+  .slide
+    +show('.answer1')
+  .slide
+    +show('.question')
+  .slide
+    +show('.step2')
+
+
++slide_middle
+  p.center one response
+
++slide_middle
+  .notes.handout: :t
+    ‘What this must mean, then, is that the identity relation just is not what
+    matters (or is not what matters very much) in survival;
+    instead, what
+    matters has to consist in psychological continuity and/or connectedness
+    (what Parfit calls “Relation R”).
+    As long as that relation holds between
+    me-now and some other person-stage---regardless of whether or not it holds
+    one-one---what happens to me is just as good as ordinary survival.
+    Call
+    this the Identity Doesn't Matter (IDM) view.’
+    \citep{shoemaker:2019_personal}
+  .hem-around
+    p: :t
+      ‘What this must mean, then, is that the identity relation just is not what
+      matters (or is not what matters very much) in survival; 
+    p.slide: :t
+      instead, what
+      matters has to consist in psychological continuity and/or connectedness
+      (what Parfit calls “Relation R”). 
+    p.slide: :t
+      As long as that relation holds between
+      me-now and some other person-stage---regardless of whether or not it holds
+      one-one---what happens to me is just as good as ordinary survival. 
+    p.slide: :t
+      Call
+      this the Identity Doesn't Matter (IDM) view.’
+  p.right.grey-text Shoemaker, 2019
+  .notes.handout.ctd \citep{shoemaker:2019_personal}
+

@@ -1,0 +1,202 @@
+---cson
+layout: 'deck_unit'
+title: "Numerical Identity"
+tags: []
+description: """
+  What is the question of personal identity a question about?
+  One quite natural suggestion: it is about numerical identity.
+  The question is about the circumstances under which a person
+  at one time is numerically identical to a person at another time.
+  But can this be right?
+  According to David Lewis,
+  Numerical ‘identity is utterly simple and unproblematic.’
+  If Lewis is right, either there is no problem of personal identity,
+  or, if there is a problem, it is not a problem about numerical identity.
+  """
+book: [
+  """Olson, E. T. (2019). Personal Identity. In Zalta, E. N., editor, The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University, fall 2019 edition."""
+]
+exercises : [
+  "/ex/TorF/qq/Omar suffers from a rare brain-destroying disease. His sister Betty offers to donate her left brain hemisphere. Omar’s brain is removed and Betty’s left hemisphere is implanted in his skull. Does Omar continue to exist?|Omar suffers from a rare brain-destroying disease. His sister Betty offers to have her brain wiped and re-programmed with Omar’s memories and learnt associations. Betty’s brain is wiped and re-programmed; shortly after Omar’s brain gives out altogether. Does Omar continue to exist?"
+]
+streamId:'951141bb-c79c-435b-8db8-d2591a9408be'
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/lecture_mixins
+include ../../../../fragments/central_themes_mixins
+
+
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘Few concepts have been the source of more
+    misunderstanding than identity over time. The Persistence Question is
+    often confused with other questions or stated in a tendentious way.’
+  p.right.grey-text Olson, 2019
+  .notes.handout.ctd \citep{olson:2019_personal}
+  .notes: :t
+    Ok, so it’s important we understand the question and get it into clear focus. Good.
+    Let me remind you want the persistence question is ...
+
+
++slide_middle
+  p Theme
+  p.em-above What is 
+    span.metaphysically metaphysically 
+    span  necessary 
+    br
+    span for your survival?  
+    br
+    span.chocolate chocolate
+  +line-through('.chocolate')
+  +blur('.chocolate')
+  .different-person
+    p.em-above ‘
+      span.i I
+      span  am a different person now’
+  +blur('.different-person')
+  p.em-above
+    span.of [Olson’s formulation]  
+    span
+      span If a person exists at one time and something exists at another time,  
+      span under what possible circumstances is it the case that the person 
+      span.is is
+      span  the thing? 
+  .slide
+    +invert('.is')
+    .notes: :t
+      To understand the question, we need to understand what this ‘is’ captures.
+
++slide_middle
+  p.center.hem-around key distinction: 
+  p.center.hem-around qualitative similarity vs numerical identity
+
++slide_middle
+  p.center.hem-around another key distinction: 
+  p.center.hem-around ‘having an identity’ vs numerical identity
+
++slide
+  .alig-clip
+    video(width="720", height="300", controls)
+      source(src="alig2.mp4", type="video/mp4")
+  script: :coffee-script
+    getVideo = () -> $('.alig-clip video')[0]
+    addAction 
+      doit : () ->
+        screenfull.request( getVideo() )
+        getVideo().pause()
+      undoit : () -> 
+        screenfull.toggle( getVideo() ) if screenfull.isFullscreen
+  .slide
+    //- play video (and pause on next slide)
+    script: :coffee-script
+      getVideo = () -> $('.alig-clip video')[0]
+      addAction 
+        doit : () ->
+          getVideo().play()
+        undoit : () -> 
+          getVideo().pause()
+  .slide
+    //- unfull screen
+    script: :coffee-script
+      getVideo = () -> $('.alig-clip video')[0]
+      addAction 
+        doit : () ->
+          getVideo().pause()
+          screenfull.toggle( getVideo() )  if screenfull.isFullscreen
+        undoit : () -> 
+          screenfull.request( getVideo() )
+          getVideo().play()
+
++slide_middle
+  p.center.hem-around another key distinction: 
+  p.center.hem-around ‘having an identity’ vs numerical identity
+
++slide
+  .handout Key distinction: numerical vs qualitative identity.
+  .superman
+    +img_clip('superman03.jpg')
+    p.source Siegel & Shuster, 1939 (Issue 1)
+  .notes: :t
+    This person has two ‘identities’, Superman and Clark Kent.
+    In this sense, an ‘identity’ is  something like a guise.
+  .notes: :t
+    But numerically, there is only one person. (This is the point of the story, of course.)
+  .slide
+    +style('.superman', {filter:'blur(5px) saturate(0)'})
+    .notes: :t
+      Numerical identity is one of the simplest, clearest notions we have.
+      Don’t complicated it by trying to be clever.
+
++slide
+  .superman
+    +img('superman03.jpg', {filter:'blur(8px) saturate(0)', opacity:.5, position: "absolute", "max-width":"720px", "max-height":"550px"})
+    p.source.blur Siegel & Shuster, 1939 (Issue 1)
+  +reset
+    +middle 
+      .notes.handout: :t
+        Numerical ‘Identity is utterly simple and unproblematic.
+        Everything is identical to
+        itself; nothing is ever identical to anything else except itself.
+        There is
+        never any problem about what makes something identical to itself;
+        nothing can ever fail to be.
+        And there is never any problem about what makes two things identical; 
+        two things never can be identical’
+        \citep[pp.~192--3]{Lewis:1986zq}.
+      .quote
+        p: :t
+          ‘Identity is utterly simple and unproblematic. 
+        p: :t
+          Everything is identical to
+          itself; nothing is ever identical to anything else except itself. 
+        p: :t
+          There is
+          never any problem about what makes something identical to itself;
+          nothing can ever fail to be. 
+        p: :t
+          And there is never any problem about what makes two things identical; 
+          two things never can be identical.’
+      p.right Lewis, 1989 pp. 192--3
+  +blur('.quote p', '2px', 0)
+  +unblur('.quote p:eq(0)', 0)
+  .slide
+    +blur('.quote p:eq(0)')
+    +unblur('.quote p:eq(1)')
+  .slide
+    +blur('.quote p:eq(1)')
+    +unblur('.quote p:eq(2)')
+  .slide
+    +blur('.quote p:eq(2)')
+    +unblur('.quote p:eq(3)')
+  .slide
+    +unblur('.quote p')
+
+
++slide_middle
+  p Theme
+  p.em-above What is 
+    span.metaphysically metaphysically 
+    span  necessary 
+    br
+    span for your survival?  
+    br
+    span.chocolate chocolate
+  +line-through('.chocolate')
+  +blur('.chocolate')
+  .different-person
+    p.em-above ‘
+      span.i I
+      span  am a different person now’
+  +blur('.different-person')
+  p.em-above
+    span.of [Olson’s formulation]  
+    span
+      span If a person exists at one time and something exists at another time,  
+      span under what possible circumstances is it the case that the person 
+      span.is is
+      span  the thing? 
+  +invert('.is', 0)
+  .slide
+    +uninvert('.is')

@@ -1,0 +1,274 @@
+---cson
+layout: 'deck_unit'
+title: "Frankfurt’s Further Objections to Causal Theories of Action"
+tags: []
+description: """
+  Frankfurt (1978) offers some further objections to causal theories of action.
+  Are these objections sufficient to reject any such theory?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
+
+
+
++slide_middle({timer:true})
+  p Frankfurt’s Objection from Knowledge
+  p.first.em-above.notes.handout.show
+    span  ‘Causal theories imply that actions and mere happenings do 
+    span not differ 
+    span.essentially essentially
+    span  
+    span.in-themselves in themselves
+    span  at all.’
+  .slide
+    p.em-above.notes.handout.show.ctd
+      span ‘They are therefore committed to supposing that a person who knows he is in the 
+      span midst of performing an action 
+      span.key cannot have derived this knowledge from any 
+      span.key awareness of what is currently happening
+      span , but that he must have derived it 
+      span instead from his understanding of how what is happening was caused to 
+      span happen by’ 
+    .notes.handout.ctd \citep[p.~157]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 157
+  +show-timer
+  +start-timer
+  +hide-timer
+  .slide
+    +blur('span:not(.key)')
+    .notes: :t
+      Why not?
+      Claim is that actions are events appropriately related to intentions.
+      This may involve the intention having an ongoing role.
+      For example (not mine), consider how an intention to swim the channel will
+      sustain swimming (drop the intention and climb aboard the boat).
+  .slide
+    +blur('span.key')
+    +unblur('.first span')
+  .slide
+    +highlight('.essentially', 'blue')
+  .slide
+    +highlight('.in-themselves', 'pink')
+
++slide_middle
+  p.hem-around.one How can we individuate events? By their causes and effects.
+  .slide
+    p.hem-around.objection Objection: Couldn’t an event have had effects other than those it actually had?
+  .slide
+    p.hem-around.example I was unlucky. 
+      span.that-shot That shot
+      span   might not have killed him.
+    .slide
+      +invert('.that-shot')
+    .slide
+      +uninvert('.that-shot')
+  .slide
+    +blur('.example')
+  .slide
+    p.hem-around Reply: no.
+
++slide_middle
+  p Frankfurt’s Objection from Knowledge
+  p.first.hem-around.notes.handout.show
+    span  ‘Causal theories imply that actions and mere happenings do 
+    span not differ 
+    span.essentially essentially
+    span  
+    span.in-themselves in themselves
+    span  at all.’
+  .noslide
+    p.second.hem-around.notes.handout.show.ctd
+      span ‘They are therefore committed to supposing that a person who knows he is in the 
+      span midst of performing an action 
+      span.key cannot have derived this knowledge from any 
+      span.key awareness of what is currently happening
+      span , but that he must have derived it 
+      span instead from his understanding of how what is happening was caused to 
+      span happen by’ 
+    .notes.handout.ctd \citep[p.~157]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 157
+  +blur('.second span')
+  +highlight('.essentially', 'blue')
+  +highlight('.in-themselves', 'pink')
+  .slide
+    +unhighlight('.essentially', 'blue')
+    +unhighlight('.in-themselves', 'pink')
+    +highlight-row('.first', 'red')
+
+
+
++slide_middle({timer:true})
+  p 
+    span.objection.hide Frankfurt’s Objection from 
+    span  Deviant Causal Chains
+  .slide
+    +show('.objection')
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘No matter what kinds of causal antecedents are designated as necessary 
+      and sufficient for the occurrence of an
+      action, it is easy to show that causal antecedents of that kind may 
+      have as their effect an event that is
+      manifestly not an action but a mere bodily movement’
+    .notes.handout.ctd \citep[p.~157]{frankfurt1978problem}.
+    p.right.grey-text Frankfurt, 1978 p. 157
+  +show-timer
+  +start-timer
+
++slide_rh_white
+  +run_across
+    p.center What is the mark that distinguishes actions?
+  +left_half
+    p.center Davidson’s View
+    p.hem-around It is intention 
+      span.jr (or justifying reasons)
+      span .
+    .blurme
+      p.em-above Objection: 
+      p.indent.line-through Frankfurt’s Argument from Spiders
+      p.indent Bach’s objections from absent-minded, instinctive and impulive actions.
+  +right_half
+    p.center Frankfurt’s View
+    p.hem-around Action is ‘behaviour whose course is under the guidance of an agent’.
+    p.em-above Two Problems:
+    p.indent What is guidance?
+    p.indent When is guidance ‘attributable to an agent’?
+  +blur('.blurme, .right-half')
+  .slide
+    +invert('.view')
+
++slide_middle
+  p.hem-around Strong claim: To be an action is to be caused by an intention.
+  p.hem-around Weak claim: To be an action is to stand in some specific, but here unspecified, relation to an intention.
+
++slide_middle
+  p 
+    span.objection Frankfurt’s Objection from 
+    span  Deviant Causal Chains
+  p.em-above.notes.handout.show: :t
+    ‘No matter what kinds of causal antecedents are designated as necessary 
+    and sufficient for the occurrence of an
+    action, it is easy to show that causal antecedents of that kind may 
+    have as their effect an event that is
+    manifestly not an action but a mere bodily movement’
+  .notes.handout.ctd \citep[p.~157]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 157
+
+
++slide_middle
+  p.center Frankfurt’s Objection from Being in Touch
+
++slide_middle
+  p.em-above.notes.handout.show: :t
+    ‘... the most salient differentiating characteristic of action: during the
+    time a person is performing an action he is necessarily in touch with the
+    movements of his body in a certain way, whereas he is necessarily not in
+    touch with them in that way when movements of his body are occurring
+    without his making them.
+
++slide_middle({timer:true})
+  p.em-above.notes.handout.show
+    span ‘A theory that is limited to describing  
+    span.error1 causes prior to the occurrences of actions
+    span  and of mere bodily movements cannot possibly include an analysis of 
+    span these two ways in which a person may be related to the may occur when an 
+    span action is being performed or movements of his body. It must inevitably 
+    span open the possibility that a person, whatever his involvement in the events 
+    span from which his action arises, loses all connection with the movements of 
+    span his body at the moment when his action begins.’ 
+  .notes.handout.ctd \citep[p.~158]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 158
+  +show-timer
+  +start-timer
+  +hide-timer
+  .slide
+    +blur('span:not(.error1)')
+
+
++slide_rh_white
+  +run_across
+    p.center What is the mark that distinguishes actions?
+  +left_half
+    p.hem-around It is intention 
+      span.jr (or justifying reasons)
+      span .
+    .blurme
+      p.em-above Objection: 
+      p.indent.line-through Frankfurt’s Argument from Spiders
+      p.indent Bach’s objections from absent-minded, instinctive and impulive actions.
+  +right_half
+    p.center Frankfurt’s View
+    p.hem-around Action is ‘behaviour whose course is under the guidance of an agent’.
+    p.em-above Two Problems:
+    p.indent What is guidance?
+    p.indent When is guidance ‘attributable to an agent’?
+  +blur('.blurme, .right-half')
+  .slide
+    +invert('.view')
+
+
++slide_middle
+  p.em-above.notes.handout.show
+    span ‘A theory that is limited to describing  
+    span.error1 causes prior to the occurrences of actions
+    span  and of mere bodily movements cannot possibly include an analysis of 
+    span these two ways in which a person may be related to the may occur when an 
+    span action is being performed or movements of his body. It must inevitably 
+    span open the possibility that a person, whatever his involvement in the events 
+    span from which his action arises, loses all connection with the movements of 
+    span his body at the moment when his action begins.’ 
+  .notes.handout.ctd \citep[p.~158]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 158
+  +blur('span:not(.error1)')
+  .slide
+    +highlight('.error1', 'red')
+
+
++slide_middle({bkg:'spider_web3.jpg'})
+  +hide('img.bkg', 0)
+  p.em-above.notes.handout.show
+    span ‘... the most salient differentiating characteristic of action: during the 
+    span time a person is performing an action he is necessarily 
+    span.key in touch with the movements of his body in a certain way
+    span , whereas he is necessarily not in 
+    span touch with them in that way when movements of his body are occurring 
+    span without his making them. 
+  .slide
+    +blur('span:not(.key)')
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      What is this way? Is it a way that spiders are also in touch with their actions?
+
++slide_middle
+  p.center Frankfurt’s mistake?
+  .slide
+    p.em-above
+      span ‘According to causal theories 
+      span.step2.hide [...] the essential difference 
+        span between events of the two types  
+        span [actions vs things that merely happen to an agent] 
+        span is to be found in their 
+        span.prior prior
+        span  causal histories: a [pattern of joint displacements and bodily configurations] is an 
+        span action if and only if it results from 
+        span.antecedents antecedents
+        span  of a certain kind
+        span .’ 
+    .notes.ctd \citep[p.~157]{frankfurt1978problem}.
+    p.right.grey-text Frankfurt, 1978 p. 157
+  .slide
+    +show('.step2')
+  .slide
+    +invert('.prior')
+  .slide
+    +invert('.antecedents')
+    .notes: :t
+      I said Davidson is offering a causal theory in Frankfurt’s sense.
+      But it appears that he is not.

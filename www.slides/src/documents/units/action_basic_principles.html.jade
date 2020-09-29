@@ -1,0 +1,186 @@
+---cson
+layout: 'deck_unit'
+title: "Action: Three Basic Principles"
+tags: []
+description: """
+  Discussion about action should be informed by three basic principles.
+  Actions have hierarchical structures.
+  Actions are individuated by outcomes.
+  And one action can have multiple descriptions (the Accordion Effect).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
++slide_middle
+  p.huge-glow 1
+  p(style='margin-top:-3em;').notes.handout.show  actions have hierarchical structures
+
++slide({bkg:'action_structure/slide01.jpg'})
+  .notes: :t
+    changing the nappy is one action, but it has proper parts which are also actions.
++slide({bkg:'action_structure/slide02.jpg'})
++slide({bkg:'action_structure/slide03.jpg'})
++slide({bkg:'action_structure/slide04.jpg'})
++slide({bkg:'action_structure/slide05.jpg'})
++slide({bkg:'action_structure/slide06.jpg'})
++slide({bkg:'action_structure/slide07.jpg'})
+  .notes: :t
+    The structure is even more complex that this suggests;
+    consider an apparently simple action like movig the nappy ...
++slide({bkg:'action_structure/slide08.jpg'})
++slide({bkg:'action_structure/slide09.jpg'})
++slide({bkg:'action_structure/slide10.jpg'})
+
++slide_middle
+  p.huge-glow 1
+  p(style='margin-top:-3em;').notes.handout.show  actions have hierarchical structures
+
++slide_middle
+  p.huge-glow 2
+  p(style='margin-top:-3em;').notes.handout.show  actions are 
+    span.individuate individuate
+    span d by 
+    span.outcome outcome
+    span s
+  .notes: :t
+  .slide
+    +invert('.individuate')
+    .notes: :t
+      one is distinguished from another.
+      As when I ask, ’What is she doing?’
+  .slide
+    +uninvert('.individuate')
+  .slide
+    +invert('.outcome')
+    .notes: :t
+      An outcome is a possible or actual state of affairs.
+  .slide
+    +uninvert('.outcome')
+
++slide_middle
+  p.indent What has she done?
+  p.indent - She killed the king.
+  .notes: :t
+    Outcome: the killing of the king.
+
++slide_middle
+  p Not all outcomes are actual.
+  .slide
+    p.em-above.indent What is she doing?
+    p.indent - Digging a 6ft hole.
+  .slide
+    p.hem-above.indent Will she succeed?
+    p.indent - No.
+
++slide_middle
+  p Not all outcomes are end states; 
+  p.slide nor need they be consequences of actions.
+  .slide
+    p.em-above.indent What did he do?
+    p.indent - He reached for his gun.
+
+
++slide_middle
+  p.hem-around.hide.claim Actions are individuated by outcomes.
+  p.hem-around.hide.type type vs token
+  p Ayesha and Alfie are raising money by running 10k.
+  p.em-above Ayesha is 
+    span.outcome1 running 10k
+    span .
+  p.em-above Alfie is  
+    span.outcome2 running 10k
+    span .
+  .slide
+    +highlight('.outcome1', 'yellow')
+    +highlight('.outcome2', 'blue')
+  .slide
+    +show('.claim')
+  .slide
+    +show('.type')
+    +highlight-row('.type', 'white')
+    .notes: :t
+      One can fail while the other succeeds.
+
++slide_middle
+  p.huge-glow 2
+  p(style='margin-top:-3em;').notes.handout.show  actions are 
+    span.individuate individuate
+    span d by 
+    span.outcome outcome
+    span s
+  .slide
+    +highlight('.individuate', 'pink')
+  .slide
+    .step2
+      p.em-above But what *are* 
+        span.bodily.hide bodily
+        span  actions?
+  .slide
+    .step2
+      .em-above 
+        p.indent bodily configuration
+        p.indent joint displacement
+        p.indent outcome
+  .slide
+    +show('.bodily')
+    +flash('.bodily')
+  .slide
+    +blur('.step2')
+    +unhighlight('.individuate', 'pink')
+
+
+
++slide_middle
+  p.huge-glow 3
+  p(style='margin-top:-3em;').notes.handout.show  one action can have multiple descriptions (the accordion effect)
+
+
++slide_middle
+  .notes: :t
+    Recall this example ...
+  p.indent What has she done?
+  p.indent - She killed the king.
+  .notes: :t
+    Outcome: the killing of the king.
+  .slide
+    p.em-above.indent How?
+    p.indent - She put poison in his ear.
+  .slide
+    p.em-above.indent How?
+    p.indent - She poured it from a bottle.
+  .slide
+    p.em-above One action, many possible and actual outcomes.
+    .notes: :t
+      You can use any outcome to describe the action.
+
+
+
++slide_middle({timer:true})
+  .one.hide
+    p.huge-glow 1
+    p(style='margin-top:-3em;').notes.handout.show  actions have hierarchical structures
+  .two.hide
+    p.huge-glow 2
+    p(style='margin-top:-3em;').notes.handout.show  actions are 
+      span.individuate individuate
+      span d by 
+      span.outcome outcome
+      span s
+  .three
+    p.huge-glow 3
+    p(style='margin-top:-3em;').notes.handout.show  one action can have multiple descriptions (the accordion effect)
+  .slide
+    +blur('.three')
+    +show('.two')
+  .slide
+    +blur('.two')
+    +show('.one')
+  .slide
+    +unblur('.two, .three')
+  +show-timer
+  +start-timer

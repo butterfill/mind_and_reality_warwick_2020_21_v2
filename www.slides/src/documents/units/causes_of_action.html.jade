@@ -1,0 +1,72 @@
+---cson
+layout: 'deck_unit'
+title: "Causes of Action: Belief and Desire"
+tags: []
+description: """
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle({timer:true})
+  p.hem-around Ahmed’s next action will be either to pull the lever or to press the button (but he cannot do both).
+  .slide
+    p.hem-around If he pulls the lever, a forest rat will fall on his head.
+  .slide
+    p.hem-around If he pushes the button, he will get ten dollars.
+  .slide
+    p.hem-around.q1 Will Ahmed pull the lever?
+  .slide
+    +line-through('.q1')
+    .notes silly question
+  .slide
+    p.hem-around.q2 What is the minimum you need to know in order to know what Ahmed will do?
+  +show-timer
+  +start-timer
+
++slide_middle
+  p Will Ahmed pull the lever?
+  .em-above
+    table.data
+      thead
+        tr
+          td
+          td(style='vertical-align:middle') Ahmed desires forest rat most.
+          td(style='vertical-align:middle') Ahmed desires ten dollars most.
+      tbody
+        tr
+          td(style='vertical-align:middle') Ahmed believes truly.
+          td(style='vertical-align:middle'): p.center ✔
+          td(style='vertical-align:middle'): p.center ✘
+        tr
+          td(style='vertical-align:middle') Ahmed believes 
+            span.reverse-ly reverse-ly
+            span .
+          td(style='vertical-align:middle'): p.center ✘
+          td(style='vertical-align:middle'): p.center ✔
+  .slide
+    +invert('.reverse-ly')
+  .slide
+    +uninvert('.reverse-ly')
+
+
+
++slide_middle
+  p Action is a function of belief and desire.
+
+    
++slide({bkg:'decision_theory/slide1.jpg'})
+  .notes: :t
+    Same idea from the perspective of decision theory
++slide({bkg:'decision_theory/slide2.jpg'})
++slide({bkg:'decision_theory/slide3.jpg'})
++slide({bkg:'decision_theory/slide4.jpg'})
++slide({bkg:'decision_theory/slide5.jpg'})
+
+
+
++slide_middle
+  p Action is a function of belief and desire.

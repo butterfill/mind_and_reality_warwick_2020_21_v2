@@ -1,0 +1,35 @@
+---cson
+layout: 'default2'
+title: 'Lecture 01'
+subtitle: 'Mind & Reality'
+lecture_date: '2020/10/06'
+weburl: ''
+units: []
+recordings: []
+recordingUnitNames: []
+recordingStreamIds: []
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/words_things_mixins
+
+- var images = get_images('mix')
+
++title_slide({document:document, images:images})
+
+
+
+
++insert_unit({unit:'points_of_view', title_slide:true, images:images, handout:true})
++insert_unit({unit:'the_questions', title_slide:true, images:images, handout:true})
+
+
++insert_unit({unit:'how_to_lectures', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  p.center *TODO* explain the week-by-week guide
+  p.center *TODO* explain the slides
+

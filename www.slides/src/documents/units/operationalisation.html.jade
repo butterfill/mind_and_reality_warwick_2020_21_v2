@@ -1,0 +1,60 @@
+---cson
+layout: 'deck_unit'
+title: "Operationalising Perception and Perceptual Awareness"
+tags: []
+description: """
+  ‘If psychologists can really identify something 
+  that deserves to be called perception without awareness, they must have an 
+  operational grasp
+  on not only 
+  perceive what it takes to perceive something
+  but on 
+  conscious what it takes to be conscious of it’
+  (Dretske, 2006 p. 148).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    .slide
+      +invert('.op')
+    .slide
+      +uninvert('.op')
+      +invert('.perceive')
+    .slide
+      p.hem-around blindsight:
+      p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    .slide
+      +highlight-row('.vision-criterion')
+      .notes: :t
+        This was the point of talking about simple seeing.
+    .slide
+      +unhighlight-row('.vision-criterion')
+      +uninvert('.perceive')
+    .slide
+      +invert('.conscious')
+    .slide
+      p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    .slide
+      +highlight-row('.awareness-criterion', 'red')
+

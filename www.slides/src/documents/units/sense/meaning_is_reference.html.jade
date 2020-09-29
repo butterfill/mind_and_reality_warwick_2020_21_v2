@@ -1,0 +1,339 @@
+---cson
+layout: 'deck_unit'
+title: "Meaning Is Reference"
+tags: []
+description: """
+  """
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
++slide_middle
+  p What is the 
+    span.meaning meaning
+    span  of ‘Earth’?
+  .slide
+    +highlight('.meaning', 'red')
+    .notes bad question!
+
+
++slide_middle({photo:'davidson.gif'})
+  p.notes.handout.show
+    span ‘entities such as meanings ... 
+    br
+    span are not of  
+    span.independent independent
+    span   interest’
+  .notes.handout.ctd \citep[p.~154]{Davidson:1974gh}
+  p.grey-text Davidson, 1974 p. 154
+  .slide
+    +invert('.independent')
+    .notes independent of what?
+
+
+section.slide
+  +_slide_middle_inner
+    p.why.hide.center.huge-glow-180(style='margin-top:-50px;') Why?
+  +reset
+    +_slide_middle_inner
+      +warmingSentences
+      +hide('.quotes, .because, .utterance, p.mars',0)
+      .notes: :t
+        Here is a true utterance.
+      .slide
+        .notes: :t
+          ...and here is a false utterance.
+        +show('p.mars')
+        .notes: :t
+          What makes for this difference between the two utterances?
+          Why is one true but the other false?
+          This is an easy question to answer, I think ...
+      .slide
+        +show('p.earth .quotes, p.earth .because')
+      .slide
+        +show('p.mars .quotes, p.mars .because')
+        .notes: :t
+          Now for a much harder question ...
+      .slide
+        .notes: :t
+          Now for a much harder question: 
+          Why is ’s’ true because p?
+          How does it come about that this is what makes the utterance true?
+        +blur('p.mars')
+        +show('.why')
+
++slide({bkg:'meaning_causes01.jpg'})
+  .notes: :t
+    Why is this amazing?
+    (You might think it’s too obvious to be amazing,
+    but some philosophy is about finding the amazing
+    in the obvious.)
++slide({bkg:'meaning_causes02.jpg'})
+  .notes: :t
+    this is a fact about humans
++slide({bkg:'meaning_causes03.jpg'})
+  .notes: :t
+    this is a fact about words
++slide({bkg:'meaning_causes04.jpg'})
+  .notes: :t
+    yet they are causally linked
++slide({bkg:'meaning_causes05.jpg'})
+  .notes: :t
+    in the strong sense that if I intervene on the humans,
+    I change the fact about the words!
+
+
+section.slide
+  +_slide_middle_inner
+    p.why.center.huge-glow-180(style='margin-top:-50px;') Why?
+  +reset
+    +_slide_middle_inner
+      +warmingSentences
+      +hide('.utterance',0)
+      +blur('p.mars')
+      .notes: :t
+        I want to mention a clue so obvious that it is easy to overlook.
+    .slide
+      .notes: :t
+        Think about the two utterances, how one has this word ‘Earth’ ...        
+      +highlight('span.earth', 'blue')
+    .slide
+      +fade('.why')
+      +unblur('p.mars')
+      +highlight('span.mars', 'red')
+      .notes: :t
+        What makes the utterance true or false has to depend on 
+        the words the sentence it expresses contains.
+        But what are those words doing?
+        What is it about them which contributes to determining which state of affairs
+        makes the utterance true?
+
+
++slide_middle({photo:'davidson.gif'})
+  p.notes.handout.show
+    span ‘entities such as meanings ... 
+    br
+    span are not of  
+    span.independent independent
+    span   interest’
+  .notes.handout.ctd \citep[p.~154]{Davidson:1974gh}
+  p.grey-text Davidson, 1974 p. 154
+  +invert('.independent')
+  .notes independent of what? Of our explanatory interests!
+  .slide
+    +uninvert('.independent')
+
++slide_middle
+  p Facts in need of explanation:
+  +warmingSentences
+  +hide('.utterance',0)
+  .slide
+    p.em-above Postulating attributes of words, call them ‘meanings’, will enable us to explain these facts.
+
+  .handout: :t
+    \section{The Question}
+    Consider utterances of the following sentences:
+    \begin{enumerate}
+    \item ‘Earth is being warmed by human activity.’
+    \item ‘Mars is being warmed by human activity.’
+    \end{enumerate}
+    The first depends for it’s truth on how things are with Earth 
+    whereas the second depends for its truth on how things are with Mars.
+    Why do the two utterances differ in this way?
+
+  .handout: :t
+    \section{Reference}
+    Guess: It is because the utterance of ‘Earth’ stands in some relation to Earth whereas the utterance of ‘Mars’ stands in that relation to Mars.
+  .handout: :t
+    Terminology: Call this relation ‘reference’.
+  .handout: :t
+    Question: What is this relation?  Is there really any such relation at all?
+
++slide_middle
+  p What is the meaning of ‘Earth’?
+  .slide
+    p.hem-around Simple idea: ‘Earth’ means Earth.
+  .slide
+    p.hem-around Simple idea: ‘Mars’ means Mars.
+  .slide
+    p.hem-around The meaning of a word is the thing it is used to refer to.
+  .slide
+    p.hem-around.q1: :t
+      Q1. If we take this view of meanings, can we explain the first fact in need of explanation?
+  .slide
+    +highlight-row('.q1')
+
++slide_rh_white({step:true, timer:true})
+  +left_half
+    p Facts in need of explanation:
+    +warmingSentences
+    +hide('.utterance',0)
+  +right_half({step:true})
+    p Postulates about meaning:
+    p.hem-above ‘Earth’ means Earth.
+    p.hem-above ‘Mars’ means Mars.
+    .notes: :t
+      We cannot explain just by postulating meanings;
+      we also need principles
+    +show-timer
+    +start-timer
+    +hide-timer
+    .slide
+      p.em-above
+        span.principle Principle
+        span :
+    .slide
+      +highlight('.principle', 'blue')
+    .slide
+      p.hem-above What makes a sentence true 
+        span.somehow somehow
+        span  depends on what its constituent words mean.
+    .slide
+      +invert('.somehow')
+    .slide
+      +uninvert('.somehow')
+    .slide
+      +unhighlight('.principle', 'blue')
+
+  
++slide_rh_white({step:true})
+  .notes: :t
+    Let’s do it again with new facts ...
+  +left_half
+    p Fact in need of explanation:
+    .slide
+      .fact1
+        p.em-above 
+          span.utterance.hide Steve’s utterance of 
+          span ‘Touch your nose’ 
+          span.caused.hide caused me to touch my nose, 
+        p.em-above whereas
+    .slide
+      .fact1
+        p.em-above 
+          span.utterance.hide Steve’s utterance of 
+          span ‘Touch your ear’ 
+          span.caused.hide caused me to touch my ear.
+    +hide('.utterance, .caused',0)
+    .slide
+      +show('.utterance:eq(0), .caused:eq(0)')
+      .notes Behold the extraorinary power of language!
+    .slide
+      +show('.utterance:eq(1), .caused:eq(1)')
+    .fact2.hide
+      p.em-above
+        span Steve 
+        span.knew knew
+        span  that uttering ‘touch your nose’ 
+        span would cause you to touch your nose (and not your ear). 
+  +right_half({step:true})
+    p Postulates about meaning:
+    p.hem-above ???
+    p.em-above Principles:
+    p.hem-above ???
+  .slide
+    +blur('.fact1')
+  .slide
+    +show('.fact2')
+  .slide
+    +invert('.knew')
+    .notes nb it’s a fact about knowledge (communication by language is a 
+    rational activity ...)
+  .slide
+    +uninvert('.knew')
+
++slide_middle({timer:true})
+  p.hem-around
+    span.step2.hide Meaning is 
+    span.reference reference
+    span.step2.hide .
+  .slide
+    +show('.step2')
+  .slide
+    p.hem-around 
+      span.grey-text [the formal question] 
+      span What kind of things are meanings?
+  .slide
+    p.hem-around 
+      span.grey-text [the mapping question] 
+      span In virtue of what does a given word have a particular meaning?
+  .slide
+    p.hem-around 
+      span.grey-text [the linking question] 
+      span What links the mind and actions of a particular language user to the facts about meaning?
+  +show-timer
+    .notes: :t
+      Which if any of these questions does the view that meaning
+      is reference enable us to answer?
+  +start-timer
+  +hide-timer
+  .slide
+    +highlight-row('p:eq(3)')
+  .slide
+    +unhighlight-row('p:eq(3)')
+    +highlight-row('p:eq(3)', 'red')
+  .slide
+    +unhighlight-row('p:eq(3)', 'red')
+    +highlight-row('p:eq(2)')
+  .slide
+    +unhighlight-row('p:eq(2)')
+    +highlight-row('p:eq(2)', 'red')
+  .slide
+    +unhighlight-row('p:eq(2)', 'red')
+    +highlight-row('p:eq(1)')
+  .slide
+    +unhighlight-row('p:eq(1)')
+    +highlight-row('p:eq(1)', 'limegreen')
+
+
++slide_middle
+  p.hem-around: :t
+    Method:
+  p.hem-around: :t
+    1. Identify a fact which stands in need of explanation.
+  p.hem-around: :t
+    2. Show that postulating some attribute of words can, together with some principles, 
+    provide a candidate explanation of the fact.
+  p.hem-around: :t
+    Terminology: label the attribute ‘meaning’.
+
+
++slide_middle
+  p: :t
+    General point: 
+  p
+    span If you are going to postulate meanings  
+    span.or.hide (or referents, or senses, or ...), 
+    span.ensure.hide make sure, minimally, that   
+  .slide
+    +show('.ensure')
+  p.indent.slide: :t
+    you have identified a fact, or some facts, which stand in need of explanation
+  p.slide and that
+  p.indent.slide: :t
+    the meanings can explain the facts.
+  .slide
+    +show('.or')
+
+
++slide_middle({timer:true})
+  p What is the meaning of ‘Earth’?
+  p Simple idea: ‘Earth’ means Earth.
+  p.em-above Simple idea: ‘Mars’ means Mars.
+  p.em-above The meaning of a word is the thing it is used to refer to.
+  .slide
+    p.hem-around.q1: :t
+      Q1. If we take this view of meanings, can we explain the first fact in need of explanation?
+    .notes: :t
+      We already asked this question; you can see in outline how it might be answered.
+  .slide
+    +blur('.q1')
+    p.hem-around.q2: :t
+      Q2. Is there anything meanings are needed to explain which 
+      we cannot explain if we take this view of them?
+    +show-timer
+    +start-timer
+    +hide-timer
+  +slide
+    +highlight-row('.q2')

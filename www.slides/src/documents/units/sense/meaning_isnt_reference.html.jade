@@ -1,0 +1,199 @@
+---cson
+layout: 'deck_unit'
+title: "Meaning Isn’t (Only) Reference"
+tags: []
+description: """
+  """
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide_middle
+  p What is the meaning of ‘Earth’?
+  p Simple idea: ‘Earth’ means Earth.
+  p The meaning of an utterance of a word is the thing it refers to.
+  .slide
+    p.hem-around.q1: :t
+      Q1. If we take this view of meanings, can we explain the first fact in need of explanation?
+    .notes: :t
+      We already asked this question; you can see in outline how it might be answered.
+  .slide
+    +blur('.q1')
+    p.hem-around.q2: :t
+      Q2. Is there anything meanings are needed to explain which 
+      we cannot explain if we take this view of them?
+  .slide
+    +highlight-row('.q2')
+
++slide
+  .superman
+    +img_clip('superman03.jpg')
+    p.source Siegel & Shuster, 1939 (Issue 1)
+  +reset
+    .slide
+      p(style='margin-top:350px;').id1
+        span.knows.hide Lois knows that 
+        span.hide.true ‘
+        span Superman is superman
+        span.hide.true ’ is true.
+      p.em-above.id2
+        span.knows.hide Lois does not know that 
+        span.hide.true ‘
+        span Clarke Kent is superman
+        span.hide.true ’ is true.
+    .slide
+      +show('.id1 .true')
+    .slide
+      +show('.id2 .true')
+    .slide
+      +show('.id1 .knows')
+    .slide
+      +show('.id2 .knows')
+    
+
++slide_middle
+  p.center A Simple Observation
+  .handout.notes: :t
+    \subsection{Observation}
+
+    If we adopt the view that meaning is reference,
+    then 
+    \begin{enumerate}
+      \item ‘Superman’ means superman.
+      \item ‘Clarke Kent’ means Clarke Kent.
+    \end{enumerate}
+        but:
+    \begin{enumerate}[resume]
+      \item Superman is Clarke Kent
+    \end{enumerate}
+    therefore:
+    \begin{enumerate}[resume]
+      \item ‘Clarke Kent’ means Superman.
+    \end{enumerate}
+    therefore:
+    \begin{enumerate}[resume]
+      \item ‘Clarke Kent’ and ‘Superman’ do not differ in meaning.
+    \end{enumerate}
+  .notes If we adopt the view that meaning is reference, ...
+  p.em-above: :t
+    1. ‘Superman’ means Superman.
+  p.hem-above: :t
+      2. ‘Clarke Kent’ means Clarke Kent.
+  .slide
+    p.hem-above: :t
+      but:
+    p.hem-above: :t
+      3. Superman is Clarke Kent
+  .slide
+    p.hem-above: :t
+      therefore (from 2 & 3):
+  .slide
+    p.hem-above: :t
+      4. ‘Clarke Kent’ means Superman.
+  .slide
+    p.hem-above: :t
+      therefore (from 1 & 4):
+    p.hem-above.conclusion: :t
+      5. ‘Clarke Kent’ and ‘Superman’ do not differ in meaning.
+  .slide
+    +blur('p:not(.conclusion)')
+
++slide_rh_white({timer:true})
+  +left_half
+    .step2.hide
+      p Fact in need of explanation:
+      p.em-above.id1
+        span.knows Lois knows that 
+        span.true ‘
+        span Superman is superman
+        span.true ’ is true; 
+      p.em-above but 
+      p.em-above.id2
+        span.knows Lois does not know that 
+        span.true ‘
+        span Clarke Kent is superman
+        span.true ’ is true.
+
+  +right_half
+    p Postulates about meaning:
+    p.hem-above ‘Superman’ means Superman.
+    .slide
+      p.hem-above ‘Clarke Kent’ means 
+        span.Superman Superman
+        span .
+    .slide
+      +invert('.Superman')
+      .notes: :t
+        Is this a mistake? No!
+    .slide
+      +uninvert('.Superman')
+    .slide
+      p.em-above Principle:
+      p.hem-above What makes a sentence true 
+        span.somehow somehow
+        span  depends on what its constituent words mean.
+  .slide
+    +blur('.right-half')
+  .slide
+    +show('.step2')
+  .slide
+    +unblur('.right-half')
+  +show-timer
+    .notes: :t
+      Can you see an impending problem?
+  +start-timer
+
+
+
++slide_middle
+  .handout.notes: :t
+    \subsection{Argument}
+    \begin{enumerate}
+      \item The contrast in what Lois knows about the sentences is a fact in need of explanation.
+      \item The explanation, whatever it is, will hinge on the meanings of the words ‘Superman’ and ‘Clarke Kent’.
+      \item If meaning is reference, this explanation is impossible.
+    \end{enumerate}
+    therefore:
+    \begin{enumerate}[resume]
+      \item Meaning is not, or not only, reference.
+    \end{enumerate}
+    Should we reject a premise or accept the conclusion?
+
+
+  p.hem-around Contrast  ‘Superman is Superman’ with ‘Clarke Kent is Superman’
+  .slide
+    p.hem-around.one ftbe: Lois may know that one is true but not that the other is.
+  .slide
+    p.hem-around.two idea: This difference is due to some difference in the meanings of the words ‘Superman’ and ‘Clarke Kent’.
+  .slide
+    p.hem-around.three There could be no such difference if the meaning of a word were merely the thing it refers to.
+  .slide
+    p.hem-around.conclusion 
+      span.conclusion Conclusion: 
+      span the meaning of a word is not, or not only, the thing it refers to.
+  .slide
+    +highlight-row('.three', 'limegreen')
+  .slide
+    +unhighlight-row('.three', 'limegreen')
+    +highlight-row('.two', 'orange')
+  .slide
+    +unhighlight-row('.two', 'orange')
+  .slide
+    +blur('p:not(.conclusion), span.conclusion')
+
++slide_middle
+  p What is the meaning of ‘Earth’?
+  p Simple idea: ‘Earth’ means Earth.
+  p The meaning of an utterance of a word is the thing it refers to.
+  p.hem-around.q1: :t
+    Q1. If we take this view of meanings, can we explain the first fact fact in need of explanation?
+  .notes: :t
+    We already asked this question; you can see in outline how it might be answered.
+  +blur('.q1')
+  p.hem-around.q2: :t
+    Q2. Is there anything meanings are needed to explain which 
+    we cannot explain if we take this view of them?
+  +highlight-row('.q2')
+

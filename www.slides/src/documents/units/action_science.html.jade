@@ -1,0 +1,185 @@
+---cson
+layout: 'deck_unit'
+title: "Are scientific discoveries relevant?"
+tags: []
+description: """
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+
+
+.handout: :t
+  Donald Davidson asks, ‘What is the mark that distinguishes ... actions?’ Are scientific discoveries relevant to answering this question?
+
+mixin twoQ()
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-3em;') Donald Davidson asks, ‘What is the mark that distinguishes ... actions?’ Are scientific discoveries relevant to answering this question?
+  .q2
+    p.huge-glow Q2
+    p(style='margin-top:-3em;') What is the mark that distinguishes actions?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-3em;') How are non-accidental matches between intentions and motor representations possible?
+
++slide_middle
+  +twoQ
+  +hide('.q2, .q3', 0)
+
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow.center(style='line-height:.4em; filter:opacity(.5)') philosophical
+      br
+      span methods
+  +reset
+    +_slide_middle_inner
+      .em-around-children
+      .em-around-children
+        p.center informally observing, 
+        p.center guessing (‘intuition’), 
+        p.center imagining counterfactual situations 
+          br
+          span (‘thought experiments’),
+        p.center reasoning, 
+        p.center & pursuing theoretical elegance
+  .notes: :t
+    First, think about the methods philosophers use.
+    Am I missing any?
+  .notes: :t
+    Next, think about how philosophers construct theories of action ...
+
+
++slide({bkg:'folk_psychology_roots/Slide1.jpg'})
+  .notes: :t
+    Here’s Ayesha and she’s about to act, which involves some kind of 
+    processes occurring in her imnd.
+    
++slide({bkg:'folk_psychology_roots/Slide2.jpg'})
+  .notes: :t
+    Ben want’s to predict Ayesha’s action, perhaps so he can coordinate his actions
+    around hers. He is therefore having a think about what Ayesha might be up to.
+  .notes: :t
+    Implicit in Ben’s thinking is a model of actions.
+
++slide({bkg:'folk_psychology_roots/Slide3.jpg'})
+  .notes: :t
+    And along comes the philosopher and attempts to guess what is going on in
+    Ben’s mind when he is thinking about Ayesha.
+    The philosopher asks, in effect, What model of actions is implicit in Ben’s thinking?
+  .notes: :t
+    And this, essentially, is the raw material for philosophical theories of actions.
+
+section.slide
+  img.bkg.two(src='/img/folk_psychology_roots/Slide2.jpg')
+  +reset
+    img.bkg.three(src='/img/folk_psychology_roots/Slide3.jpg', style='mix-blend-mode:screen;')
+  +blur('img.three', '5px')
+  +fade('img.three')
+  .notes: :t
+    Focus on Ben for a moment.
+  .slide
+    +_slide_inner
+      .notes.handout: :t
+        What mundane purposes does thinking about actions serve?
+        \begin{itemize}
+        \item prediction and coordination
+        \item ethical (assigning responsibility, blame; living together)
+        \item normative (how actions should be)
+        \item regulative (he wants himself and others to live it out as much as to describe how things are)
+        \end{itemize}
+        
+        Insofar as thinking about actions enables making predictions, 
+        how accurate would we expect it to be?
+
+      .notes: :t
+        So it’s not all about accuracy; in fact, of these, only prediction and coordination even
+        potentially requires that his model of actions is accurate.
+      .bens-model
+        p Functions of Ben’s model of minds and actions:
+        ul.hem-around-children
+          li.ethical ethical
+          li.normative normative
+          li.regulative regulative
+          li.predictive predictive
+            .slide
+              +highlight-row('.predictive')
+              +blur('.ethical, .normative, .regulative')
+              .notes: :t
+                Second, consider Ben’s concern with making predictions.
+            .slide
+              p.indent --- speed vs accuracy
+                .notes.handout: :t
+                  Whenever you are making predictions about anything at all, you face a 
+                  \textbf{trade-off between accuracy and speed}.
+                  Making more accurate predictions requires considering more information and integrating
+                  it in a more complex model of minds and actions.
+                  By contrast, making faster predictions requires narrowing the information you consider
+                  and using a less complex model of minds and actions.
+                  Since an observer often has to make predictions fast enough to actually coordinate her actions
+                  with another agent’s, and since making predictions consumes scarce 
+                  cognitive resources, the observer usually needs to trade accuracy for speed.
+                .notes.handout: :t
+                  Because making predictions involves a trade-off between speed and accuracy, 
+                  we should not expect mundane thinking about actions to be especially accurate.
+                .notes: :t
+                  So Ben’s model of minds and actions is not built for accuracy.
+    .slide
+      +hide('.bens-model')
+      .notes: :t
+        So this is the model of minds and actions on which many philosophical theories
+        are based ... they are cast as attempts to characterise this model.
+      .notes: :t
+        Maybe philosophers are not interested in the mark of action but in how
+        people think of action. 
+        How do people ordinarily make the distinction between actions 
+        and other events in an agent’s life? Perhaps in myriad ways.
+        But if philosophers were really interested in this, they’d be using the 
+        methods of social psychology. Which they are not.
+
+
++slide_middle
+  p.notes.handout.show Relying on philosophers to characterise actions 
+    br
+    span would be like 
+    br
+    span relying on Aristotelians to characterise physical objects.
+  .notes: :t
+    In the case of physical objects, I suppose few people seriously think 
+    there is much we can understand without appeal to physics.
+  .notes: :t
+    As Newton stressed, contemporary philosophical methods are not well suited to the task.
+    Contemporary philosophical methods are of limited use in making discoveries about the world.
+
+
++slide_middle
+  +twoQ
+  +hide('.q2, .q3', 0)
+  .notes: :t
+    So I was asking whether scientific discoveries are relevant ot answering Davidson’s 
+    question,  ‘What is the mark that distinguishes ... actions?’ 
+  .notes: :t
+    My conclusion is that PHILOSOPHICAL THEORIES ARE NOT LIKELY TO BE RELEVANT to answering
+    the question. 
+    Because philosophical methods are of limited use in making discoveries about the world.
+  .notes: :t
+    Ultimately, the scientific discoveries are our only hope.
+  .slide
+    +blur('.q1')
+    .notes: :t
+      So why would philosophers think about Davidson’s question at all?
+      One thing philosophical methods are ideally suited to is 
+      identifying limits on scientific theories and asking questions.
+      Not knowing things is what philosophers are best at.
+    .notes: :t
+      This brings me to my next question ...
+  .slide
+    +show('.q2')
+
+

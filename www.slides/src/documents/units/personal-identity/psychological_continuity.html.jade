@@ -1,0 +1,276 @@
+---cson
+layout: 'deck_unit'
+title: "Psychological Continuity"
+tags: []
+description: """
+  
+  """
+book: [
+  """Parfit, D. (1984). Reasons and Persons. Clarendon Press, Oxford."""
+]
+exercises : [
+  "/ex/TorF/qq/Person essentialism is the view that everything is essentially a person.|Person essentialism is the view that the essence of a thing is the person.|Person essentialism is the view that anything which is a person could not ever not be a person.|Person essentialism is the view that if you are a person now, you can never stop being a person."
+]
+streamId:'bac99b17-c7f1-4624-877d-456cdcdb53a6'
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/lecture_mixins
+include ../../../../fragments/central_themes_mixins
+
+
++slide_middle
+  .question.hide
+    p.hem-around.show
+      span.of [Olson’s formulation]  
+      span: :t
+        If a person exists at one time and something exists at another time, 
+        under what possible circumstances is it the case that the person is the thing?
+  p.hem-around Answer 1: psychological continuity
+  .slide
+    p.hem-around
+      span Necessarily, a 
+      span.person person
+      span   existing at one time is a 
+      span.person person
+      span   existing at  
+      span another time if and only if the first mentioned person can, at the first time,  
+      span.remember remember
+      span  an experience the second mentioned person has at the second time, or vice versa.  
+  .slide
+    +show('.question')
+  .slide
+    +invert('.remember')
+    .notes: :t
+      Could be some deeper notion of psychological continuity.
+      Think, for example, of the way emotions unfold.
+    .notes.handout: :t
+      \emph{The Psychological Criterion of Personal Identity}: 
+      $X$ at $t1$ is the same person as $Y$ at $t2$ if and only if $X$ is uniquely
+      psychologically continuous with Y, where psychological continuity consists
+      in overlapping chains of strong psychological connectedness, itself
+      consisting in significant numbers of direct psychological connections like
+      memories, intentions, beliefs/goals/desires, and similarity of character
+      (Parfit 1984, 207)
+    .notes: :t
+      further issue ... transitive closure needed
+
++slide({bkg:'personal_identity_transitive/slide1.jpg'})
+  .notes: :t
+    further issue ... transitive closure needed
+    ask your logic teachers 
++slide({bkg:'personal_identity_transitive/slide2.jpg'})
++slide({bkg:'personal_identity_transitive/slide3.jpg'})
++slide({bkg:'personal_identity_transitive/slide4.jpg'})
+  .notes: :t
+    further issue ... transitive closure needed
+    ask your logic teachers 
+
+
+
+
++slide_middle
+  .question
+    p.hem-around
+      span.of [Olson’s formulation]  
+      span: :t
+        If a person exists at one time and something exists at another time, 
+        under what possible circumstances is it the case that the person is the thing?
+  p.hem-around Answer 1: psychological continuity
+  p.hem-around
+    span Necessarily, a 
+    span.person person
+    span   existing at one time is a 
+    span.person person
+    span   existing at  
+    span another time if and only if the first mentioned person can, at the first time,  
+    span.remember remember
+    span  an experience the second mentioned person has at the second time, or vice versa.  
+  +invert('.remember')
+  .slide
+    +uninvert('.remember')
+  .handout: :t
+    Two lines of objection to Psychological Continuity:
+    \begin{itemize}
+    \item You were an embryo.
+    \item You can be psychologically continuous with more than one individual [not covered in this lecture].
+    \end{itemize}
+
+
+
+
+
+
+
++slide({bkg:'altered_carbon_identity.jpg'})
+  +style('img.bkg', {filter:'saturate(0) brightness(3)'})
+  .notes: :t
+    What’s good about psychological continuity views? 
+    That they allow us to make sense of the possibility of 
+    people swapping bodies.
+
++slide_middle({timer:true, bkg:'altered_carbon_identity.jpg'})
+  +style('img.bkg', {filter:'saturate(0) brightness(3)'})
+  .hem-around-children
+    p.title.hide
+      span.three.hide Three  
+      span.inconsistent inconsistent
+      span  claims
+    p.embryo.hide 1. Sam is a person; Sam was an embryo; unless she recovers, Sam will be in a PVS.
+    p.essentialism.hide 2. Person essentialism is true.
+    p
+      span 3. Necessarily, a 
+      span.person person
+      span   existing at one time is a 
+      span.person person
+      span   existing at  
+      span another time if and only if the first mentioned person can, at the first time,  
+      span remember an experience the second mentioned person has at the second time, or vice versa.  
+  .slide
+    +show('.embryo')
+    +fade('img.bkg')
+  .slide
+    +show('.title')
+    +style('img.bkg', {filter:'saturate(0) brightness(3) blur(2px)'})
+  .slide
+    +highlight('.inconsistent', 'red')
+  +show-timer
+    .notes: :t
+      Can you articulate why these two claims are not in fact inconsistent?
+      (This is the core of the seminar task)
+  +start-timer
+  .slide
+    +show('.three')
+    +flash('.three')
+  .slide
+    +show('.essentialism')
+    +highlight-row('.essentialism')
+  .slide
+    +blur('p:not(.essentialism)')
+
++slide_middle({bkg:'hannah_annabel.jpg'})
+  .notes.handout: :t
+    \emph{Person Essentialism} is the view that being a person is an essential property.
+    (Contrast nonessential properties, like being the 
+    wearer of the most fly shoes.)
+  .notes: :t
+    This is Hannah with Annabel.
+    According to Hannah, Annabel is a person so we can’t eat her.
+    To get around this, I encouraged her to think that Annabel might
+    come back to us as a mango.
+    (Unfotunately when we went shopping, the person in front of us 
+    took Annabel-mango before we could get there.)
+  .notes: :t
+    In Hannah’s world, Butternut squash is Annabel now but it wasn’t always.
+
++slide_rh_white({bkg:'hannah_annabel.jpg', step:true})
+  +blur('img.bkg', '5px')
+  +run_across
+    p.center person essentialism?
+  +left_half
+    p.center Hannah’s view
+    .hem-around-children
+      p The butternut squash wasn’t always Annabel or any other person, and it won’t be Annabel (nor any person) later when I cook it.
+      p.slide This butternut squash, which is now Annabel, is identical with a seed.
+      p.slide The seed was never Annabel, nor any person.
+  +right_half({step:true})
+    +blur('.left-half')
+    p.center Steve’s view
+    .hem-around-children
+      p.slide Hannah is a person essentially: being a person is not an attribute she could gain or lose without ceasing to exist altogether.
+      p.slide This person, Hannah, was once an embryo.
+      p.slide The embryo was a person.
+
++slide_middle
+  p 
+    span Have I shown that 
+    br
+    span person essentialism 
+    br
+    span is true? 
+    span.slide No!
+  .notes: :t
+    I just want you to understand what it is.
+  .slide
+    p.em-above.right 
+      span So what are you 
+      br
+      span trying to show?
+  .slide
+    .notes: :t
+      What I am about to argue ...
+    p.em-above 
+      span Eventually, that 
+      br
+      span psychological continuity views 
+      br
+      span of personal 
+      span.identity identity
+      br
+      span  presuppose personal essentialism.
+  .slide
+    +invert('.identity')
+    .notes.handout: :t
+      Without person essentialism, the Psychological Criterion would not
+      be a criterion of identity after all.
+
+
++slide_middle
+  .handout: :t
+    Inconsistent Triad:  
+    \begin{enumerate}
+    \item Sam is a person; Sam was an embryo; unless she recovers, Sam will be in a PVS.
+    \item Person essentialism is true.
+    \item
+      Necessarily, a person
+        existing at one time is a 
+       person
+        existing at  
+      another time if and only if the first mentioned person can, at the first time,  
+      remember an experience the second mentioned person has at the second time, or vice versa.  
+    \end{enumerate}
+
+  .hem-around-children
+    p.title
+      span.three Three  
+      span.inconsistent inconsistent
+      span  claims
+    p.embryo 1. Sam is a person; Sam was an embryo; unless she recovers, Sam will be in a PVS.
+    p.essentialism 2. Person essentialism is true.
+    p
+      span 3. Necessarily, a 
+      span.person person
+      span   existing at one time is a 
+      span.person person
+      span   existing at  
+      span another time if and only if the first mentioned person can, at the first time,  
+      span remember an experience the second mentioned person has at the second time, or vice versa.  
+  +fade('img.bkg')
+  +style('img.bkg', {filter:'saturate(0) brightness(3) blur(2px)'})
+  +highlight('.inconsistent', 'red')
+  +highlight-row('.essentialism')
+  +blur('p:not(.essentialism)')
+  .slide
+    +unhighlight-row('.essentialism')
+    +unblur('p:not(.essentialism)')
+  .slide
+    +unhighlight('.inconsistent', 'red')
+
+
++slide_middle
+  .hem-around-children
+    p Two lines of objection to psychological continuity views
+    p.indent.one You were an embryo.
+  .slide
+    p.hem-around.indent.two You can be psychologically continuous with more than one individual.
+  .slide
+    +highlight-row('.two')
+    .notes: :t
+      Not covered here, might cover later.
+      (Interesting this is that Parfit goes all ‘Relation R’; it’s what we care about,
+      but not identity, on us.)
+  .slide
+    +unhighlight-row('.two')
+    +highlight-row('.one')
+    .notes: :t
+      This is the one we just covered.

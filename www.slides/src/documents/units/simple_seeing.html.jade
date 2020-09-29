@@ -1,0 +1,223 @@
+---cson
+layout: 'deck_unit'
+title: "Simple Seeing"
+tags: []
+description: """
+  When talking with Superman, does Lois Lane see Clark Kent?
+  The answer depends on what seeing involves.
+  Dretske’s notion of simple seeing (earlier: ‘nonepistemic seeing’) provides
+  a useful clarification.
+  The key characteristic of simple seeing is this:
+  if X is the F, then S sees X is equivalent to S sees the F.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
++slide_middle
+  .quote
+    p.em-above.notes.handout.show
+      span.step1.hide ‘If psychologists can really identify something 
+      span.step1.hide that deserves to be called 
+      span.p-wo-a perception without awareness
+      span.step2.hide , they must have an 
+      span.step2.hide.op operational grasp
+      span.step2.hide  on
+      span.step3.hide  not only 
+      span.perceive.step2.hide what it takes to perceive something
+      span.step3.hide , but on 
+      span.step3.hide.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+  .slide
+    +show('.quote .step1')
+  .slide
+    +show('.quote .step2')
+  .slide
+    +invert('.perceive')
+    .notes: :t
+      We need to start by clarifying what we mean by perceiving.
+      To this end I want to introduce an old story that we will
+      also use later (for Sense & Reference).
+
+
+
+
+
++slide
+  +img_clip('superman01.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+
++slide
+  +img_clip('superman02.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+
++slide
+  +img_clip('superman03.jpg')
+  +reset
+    .img-over
+      +img_clip('superman03.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+  +style('.img-over img', {clip:'rect(0,800px,800px,340px)'})
+  .slide
+    +blur('.img-over')
+  .slide
+    p(style='margin-top:325px').center Does Lois see the unbearable coward?
+
++slide_rh_white({step:true, timer:true})
+  +run_across
+    p.center Does Lois see the unbearable coward?
+  +left_half
+    p.hem-around 1. Lois sees Superman.
+    .slide
+      p.hem-around 2. Superman is Clark.
+    .slide
+      p.hem-around 3. Clark is the unbearable coward.
+    .slide
+      p Therefore:
+      p.hem-around 4. Superman is the unbearable coward.
+    .slide
+      +invert('.left-half p:eq(4)')
+      .notes: :t
+        How did I get here?
+    .slide
+      +highlight-row('.left-half p:eq(1), .left-half p:eq(2)')
+    .slide
+      +unhighlight-row('.left-half p:eq(1), .left-half p:eq(2)')
+      +uninvert('.left-half p:eq(4)')
+    .slide
+      p Therefore:
+      p.hem-around 5. Lois sees the unbearable coward.
+    .slide
+      +invert('.left-half p:eq(6)')
+    .slide
+      +highlight-row('.left-half p:eq(0), .left-half p:eq(4)')
+    .slide
+      +unhighlight-row('.left-half p:eq(0), .left-half p:eq(4)')
+      +uninvert('.left-half p:eq(6)')
+  +right_half({step:true})
+    +blur('.left-half')
+    .slide
+      p.hem-around 1. If Lois could see the unbearable coward, she’d know where he is.
+    .slide
+      p.hem-around 2. Lois does not know where the unbearable coward is.
+    .slide
+      p Therefore:
+      p.hem-around 3. Lois cannot see the unbearable coward.
+  .slide
+    +unblur('.left-half')
+  +show-timer('timer1')
+  +start-timer('timer1')
+
++slide_middle
+  .hem-around-children
+    p Simple Seeing 
+      span.nonepistemic.hide  (aka Nonepistemic Seeing) 
+    .notes.handout: :t
+      Dretske introduces the notion of \emph{simple seeing} 
+      (see \citealp[chapter 6]{Dretske:2000ky}; the same thing is called as ‘nonepistemic seeing’ in \citep{Dretske:1969td}).
+      The key characteristic of simple seeing: if X is the F, then \emph{S sees X} is equivalent to \emph{S sees the F}.  
+    p.em-above Key characteristic of simple seeing: if X is the F, then S sees X is equivalent to S sees the F. 
+    .notes.handout.ctd \citep[p.~54]{Dretske:1969td}. 
+    p.right.grey-text Dretske, 1969 chapter II; Dretske 2000 chapter 6
+    .notes.handout: :t
+      ‘Seeing objects is a way of getting information about them. What makes it
+      seeing (rather than, say, hearing) is the intrinsic character of those
+      events occurring in us that carry the information. What makes it X
+      (rather than Y) that we see is that the information these internal events
+      carry is information about X (rather than Y). Everything else [...]
+      is [...] something the scientist, not
+      the philosopher, should provide’
+      \citep[p.~112]{Dretske:2000ky}.
+  .slide
+    +show('.nonepistemic')
+
+
+
++slide_middle
+  .quote
+    p.em-above.notes.handout.show
+      span.step1.hide ‘If psychologists can really identify something 
+      span.step1.hide that deserves to be called 
+      span.p-wo-a perception without awareness
+      span.step2.hide , they must have an 
+      span.step2.hide.op operational grasp
+      span.step2.hide  on
+      span.step3.hide  not only 
+      span.perceive.step2.hide what it takes to perceive something
+      span.step3.hide , but on 
+      span.step3.hide.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+  +show('.quote .step1')
+  +show('.quote .step2')
+  +invert('.perceive')
+  .notes: :t
+    We have been clarifying what we mean by perceiving.
+
+
+
++slide
+  .layer0.hide
+    +img_clip('superman03.jpg')
+    +reset
+      .img-over
+        +img_clip('superman03.jpg')
+    p.source Siegel & Shuster, 1939 (Issue 1)
+    +style('.img-over img', {clip:'rect(0,800px,800px,340px)'})
+    +blur('.img-over', '2px', 0)
+  +reset
+    +middle
+      +awarenessQ2
+      +invert('.perceive')
+      .slide
+        +show('.layer0')
+        .notes: :t
+          The question is trivial if we interpret ‘perceive’ so that  
+          this (Lois’ seeing superman but not being aware of the 
+          unbearable coward) counts as a case of perceiving without awareness.
+        .notes: :t
+          To make this question hard, and therefore interesting,
+          we need to understand ‘perceive’ in the sense of simple seeing.
+      .slide
+        +style('.layer0 img, .source', {filter:'saturate(0) opacity(0.5) blur(4px)'})
+        +uninvert('.perceive')
+      .slide
+        p.em-above.notes.handout.show
+          span ‘Perception without 
+          span.awareness awareness
+          span  [...] is therefore to be 
+          span understood as perception of some object without 
+          span.awareness awareness 
+          span [...] of that object’ 
+        p.right.grey-text Dretske, 2006
+        .notes.handout.ctd \citep{Dretske:2006fv}.
+
+
++slide_middle
+  .notes: :t
+    Note that we have not attempted to discover the design of the mind,
+    merely made a distinction.
+  p.notes.step2.hide.show: :t
+    ‘Here lies the fatal flaw in [...] the philosophy of mind, 
+  p.notes.step2.hide.ctd.show: :t
+    for, in
+    using as evidence what seems reasonable or persuasive, philosophers
+    ultimately rely on their own introspections. 
+  p.notes.ctd.show
+    span.step2.hide They look inside themselves  
+    br
+    span.step2.hide  in an attempt 
+    br
+    span.discover to discover the design of the mind
+    span.step2.hide ’
+  .notes.ctd \citep[p.~380]{bridgeman2004philosophy}
+  p.right.grey-text.step2.hide Bridgeman, 2004 p. 380
+  .slide
+    +show('.step2')

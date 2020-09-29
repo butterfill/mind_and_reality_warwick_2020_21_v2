@@ -1,0 +1,341 @@
+---cson
+layout: 'deck_unit'
+title: "The Seven Questions"
+tags: []
+description: """
+  Seven questions we will investigate in this course.
+  About the mind’s relation to the world, 
+  the influence of cognition on perception,
+  awareness, 
+  the aspectual nature of mental states, 
+  action, 
+  personal identity and 
+  the relation between theories and the evidence which supports them.
+  """
+exercises : [
+]
+book : [
+  'Russell, B. (1910). Knowledge by Acquaintance and Knowledge by Description. Proceedings of the Aristotelian Society, 11:108–128.'
+
+]
+streamId : '6435f3cf-927d-48f6-8ba3-e8f616ed965b'
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/mind_reality_mixins
+
++slide_middle
+  +topicTable
+  +hide('.q', 0)
+  .slide
+    +show('.q:lt(2)')
+    +blur('tr:gt(1)')
+    .notes: :t
+      Russell thinks the answer is something he calls acquaintance’ ...
+
+//- +slide_middle({photo:'russell.jpg'})
+//-   p
+//-     span ‘Every 
+//-     span.proposition proposition
+//-     span  which we can understand must be composed wholly of constituents 
+//-     span with which we are 
+//-     span.acquainted acquainted
+//-     span ’ 
+//-   p.right.grey-text Russell, 1910 p. 117
+//-   .slide
+//-     +invert('.proposition')
+//-   .slide
+//-     +uninvert('.proposition')
+//-     +invert('.acquainted')
+
++slide_middle({photo:'russell.jpg'})
+  p.center Principle of Acquaintance
+
++slide({photo:'russell.jpg'})
+  p.hem-around.principle.hide
+    span ‘Whenever 
+    span.cut the relation of 
+    span supposing or judging occurs, 
+    span the 
+    span.terms terms
+    span  to which the suppossing or judging mind is  
+    span.uncut.hide [thereby]
+    span  related 
+    span.cut by the relation of supposing or judging  
+    span must be 
+    span.terms terms
+    with  which the mind in question 
+    span.acquainted acquainted
+    span . 
+  p.hem-around.intuition
+    span.equiv.hide ‘This is merely to say that 
+    span we cannot make a 
+    span judgment or a supposition without knowing what it is that we are making 
+    span our judgment or supposition about. 
+  .argument.hide
+    p.hem-around
+      span ‘It seems to me that the truth of this principle is evident as soon as the principle is understood’
+    p.right.grey-text Russell, 1910 p. 118
+  .slide
+    +show('.principle')
+  .slide
+    +hide('.cut')
+    +show('.uncut')
+  .slide
+    +show('.equiv')
+  .slide
+    +show('.argument')
+  .slide
+    +blur('.intuition, .argument')
+  .slide
+    +invert('.acquainted')
+
+
+
++slideTopicTable({step:2})
+
++slide
+  .figure
+    +img_clip('levin_banaji_2006_fig2b.png', 'rect(0,230px,250px,120px)')
+  p.source Levin & Banaji, 2006 figure 2B
+  .slide
+    +clip('.figure img', 'rect(0,230px,250px,0)')
+  .slide
+    +clip('.figure img')
+  .notes: :t
+     ‘Subjects viewed two faces on each trial. One was defined as a reference face and the other was defined as an adjustable face. Subjects were told that their task was to adjust the adjustable face until it matched the lightness of the reference face. On half of the trials, the faces were of the same race (both were Black or both were White), and, on the remaining half, they were of different races. On the basis of our previous informal observations, we tested whether subjects would choose relatively dark versions of the adjustable face for the Black reference face and relatively light versions for the White reference face.’
+
++slide
+  .figure
+    +img_clip('levin_banaji_2006_fig2b_mod.png')
+  p.source Levin & Banaji, 2006 figure 2B
+
+
++slide
+  +img_clip('levin_banaji_2006_fig3.png')
+  +style('img', {filter:'invert(1)'})
+  p.source Levin & Banaji, 2006 figure 3
+  .notes: :t
+    ‘Results of Experiment 1. The two bars on the left represent trials where subjects adjusted a face of one race to match a face of the other race. The two bars on the right represent trials in which the adjusted face and the target face were the same. Positive numbers represent overlight- ening of the face. Adj 􏰃 adjustable.’
+
++slide_middle
+  p Apparently, your beliefs can influence your perception of lightness and darkness.
+  .notes: :t
+    So what?
+
++slide
+  +img_clip('lupyan_clark_2015_fig1.png')
+  +style('img', {filter:'invert(1)'})
+  p.source Lupyan & Clark, 2011 figure 1
+
+
+
+
+
++slide({photo:'russell.jpg'})
+  .notes: :t
+    Start with it’s formal properties ...
+  p.notes.handout.show
+    span ‘Acquaintance ... essentially consists in a 
+    span.relation relation
+    span.step3.hide  between the mind and something other than the mind’
+  p.notes.handout.ctd \citep[chapter 4]{Russell:1912ln}
+  p.right.grey-text Russell, 1912 Chapter 4
+  .slide
+    +invert('.relation')
+  .slide
+    +show('.step3')
+    .notes But which relation is acquaintance? ...
+  .slide
+    +uninvert('.relation')
+    .notes What else can we say about acquaintance?
+
+  .slide
+    p.notes.handout.show
+      span ‘we have acquaintance with anything of which we are 
+      span.directly directly
+      span  aware, 
+      span.step2.hide without the intermediary of any process of inference or any knowledge of truths’
+    p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+    p.right.grey-text Russell, 1912 chapter 5
+  .slide
+    +invert('.directly')
+    .notes What does this mean? Nothing, by itself. But Russell goes on to explain what he means:
+  .slide
+    +show('.step2')
+    .notes: :t
+      Contrast: infer existence of a phone in your washing machine from the bumps vs opening it
+      and finding the phone.
+  .slide
+    +uninvert('.directly')
+  .slide
+    +highlight('.step2', 'pink')
+
+
+
+//- +slide_middle
+//-   p Principle of Acquaintance (rough approximation): You can only think about things you are  
+//-     span.acquainted acquainted
+//-     span   with.
+//-   .slide
+//-     +invert('.acquainted')
+//-   .slide
+//-     p.em-above Perception is (one kind of) acquaintance.
+//-   .slide
+//-     +uninvert('.acquainted')
+//-   .slide
+//-     p.em-above Therefore, acquaintance is distinct from, and more primitive than, belief.
+
+
+
++slideTopicTable({step:3})
+
++slideTopicTable({step:4})
+
++slide_middle
+  .hem-around-children
+    p a point of view:
+    p.indent some things
+    p.indent.aspect presented in a certain way
+  .slide
+    +highlight-row('.aspect')
+
++slide
+  +img_clip('superman01.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+
++slide
+  +img_clip('superman02.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+
++slide
+  +img_clip('superman03.jpg')
+  +reset
+    .img-over
+      +img_clip('superman03.jpg')
+  p.source Siegel & Shuster, 1939 (Issue 1)
+  +style('.img-over img', {clip:'rect(0,800px,800px,340px)'})
+  .slide
+    +blur('.img-over')
+  .slide
+    p(style='margin-top:325px').center Does Lois see the unbearable coward?
+
++slide_rh_white({step:true, timer:true})
+  +run_across
+    p.center Does Lois see the unbearable coward?
+  +left_half
+    p.hem-around 1. Lois sees Superman.
+    .slide
+      p.hem-around 2. Superman is Clark.
+    .slide
+      p.hem-around 3. Clark is the unbearable coward.
+    .slide
+      p Therefore:
+      p.hem-around 4. Superman is the unbearable coward.
+    .slide
+      +invert('.left-half p:eq(4)')
+      .notes: :t
+        How did I get here?
+    .slide
+      +highlight-row('.left-half p:eq(1), .left-half p:eq(2)')
+    .slide
+      +unhighlight-row('.left-half p:eq(1), .left-half p:eq(2)')
+      +uninvert('.left-half p:eq(4)')
+    .slide
+      p Therefore:
+      p.hem-around 5. Lois sees the unbearable coward.
+    .slide
+      +invert('.left-half p:eq(6)')
+    .slide
+      +highlight-row('.left-half p:eq(0), .left-half p:eq(4)')
+    .slide
+      +unhighlight-row('.left-half p:eq(0), .left-half p:eq(4)')
+      +uninvert('.left-half p:eq(6)')
+  +right_half({step:true})
+    +blur('.left-half')
+    .slide
+      p.hem-around 1. If Lois could see the unbearable coward, she’d know where he is.
+    .slide
+      p.hem-around 2. Lois does not know where the unbearable coward is.
+    .slide
+      p Therefore:
+      p.hem-around 3. Lois cannot see the unbearable coward.
+  .slide
+    +unblur('.left-half')
+  //- +show-timer('timer1')
+  //- +start-timer('timer1')
+
++slide_middle
+  .hem-around-children
+    p a point of view:
+    p.indent some things
+    p.indent.aspect presented in a certain way
+  +highlight-row('.aspect')
+
+
++slideTopicTable({step:5})
+
++slide
+  .altered_carbon_clip1
+    video(width="720", height="300", controls, src="img/altered_carbon_clip1.mp4")
+  .notes: :t
+    scene from altered carbon where couple gets daughter back in old body
+  .notes: :t
+    Relevant because one is a familiar person in an unfamiliar body;
+    the other is an unfamiliar person in a familiar body (Ortega’s boyfriend’s).
+  script: :coffee-script
+    getVideo = () -> $('.altered_carbon_clip1 video')[0]
+    addAction 
+      doit : () ->
+        screenfull.request( getVideo() )
+        getVideo().pause()
+      undoit : () -> 
+        screenfull.toggle( getVideo() ) if screenfull.isFullscreen
+  .slide
+    //- play video (and pause on next slide)
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().play()
+        undoit : () -> 
+          getVideo().pause()
+  .slide
+    //- unfull screen
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().pause()
+          screenfull.toggle( getVideo() )  if screenfull.isFullscreen
+        undoit : () -> 
+          screenfull.request( getVideo() )
+          getVideo().play()
+
++slideTopicTable({step:6})
++slideTopicTable({step:7})
+
++slide_rh_white({step:true})
+  +left_half
+    p.hem-around All emeralds observed until 2020 have been green.
+    p.hem-around [induction] Therefore, probably all emeralds are green.
+
+  +right_half({step:true})
+    .grue-arg.hide 
+      p.hem-around All emeralds observed until 2020 have been grue.
+      p.hem-around [induction] Therefore, probably all emeralds are grue.
+    .grue-df
+      p.em-above An object is grue just if it is EITHER
+      p first observed before 2020 and green, OR
+      p first observed after 2020 and blue.
+    .slide
+      +show('.grue-arg')
+
+  .notes: :t
+    ‘Goodman’s point is that two inductive arguments can have the exact same form, but one argument can be good while
+    the other is bad. So what makes an inductive argument a good or bad one cannot be just its form. Consequently, there can be no purely formal the- ory of induction and confirmation. Note that the word “grue” works per- fectly well in deductive arguments. You can use it in the form of argument 1, and it will cause no problems. But induction is different’
+    \citep[pp.52--3]{godfrey-smith:2003_theory}.
+
++slideTopicTable({step:8})
++slide_middle
+  +topicTable

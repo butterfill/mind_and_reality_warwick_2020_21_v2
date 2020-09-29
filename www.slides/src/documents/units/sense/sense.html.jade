@@ -1,0 +1,371 @@
+---cson
+layout: 'deck_unit'
+title: "Sense"
+tags: []
+description: """
+  ‘Frege’s idea was that to understand an expression, one must not merely think of 
+  the reference that it is the reference, but that one must, in so thinking, think 
+  of the reference in a particular way.  The way in which one must think of the 
+  reference of an expression in order to understand it is that expression’s sense’
+  (Evans 1981 [1985]: 294).
+  """
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
+
+
++slide_middle({bkg:'long_kiss.jpg'})
+  .notes: :t
+    This repeats something we’ve already done but in Frege’s words.
+    When Frege was writing, he didn’t know about superman (it hadn’t been created yet).
+    So instead he focussed on a film called ‘The Long Kiss Goodnight’.
+
++slide({photo:'samantha.jpg'})
+  p Samantha Caine
+  p: :t
+    Suburban homemaker and the ideal mom to her 8 year old daughter Caitlin. She lives in a New England small town, teaches in a local school and makes the best Rice Krispie treats in town.
+
++slide_middle({bkg:'charly.jpg', photo:'samantha.jpg'})
+  +hide('.photo', 0)
+  .about
+    p Charly Baltimore
+    p: :t
+      a highly trained secret agent and cold-blooded killer involved in the government's most unscrupulous affairs.
+  .slide
+    +blur('.about')
+    p.em-above ‘Charly is Charly.’
+  .slide
+    +show('.photo')
+    p.em-above ‘Charly is Samantha.’
+
++slide({bkg:'charly.jpg', photo:'samantha.jpg'})
+  +fade('.photo, .bkg', 0)
+  +style('.photo, .bkg', {filter:'grayscale(.7) blur(5px)'})
+  .notes.handout.show
+    p
+      span ‘What is stated in the 
+      span.proposition proposition
+      span  ‘Charly is Samantha’ is certainly not the 
+      span same thing as 
+      span.content  the content of 
+      span the proposition ‘Charly is Charly’. 
+    .slide
+      +invert('.proposition')
+
++slide_middle
+  p.log ‘Logic makes me die inside’
+  .slide
+    +blur('.log')
+    p.em-above.indent ‘You have to turn your headlamps on 
+      br
+      span when it’s raining in Sweden.’
+  .notes How do I know it’s raining in Sweden
+
+
++slide_middle
+  .notes: :t
+    Not everyone agrees about this. Consider for instance
+    Devitt and Sterelny’s 1999 textbook.
+  p
+    span ‘the core of a 
+    span.sentence sentence
+    span ’s meaning is its truth condition; 
+    span that is, the property of a 
+    span.sentence sentence
+    span   which, together with the world, 
+    span makes it true or false.’ 
+  p.right.grey-text Devitt and Sterelny, 1999 p. 11
+  .slide
+    +highlight('.sentence', 'red')
+    .notes: :t
+      In this course I'm also speaking as if sentences 
+      were truth bearers. (Sorry!)
+    .notes: :t
+      sentence vs utterance
+
++slide_middle
+  p.center But what are utterances?
+  .notes: :t
+    They’re actions which typically occur in, and are constitutive of, lingiustic communication.
+    Hard to define because not all utterances are communicative. 
+  .notes: :t
+    Part of the point is to avoid distinguishing oral and manual communication.
+
++slide_rh_white({timer:true})
+  +left_half
+    p.center sentence
+    p.em-above Is timeless.
+    p.em-above Can be uttered by different people.
+    p.em-above Is a structure of words.
+    p.em-above Cannot express a proposition (strictly speaking).
+  +right_half
+    p.center utterance
+    p.em-above Has a date.
+    p.em-above Has a particular utterer or utterers.
+    p.em-above Is a structure of events.
+    p.em-above Can express a proposition.
+  +show-timer('timer1')
+  +start-timer('timer1')
+
++slide_middle
+  p.center But what are propositions?
+
++slide_middle
+  p Propositions
+  p.indent ... are the things that can be true or false;
+  p.indent ... and the things that utterances characteristcally express.
+
+
+
+
++slide({bkg:'charly.jpg', photo:'samantha.jpg', timer:true})
+  +fade('.photo, .bkg', 0)
+  +style('.photo, .bkg', {filter:'grayscale(.7) blur(5px)'})
+  +_slide_inner
+    .notes.handout.show
+      p
+        span ‘What is stated in the 
+        span.proposition proposition
+        span  ‘Charly is Samantha’ is certainly not the 
+        span same thing as 
+        span.content  the content of 
+        span the proposition ‘Charly is Charly’. 
+      +invert('.proposition')
+      .slide
+        +uninvert('.proposition')
+      .slide
+        +invert('.content')
+      .slide
+        +uninvert('.content')
+        +line-through('.content')
+      p.slide
+        span Now if what corresponded to the name ‘Samantha’ as part of the 
+        span.thought thought
+        span.remove-me.proposition2  proposition
+        span  was 
+        span the reference of the name and hence the woman herself, then this would be 
+        span the same in both 
+        span.thought thoughts
+        span.remove-me.proposition2  propositions
+        span . 
+      .slide
+        +invert('.thought')
+      .slide
+        +uninvert('.thought')
+        +line-through('.thought')
+        +unremove('.proposition2')
+      p.slide
+        span The 
+        span.thought thought
+        span.remove-me.proposition2  proposition
+        span  expressed in ‘Charly is Samantha’ 
+        span would have to coincide with the one in ‘Charly is Charly’, which is far from being 
+        span the case’
+    .notes.handout.ctd \citep[p.~44]{Frege:1892uq}.
+    p.right.grey-text Frege, 1892[1993] p. 44
+  +show-timer
+    .notes: :t
+      You’re gonna be writing an article on this.
+      Link what is written here to the Observation on handout
+      from lecture 10
+  +start-timer
+
++slide({bkg:'charly.jpg', photo:'samantha.jpg'})
+  +fade('.photo, .bkg', 0)
+  +style('.photo, .bkg', {filter:'grayscale(.7) blur(5px)'})
+  p Charly Baltimore lives in New England
+  p Samantha Caine lives in New England
+  .slide
+    .notes.handout.show
+      p.em-above
+        span ‘Someone who takes the latter to be true need not … take the former to be true
+      p.slide
+        span ‘An object can be 
+        span.determined determined
+        span.remove-me.thought-of  thought of
+        span   in different ways
+        span.step2.hide , and every one of these ways of 
+          span.determined determining
+          span.remove-me.thought-of  thinking of
+          span  it can give rise to  a special name
+        span.step3.hide , and these different names have different 
+          span.sense sense
+          span s’
+      .slide
+        +invert('.determined')
+      .slide
+        +uninvert('.determined')
+        +line-through('.determined')
+        +unremove('.thought-of')
+      .slide
+        +show('.step2')
+      .slide
+        +show('.step3')
+      p.slide
+        span ‘for it is not self-evident that it is the same object which is being  
+        span.determined determined
+        span.remove-me.thought-of  thought of
+        span  in different ways’
+      .notes.handout.ctd \citep[p.~44]{Frege:1892uq}.
+    p.right.grey-text Frege, 1892[1993] p. 44
+    .slide
+      +invert('.sense')
+
+
++slide_middle
+  p.center What are senses? 
+    span.step2.hide.invert Answer 1
+  .slide
+    +show('.step2')
+    .notes: :t
+      I’ll give you three answers ...
+
++slide_middle
+  .hem-around-children
+    p Contrast that utterance of ‘Charly is Charly’ with the utterance ‘Charly is Samantha’
+    p.ftbe ftbe: These may differ in informativeness.
+    p idea: This difference is due to some difference in the meanings of the words ‘Charly’ and ‘Samantha’.
+    p Terminology: call whatever attribute of words explains the difference ‘sense’.
+    .slide
+      +highlight-row('.ftbe')
+    .slide
+      +unhighlight-row('.ftbe')
+    .slide
+      p.em-above observation: There could be no such difference if meaning were reference.
+      p.em-above conclusion: Sense and reference are distinct.
+    
+
++slide_middle
+  +timer-element('timer1','90s',{hide:true})
+    p What is the meaning of ‘Earth’?
+    p Simple idea: ‘Earth’ means Earth.
+    p The meaning of a word is the thing it refers to.
+    .slide
+      p.hem-around: :t
+        Q2. Is there anything meanings are needed to explain which 
+        we cannot explain if we take this view of them?
+    .slide
+      p.hem-around Yes! Frege’s puzzle about Charly/Samantha (=Superman/Clarke Kent).
+    .slide
+      p Complex idea: The meaning of a word is its 
+        span.sense sense
+        span .
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .slide
+    +invert('.sense')
+
+
++slide_middle
+  p.center What are senses?  
+    span.step2.hide.invert Answer 2
+  .slide
+    +show('.step2')
+
++slide({photo:'frege.jpg'})
+  .notes This is offered as an intuitive gesture towards an answer ...
+  p.notes.handout.show: :t
+    ‘Frege’s idea was that to understand an expression, one must not merely think of 
+    the reference that it is the reference, 
+    but that one must, in so thinking, 
+    think of the reference in a particular way.  
+  p.slide.notes.handout.show.ctd: :t
+    The way in which one must think of the reference of an expression in order 
+    to understand it is that expression’s sense’
+  .notes.handout.ctd \citep[p.~294]{Evans:1985gj}
+  p.right.grey-text Evans, 1981 [1985]: 294
+
++slide_middle
+  .hem-around-children
+    p What are senses?  (Answer 2)
+    p.slide The sense of a word is ‘the way in which one must think of the reference of [it] in order to understand it’.
+
+
++slide_middle
+  p.center What are senses?  
+    span.step2.hide.invert Answer 3
+  .slide
+    +show('.step2')
+    .notes: :t
+      I’ll give you two answers ...
+
+
++slide_middle
+  p.notes.handout.show: :t
+    Andrea is in her office speaking on the telephone to her  friend Ben.  
+    As she looks out of the window, Andrea notices a man on the street below using his mobile phone.  
+    He’s not looking where he’s going; he’s about to step out in front of a bus.  
+    Andrea does not realise that this man is Ben, the friend she is speaking to.  
+    She bangs the window and waves frantically in an attempt to warn the man, but says nothing into
+    the phone.
+  .notes.handout.ctd \citep[adapted from][p.~439]{Richard:1983rl}
+  p.right.grey-text adapted from Richard, 1983 p. 439
+
+
++slide({photo:'campbell_john_bw.jpg'})
+  .hem-around-children
+    p He [‘the man on the street’] is in danger.
+    p(style='border-top:2px solid') ∴ He [‘the man I am speaking with’] is in danger.
+  .slide
+    p.hem-above valid-1 = the premises cannot be true unless the conclusion is true 
+  .slide
+    p valid-2 = knowledge of the premises suffices for knowledge of the conclusion 
+    .notes: :t
+      Since the man on the street is the man Andrea is speaking with, 
+      this inference is valid-1 but not valid-2.
+  .slide
+    p.hem-above [Answer 3]  Sense is that which determines whether 
+      br
+      span such inferences are valid-2 
+      br
+      span.grey-text (Campbell, 1992).
+    .handout.notes: :t
+      ‘Sense is that, sameness of which makes trading on identity legitimate, 
+      difference in which means that trading on identity is not legitimate’
+      (legitimate: that is, knowledge of the premises suffices for knowledge of the conclusion)
+      \citep[p.~59]{Campbell:1997tk}.
+
+//- +slide_middle
+//-   .hem-around-children
+//-     p Preview
+//-     p What is sense supposed to do?
+//-     p.slide.indent 1. Sense explains the difference in informativeness between ‘Charly is Charly’ and ‘Charly is Samantha’.
+//-     p.slide.indent 2. Sense determines reference.
+//-     p.slide.indent 3. A statement showing the sense of a name specifies what you need to know about the utterance of a name in order to understand it.
+
+
+
+//- +slide_middle
+//-   .notes: :t
+//-     Recall this little story ...
+//-   p.notes.handout.show: :t
+//-     Andrea is in her office speaking on the telephone to her  friend Ben.  
+//-     As she looks out of the window, Andrea notices a man on the street below using his mobile phone.  
+//-     He’s not looking where he’s going; he’s about to step out in front of a bus.  
+//-     Andrea does not realise that this man is Ben, the friend she is speaking to.  
+//-     She bangs the window and waves frantically in an attempt to warn the man, but says nothing into
+//-     the phone.
+//-   .notes.handout.ctd \citep[adapted from][p.~439]{Richard:1983rl}
+//-   p.right.grey-text adapted from Richard, 1983 p. 439
+
+
+//- +slide_middle
+//-   .andrea.hide
+//-     p What doesn’t Andrea realise?
+//-     p.indent That this man 
+//-       span.is is
+//-       span   Ben.
+//-     p.step2.hide.indent That Ben 
+//-       span.is is
+//-       span   Ben.
+//-   p.em-above ‘Ben’ means Ben
+//-   p.em-above ‘this man’ means Ben.
+//-   .slide
+//-     +show('.andrea')
+//-   .slide
+//-     +show('.step2')
+
+

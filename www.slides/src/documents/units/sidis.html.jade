@@ -1,0 +1,108 @@
+---cson
+layout: 'deck_unit'
+title: "A Secondary Subwaking Self?"
+tags: []
+description: """
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
++slide({bkg:'blindsight/slide03.jpg'})
+  +hide('img.bkg', 0)
+  .functions-q
+    +awarenessQ
+  .simple-hypothesis.hide
+    p.em-above Simple Hypothesis
+    p.indent  Perceptual awareness enables us to identify and report the letter.
+  p(style='font-size:96pt;margin-top:18px').letters.center
+    span.k.hide k
+    span &nbsp;&nbsp;
+    span.k.hide(style='filter:blur(4px)') k
+    span &nbsp;&nbsp;
+    span.k.hide(style='filter:blur(8px)') k
+    span &nbsp;&nbsp;
+    span.k.hide(style='filter:blur(16px)') k
+  .notes: :t
+  .slide
+    +show('.k:eq(0)')
+    .notes: :t
+      Identify this letter ...
+  .slide
+    +show('.simple-hypothesis')
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Against the Simple Hypothesis, consider
+      an older experiment, first reported in 1898 by Boris Sidis. Sidis showed
+      subjects cards containing a single printed digit or letter ...
+  .slide
+    +show('.k:eq(1)')
+    .notes: :t
+      “The subject
+      was placed at such a distance from the card that the character was far
+      out of his range of vision. He saw but a dim, blurred spot or dot” (1898:
+      170). 
+  .slide
+    +show('.k:eq(2)')
+    .notes: :t
+      In fact, “subjects often complained that they could not see
+      anything at all; that even the black, blurred, dim spot often disappeared
+      from their field of vision” (1898: 171). Some people said “that they
+      might as well shut their eyes and guess” (1898: 171). 
+  .slide
+    +show('.k:eq(3)')
+    .notes: :t
+      However, when Sidis
+      asked his subjects to name the characters on the cards, their responses
+      were correct more often than would be expected if they were just
+      guessing. This is surprising, because it’s natural to assume that what
+      you consciously see determines what you write down; the Sidis’ results
+      show that this isn’t always true. 
+  .slide
+    .quote
+      p.notes.handout.show(style='margin-left:100px;')
+        span ‘the presence within us of a 
+        span.second-self secondary subwaking self 
+        span that perceives things which the primary waking self is unable to get at’
+      .notes.handout.ctd \citep[p.~171]{sidis:1898:suggestion}.
+      p.right.grey-text Sidis, 1898 p. 171
+    .notes: :t
+      Apparently, Sidis interpreted these and
+      related experiments as revealing “the presence within us of a secondary
+      subwaking self that perceives things which the primary waking self is
+      unable to get at” (1898: 171). In other words, it isn’t you who is
+      responsible for writing down the letters at all: it is another person who
+      shares your body and sees things you don’t.
+  .slide
+    +highlight('.second-self', 'red')
+    +line-through('.second-self')
+    .notes: :t
+      Postulating a secondary self seems to make these results more, not less, confusing.
+    .notes: :t
+      Not many people would accept Sidis’ suggestion, but it does show how
+      radically the discovery of nonconscious causes of action undermines a
+      very intuitive idea about how consciousness and action are related.
+      Ordinarily we think that we act on what we consciously see. This is bound
+      up with the sense we have of being in control of what we do, and of
+      knowing what we are doing. If some actions are based on information we
+      don’t even know we have, there is a sense in which these actions are not
+      our own. So you can see why Sidis thought he had discovered a second
+      person within his own body.
+    .notes: :t
+      Natural thought is that there are many perceptual processes which do not involve 
+      awareness at all ...
+  .slide
+    +remove('.letters, .quote')
+  .slide
+    .objection
+      p.em-above Objection
+      p.indent Sidis’ subjects are not perceptually aware of the letter but can identify and report it.
+  .slide
+    +blur('img.bkg, .simple-hypothesis, .objection')
+    .notes: :t
+      So we are left with the question ...
+

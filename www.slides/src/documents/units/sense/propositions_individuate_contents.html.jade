@@ -1,0 +1,147 @@
+---cson
+layout: 'deck_unit'
+title: "Propositions Individuate Contents"
+tags: []
+description: """
+  We distinguish mental states with different contents all the time in everyday life.
+  But what distinguishes (or, better, to individuates) their contents?
+  """
+depends: ['']
+book: []
+exercises : [
+  "/ex/q/Why does the fact that sentences can be ambiguous make them unsuitable for distinguishing the contents of mental states?"
+]
+streamId:'310dbb04-abd1-47ad-bd9a-58a1818ad0e9'
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide({bkg:'model_of_the_mental/slide04.jpg'})
+  .notes: :t
+    We’ve seen that mental states have three basic components.
+    Let’s focus on the content.
+
++slide_middle({bkg:'model_of_the_mental/slide07.jpg'})
+  .notes: :t
+    How do we distinguish the contents of mental states?
+  .slide
+    +fade('.bkg')
+    p.hem-around You and I distinguish the contents of mental states every day.
+    .notes: :t
+      In one sense, this is trivial.
+      It’s something we do all the time.
+      I might say, Ayesha wants you to drive her, she does not want me to drive her.
+      Here I’m distinguishing between two desires.
+      Or you might say, ‘Lois believes superman can fly, but she doesn’t know that Clark can fly’
+  .slide
+    +blur('.q1', '2px')
+    p.hem-around What distinguishes the contents of mental states?
+    .notes: :t
+      This is a much harder question to answer.
+  .slide
+    p.indent - sentences?
+      
+
++slide_middle
+  p ME: Someone ate my breakfast.
+  .slide
+    p.em-above YOU: Steve thinks someone ate his breakfast.
+
+
++slide_middle
+  p.center Sentences have features which make them unsuitable for distinguishing the contents of mental states ... 
+
++slide_middle
+  .indexicality
+    p.hide.idx Indexicality
+    p.hem-around.indent ‘It’s raining’
+    .slide
+      p.log.hem-around.indent ‘Logic makes 
+        span.me me
+        span  die inside’
+    .slide
+      +show('.idx')
+    .slide
+      +invert('.me')
+    .slide
+      +uninvert('.me')
+  .ambiguity
+    p.em-above.hide.amb Ambiguity
+    .slide
+      +blur('.indexicality')
+      p.hem-around.indent ‘You have to turn your headlamps on 
+        br
+        span when it’s raining in Sweden.’
+    .notes How do I know it’s raining in Sweden?
+    .slide
+      +show('.amb')
+  .pragmatics
+    p.em-above.hide.prag Pragmatic features
+    .slide
+      +blur('.ambiguity')
+      p.hem-around.indent ‘Dogs must be carried.’ 
+        span.slide / ‘Shoes must be worn.’
+    .slide
+      +show('.prag')
+    .slide
+      p.hem-around.indent ‘Someone ate my breakfast..’
+      .notes It was me.
+    .slide
+      p.hem-around.indent ‘I’ve had a great evening.’
+      .notes This wasn’t it.
+
++slide_rh_white({step:true})
+  +left_half
+    p.hem-around Sentences are not true or false.
+    .slide
+      p.hem-around Sentences do not correspond to ways the world could be.
+  +right_half({step:true})
+    .slide
+      p.hem-around The contents of mental states can be true or false.
+    .slide
+      p.hem-around The contents of mental states do correspond to ways the world could be.
+  .slide
+    +run_across
+      p.hem-around.center Therefore, sentences are unsuitable for distinguishingm the contents of mental states.
+
+
++slide_middle({bkg:'model_of_the_mental/slide07.jpg'})
+  .notes: :t
+    How do we distinguish the contents of mental states?
+  +fade('.bkg', 0)
+  p.hem-around.q1 You and I distinguish the contents of mental states every day.
+  +blur('.q1', '2px', 0)
+  p.hem-around What distinguishes the contents of mental states?
+  .notes: :t
+    This is a much harder question to answer.
+  p.indent.sentences - sentences?
+  .slide
+    +highlight-row('.sentences', 'red')
+  .slide
+    +unhighlight-row('.sentences', 'red')
+    +line-through('.sentences')
+  .slide
+    p.indent.utterances  - utterances?
+    .notes: :t
+      No because these have a date. We want to say distinguish contents in this way:
+      when two attitudes have the same content, we use the same thing to distingish them.
+      (The relation between a content to thing-that-distinguishes-it-from-all-other-contents should not 
+      be a one-many relation)
+  .slide
+    +highlight-row('.utterances', 'red')
+  .slide
+    +unhighlight-row('.utterances', 'red')
+    +line-through('.utterances')
+  .slide
+    p.indent.propositions  - propositions?
+  .slide
+    +highlight-row('.propositions', 'lime')
+
+
++slide_middle
+  .hem-around-children
+    p Summary So Far
+    p We need propositions to distinguish the contents of mental states.
+    p But what are propositions?

@@ -1,0 +1,266 @@
+---cson
+layout: 'deck_unit'
+title: "Sense and Reference: The Question"
+tags: []
+description: "Introduces the question around which the sense and reference theme is organised."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+streamId:'9e5719e7-4adc-45c7-b93f-7b33ae46a5dd'
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide_middle
+  .notes.handout: :t
+    Andrea is in her office speaking on the telephone to her  friend Ben.  
+    As she looks out of the window, Andrea notices a man on the street below using his mobile phone.  
+    He’s not looking where he’s going; he’s about to step out in front of a bus.  
+    Andrea does not realise that this man is Ben, the friend she is speaking to.  
+    She bangs the window and waves frantically in an attempt to warn the man, but says nothing into
+    the phone.
+  .notes.handout.ctd \citep[adapted from][p.~439]{Richard:1983rl}
+  p
+    span Andrea is in her office speaking on the telephone to her  friend Ben.   
+    span.slide As she looks out of the window, Andrea notices a man on the street below using his mobile phone.   
+    span.slide He’s not looking where he’s going; he’s about to step out in front of a bus.   
+    span.step3.hide Andrea 
+    span.step3.hide.doesnt does not realise that this man is Ben
+    span.step3.hide , the friend she is speaking to.   
+    span.step4.hide She bangs the window and waves frantically in an attempt to warn the man, but 
+    span.step4.hide.phone says nothing into the phone
+    span.step4.hide . 
+  p.right.grey-text adapted from Richard, 1983 p. 439
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step4')
+  .slide
+    +blur('span:not(.phone)')
+  .slide
+    +unblur('.doesnt')
+
++slide
+  .altered_carbon_clip1
+    video(width="720", height="300", controls, src="../../img/asdfILikeTrains.mp4")
+  .notes: :t
+    Richard doesn’t say how it ends.
+    It could be one of those ‘I like Trains’ moments.
+    But I perfer a happy ending.
+  script: :coffee-script
+    getVideo = () -> $('.altered_carbon_clip1 video')[0]
+    addAction 
+      doit : () ->
+        screenfull.request( getVideo() )
+        getVideo().pause()
+      undoit : () -> 
+        screenfull.toggle( getVideo() ) if screenfull.isFullscreen
+  .slide
+    //- play video (and pause on next slide)
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().play()
+        undoit : () -> 
+          getVideo().pause()
+  .slide
+    //- unfull screen
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().pause()
+          screenfull.toggle( getVideo() )  if screenfull.isFullscreen
+        undoit : () -> 
+          screenfull.request( getVideo() )
+          getVideo().play()
+
+
+
+
++slide_rh_white
+  +left_half
+  +right_half
+    .frege.hide
+      p.notes.handout.show: :t
+        ‘Identity gives rise to challenging questions which are not altogether easy to answer.’
+      .notes.handout.ctd \citep[p.~209]{frege:1948_sense}
+      p.right.grey-text Frege, 1948 p. 209
+    .andrea
+      p.em-above What doesn’t Andrea realise?
+      .slide
+        p.em-above That this man 
+          span.is is
+          span   Ben.
+
+
++slide_middle
+  .container_12
+    .grid_7
+      p.hem-around This man 
+        span.is-p is
+        span  about to step out in front of a bus.  
+      .slide
+        p.hem-around This man 
+          span.is is
+          span  Ben.
+      .slide
+        p.hem-around Therefore:
+      .slide
+        p.hem-around Ben 
+          span.is-p is
+          span  about to step out in front of a bus.  
+  .slide
+    +invert('.is')
+  .slide
+    +highlight('.is-p', 'pink')
+  .slide
+    +unhighlight('.is-p', 'pink')
+
++slide_middle
+  .container_12
+    .grid_7
+      p.hem-around
+        span.aWord This man 
+        span.predicateWord 
+          span.is-p is
+          span  about to step out in front of a bus
+        span .  
+    .grid_1 &nbsp;
+    .grid_3
+      p.hem-around.logic.logic1.hide 
+        span.predicate AtRisk(
+        span.a a
+        span.predicate )
+  .container_12
+    .grid_7
+      p.hem-around
+        span.aWord This man 
+        span.is is
+        span.bWord  Ben.
+    .grid_1 &nbsp;
+    .grid_3
+      p.hem-around.logic.logic2.hide
+        span.a a
+        span  
+        span.eq  =
+        span  
+        span.b b
+  .container_12
+    .grid_7
+      p.hem-around Therefore:
+  .container_12
+    .grid_7
+      p.hem-around
+        span.bWord Ben 
+        span.is-p is
+        span  about to step out in front of a bus.  
+    .grid_1 &nbsp;
+    .grid_3
+      p.em-above.logic.logic3.hide AtRisk(b)
+  .slide
+    +highlight-row('.grid_7:eq(0) p')
+  .slide
+    +show('.logic1')
+  .slide
+    +invert('.aWord:eq(0)')
+  .slide
+    +invert('.a:eq(0)')
+  .slide
+    +uninvert('.aWord:eq(0)')
+    +uninvert('.a:eq(0)')
+  .slide
+    +invert('.predicateWord')
+  .slide
+    +invert('.predicate')
+  .slide
+    +uninvert('.predicateWord')
+    +uninvert('.predicate')
+  .slide
+    +unhighlight-row('.grid_7:eq(0) p')
+  //- premise 2
+  .slide
+    +highlight-row('.grid_7:eq(1) p')
+  .slide
+    +show('.logic2')
+  .slide
+    +invert('.is')
+  .slide
+    +invert('.eq')
+  .slide
+    +uninvert('.is')
+    +uninvert('.eq')
+  .slide
+    +unhighlight-row('.grid_7:eq(1) p')
+  //- conclusion
+  .slide
+    +highlight-row('.grid_7:eq(3) p')
+  .slide
+    +show('.logic3')
+  .slide
+    +unhighlight-row('.grid_7:eq(3) p')
+  .slide
+    +blur('.grid_7')
+  .slide
+    +unblur('.grid_7')
+    +blur('.logic')
+
++slide_rh_white
+  .notes: :t
+    All I’m saying at this point is that we’re getting into a mess ...
+  .lh.hide
+    +left_half
+      .notes recall this quote from personal identity ...
+      p: :t
+        ‘Identity is utterly simple and unproblematic. 
+      .step2.hide      
+        p.expl: :t
+          Everything is identical to
+          itself; nothing is ever identical to anything else except itself. 
+      .step3.hide      
+        p.expl: :t
+          There is
+          never any problem about what makes something identical to itself;
+          nothing can ever fail to be. 
+      .step4.hide      
+        p.expl: :t
+          And there is never any problem about what makes two things identical; 
+          two things never can be identical.’
+      p.right Lewis, 1989 pp. 192--3
+  +right_half
+    .frege.hide
+      p.notes.handout.show: :t
+        ‘Identity gives rise to challenging questions which are not altogether easy to answer.’
+      .notes.handout.ctd \citep[p.~209]{frege:1948_sense}
+      p.right.grey-text Frege, 1948 p. 209
+    .andrea
+      p.em-above What doesn’t Andrea realise?
+      p.em-above That this man 
+        span.is is
+        span   Ben.
+      .slide
+        +invert('.is')
+        .notes: :t
+          Numerical identity.
+      .slide
+        p.em-above ‘This man is Ben’ expresses a fact about numerical identity.
+  .slide
+    +show('.lh')
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step4')
+  .slide
+    +blur('.expl')
+  .slide
+    +blur('.andrea')
+  .slide
+    +show('.frege')
+

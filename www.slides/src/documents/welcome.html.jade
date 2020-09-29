@@ -1,0 +1,36 @@
+---cson
+layout: 'default2'
+title: 'Welcome'
+subtitle: 'Mind & Reality'
+lecture_date: '2020/10/06'
+weburl: ''
+units: []
+recordings: []
+recordingUnitNames: []
+recordingStreamIds: []
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/words_things_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
++slide_middle
+  p.center https://mind-and-reality.butterfill.com
+
++slide({bkg:'welcome/web1.png'})
++slide({bkg:'welcome/web2.png'})
++slide({bkg:'welcome/web3.png'})
+  +style('img.bkg', {height:'650px', 'width':'auto'})
+
++slide_middle
+  p.hem-around.center content : s.butterfill@warwick.ac.uk
+  p.hem-around.center admin : philundergrad@warwick.ac.uk
+
++slide_middle({bkg:'bkg/bees/ADSC_0172_crop.jpg'})
+  +style('img.bkg', {filter:'saturate(0) blur(2px)'})
+  p.center https://mind-and-reality.butterfill.com

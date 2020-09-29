@@ -1,0 +1,31 @@
+---cson
+layout: 'default2'
+title: 'Lecture 13'
+subtitle: 'Mind & Reality'
+weburl: ''
+units: []
+lecture_date: '2020/11/24'
+recordings: []
+recordingUnitNames: []
+recordingStreamIds: []
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/words_things_mixins
+
+- var images = get_images('mix')
+
++title_slide({document:document, images:images})
+
+
+
++insert_unit({unit:'personal-identity/personal_identity_intro', title_slide:true, images:images, handout:true})
+//- +insert_recording({unitName:'personal-identity/personal_identity_intro', streamId:'56b0d790-c5d6-4c21-a7b0-3962d2668185'})
+
++insert_unit({unit:'personal-identity/numerical_identity', title_slide:true, images:images, handout:true})
+//- +insert_recording({unitName:'personal-identity/numerical_identity', streamId:'951141bb-c79c-435b-8db8-d2591a9408be'})
+
++insert_unit({unit:'personal-identity/psychological_continuity', title_slide:true, images:images, handout:true})
+//- +insert_recording({unitName:'personal-identity/psychological_continuity', streamId:'bac99b17-c7f1-4624-877d-456cdcdb53a6'})

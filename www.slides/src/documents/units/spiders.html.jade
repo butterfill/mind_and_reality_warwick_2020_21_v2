@@ -1,0 +1,107 @@
+---cson
+layout: 'deck_unit'
+title: "Frankfurt’s Argument from Spiders"
+tags: []
+description: """
+  Discussion about action should be informed by three basic principles.
+  Actions have hierarchical structures.
+  Actions are individuated by outcomes.
+  And one action can have multiple descriptions (the Accordion Effect).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
++slide_middle({bkg:'spider_web2.jpg'})
+  .notes: :t
+    [Not sure whether to cast this as an objection to causal theories 
+    or as a generally interesting argument?
+    Maybe Davidson vs Frankfurt opposition could start from the
+    Frankfurt’s Argument from Spiders
+    and then go on to guidance vs causal history?]
+  p.center: :t
+    Frankfurt’s Argument from Spiders
+  p.em-above.slide: :t
+    (I will take you through it then ask you to reconstruct the argument.)
+
++slide_middle
+  p: :t
+    ‘the contrast between actions and mere happenings can readily be discerned elsewhere than in the lives
+    of people. 
+  p.slide: :t
+    There are numerous agents besides ourselves, who may be active as well as passive with respect 
+    to the movements of their bodies.’
+  p.slide.em-above: :t
+    Including spiders.  
+
++slide_middle
+  p: :t
+    ‘The two contrasts [one in the case of humans, one in the case of spiders] are the same’
+  p.slide.em-above: :t
+    ‘Each contrasts instances in which purposive behavior is attributable to a creature as agent and
+    instances in which this is not the case.’
+
++slide_middle
+  p: :t
+    Explications of the distinction between actions and events that merely happen to an agent
+    cannot rely on ‘distinctive higher faculties which characteristically come into play
+    when a person acts’, nor ‘upon concepts which are inapplicable to spiders’.
+  .notes.handout.ctd \citep[p.~162]{frankfurt1978problem}.
+  p.right.grey-text Frankfurt, 1978 p. 162
+
++slide_middle({timer:true})
+  p.center reconstruct the argument
+  +show-timer
+  +start-timer
+
+
++slide_middle({bkg:'spider_web4.jpg', timer:true})
+  .slide
+    +fade('img.bkg')
+    p.one.hem-around: :t
+      1. There is a contrast between actions and mere happenings in the lives of spiders.
+  .slide
+    +blur('img.bkg')
+    p.two.hem-around: :t
+      2. The contrast in the lives of humans is the same.
+  .slide
+    p.three.hem-around: :t
+      3. Spiders do not have intentions, nor do they deliberate about what to do.
+  .slide
+    p.hem-around: :t
+      Therefore (from 1 & 3):
+    p.hem-around: :t
+      4. The contrast in the case of spiders cannot be explicated by appeal to intention.
+  .slide
+    p.hem-around: :t
+      Therefore (from 2 & 4):
+    p.hem-around: :t
+      5. The contrast in the case of humans cannot be explicated by appeal to intention.
+  .slide
+    +highlight-row('.one')
+  .slide
+    +unhighlight-row('.one')
+    +highlight-row('.one', 'limegreen')
+  .slide
+    +unhighlight-row('.one', 'limegreen')
+    +highlight-row('.three')
+  .slide
+    +unhighlight-row('.three')
+    +highlight-row('.three', 'limegreen')
+  .slide
+    +unhighlight-row('.three', 'limegreen')
+    +highlight-row('.two')
+  .slide
+    +unhighlight-row('.two')
+    +highlight-row('.two', 'orange')
+  .slide
+    +unhighlight-row('.two', 'orange')
+  +show-timer
+    .notes: :t
+      Do you understand the argument?
+      If so, is it sound + valid?
+  +start-timer

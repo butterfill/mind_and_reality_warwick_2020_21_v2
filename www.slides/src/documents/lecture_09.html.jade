@@ -1,0 +1,39 @@
+---cson
+layout: 'default2'
+title: 'Lecture 09'
+subtitle: 'Mind & Reality'
+lecture_date: '2020/11/03'
+weburl: ''
+units: []
+recordings: []
+recordingUnitNames: []
+recordingStreamIds: []
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/words_things_mixins
+
+- var images = get_images('mix')
+
++title_slide({document:document, images:images})
+
+
+//- +insert_recording({unitName:'sense/mental_states', streamId:'4e48516f-f512-4c74-94f5-637f4852bb23'})
++insert_unit({unit:'sense/mental_states', title_slide:true, images:images, handout:true})
+
+
+//- +insert_recording({unitName:'sense/propositions_individuate_contents', streamId:'310dbb04-abd1-47ad-bd9a-58a1818ad0e9'})
++insert_unit({unit:'sense/propositions_individuate_contents', title_slide:true, images:images, handout:true})
+
+
+//- TODO: the question is like what distinguishes the temperature of soups (numbers, not sentences).
+
+//- +insert_recording({unitName:'', streamId:''})
++insert_unit({unit:'sense/propositions', title_slide:true, images:images, handout:true})
+
+
+//- +insert_recording({unitName:'sense/the_question', streamId:'9e5719e7-4adc-45c7-b93f-7b33ae46a5dd'})
++insert_unit({unit:'sense/the_question', title_slide:false, images:images, handout:true})
+

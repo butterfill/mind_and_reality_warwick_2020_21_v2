@@ -1,0 +1,108 @@
+---cson
+layout: 'deck_unit'
+title: "Operationalising Visual Awareness"
+tags: []
+description: """
+  Psychologists distinguish between ‘subjective’ and ‘objective’ criteria for visual awareness.
+  Subjective criteria involve asking subjects what they are aware of.
+  Objective criteria typically involve measuring discriminatory capacities.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    .slide
+      +invert('.op')
+    .slide
+      +uninvert('.op')
+      +invert('.perceive')
+    .slide
+      p.hem-around blindsight:
+      p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    .slide
+      +highlight-row('.vision-criterion')
+      .notes: :t
+        This was the point of talking about simple seeing.
+    .slide
+      +unhighlight-row('.vision-criterion')
+      +uninvert('.perceive')
+    .slide
+      +invert('.conscious')
+    .slide
+      p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    .slide
+      +highlight-row('.awareness-criterion', 'red')
+
+
++slide
+  +middle
+    p.center(style='font-size:120px; filter:blur(70px)').k x
+  +reset
+    .hem-around-children
+      p.task1 Task 1 : Say when you can see which letter it is.
+      p.task2.hide Task 2 : Guess the letter (forced choice).
+      .notes: :t
+        Task 1 vs Task 2 : example of biased vs unbiased response 
+    .slide
+      .instructions
+        p.em-above Ready? 
+          span.slide Go!
+    .slide
+      +unblur('.k', 18000)
+    .slide
+      +blur('.task1')
+    .slide
+      +blur('.k', '10px')
+      +show('.task2')
+    .slide
+      +hide('.instructions')
+      +unblur('.task1')
+      +highlight-row('.task1')
+    .slide
+      p.hem-around Group 1: £10 if you answer correctly, -£1 wrongly
+      p.hem-around Group 2: £1 if you answer correctly, -£10 wrongly
+      .notes: :t
+        shifting criteria.
+        A point made by \citet{cowey:2010_blindsighta} and Phillips
+
+
++slide_middle
+    p.notes.handout.show
+      span ‘If psychologists can really identify something 
+      span that deserves to be called perception without awareness, they must have an 
+      span.op operational grasp
+      span  on not only 
+      span.perceive what it takes to perceive something
+      span , but on 
+      span.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+    //- p: :t
+    //-   3. The two  q (2Q is is vision? Is it lacking awareness?)
+    //-   [Can take these from \citep[p.~2]{foley:2015_type2} on type 2 blindsight;
+    //-   Same questions raised by Dretske, Phillips]
+    p.hem-around blindsight:
+    p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+    +invert('.conscious')
+    p.hem-around.indent.awareness-criterion we infer lack of awareness from the subject’s reports
+    +highlight-row('.awareness-criterion', 'red')

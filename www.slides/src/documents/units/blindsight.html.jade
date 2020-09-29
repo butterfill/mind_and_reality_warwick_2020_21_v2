@@ -1,0 +1,265 @@
+---cson
+layout: 'deck_unit'
+title: "Blindsight"
+tags: []
+description: """
+  Blindsight is 
+  ‘the ability of patients with absolute, clinically established, visual field defects 
+  caused by occipital cortical damage to detect, localize, and discriminate visual stimuli 
+  despite being phenomenally visually unaware of them’
+  (Cowey, 2010).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+//- +slide_middle
+  p.huge-glow *current todos* 
+  p \citep{timmermans:2015_how} (seems directly relevant) [done - great! used!]
+  p: :t
+    [done - dead end]
+    follow up ‘numerous studies have made it clear that considerable
+    processing of (affective) information is possible in the absence of
+    awareness, and that the outcomes of these unconscious processes may
+    affect behavior (7–9)’. Is this true?
+    Well, ref 8 is to \citep{pessoa:2005_what}, who argues for the opposite 
+    conclusion (see p. 190 on 17ms: ‘the results revealed that even very brief (17 ms) stimuli can be incompletely masked’)
+    \citep{jolij:2005_repression}
+  p read Phillips 2006 on blindsight [done]
+  p read Phillips 2018 [done]
+  p read Phillips Analysis reply [done]
+  p read Phillips in Nanay ed 2017 [skip]
+  p: :t
+    check whether to use Norman LJ, Akins K, Heywood CA et al. Color constancy for an unseen surface. Curr Biol 2014;24:2822–6.
+    \citep{norman:2014_color}
+    (Phillips criticises in Peters et al, 2017 and in \citep{phillips:2018_unconscious} but not convincingly, I think)
+  .handout.notes: :t
+    ‘Cases of two types ground much contemporary belief in unconscious perception. 
+    First, clinical cases in which perception appears preserved
+    despite loss of consciousness. Second, paradigms in which a stimulus
+    continues to influence responding despite apparently being suppressed from
+    conscious awareness’
+    \citep[p.~166]{phillips:2017_debate}.
+
+
++slide({bkg:'blindsight/slide01.jpg'})
+  .notes: :t
+    exercise (will be useful later): point at the dot
++slide({bkg:'blindsight/slide02.jpg'})
+  .notes: :t
+    exercise (will be useful later): point at the dot
+  .slide
+    .functions-q
+      +awarenessQ
+  .slide
+    .em-above
+      +awarenessAns1
+  .slide
+    p.em-above(style='margin-right:300px') Ex. You can point at the dot because you are visually aware of it.
+
+
++slide_middle
+  p.notes.handout.show
+    span Blindsight is  
+    span ‘the ability 
+  .slide
+    p.notes.handout.show.ctd
+      span of patients with absolute, clinically established, visual field defects  
+  .slide
+    p.notes.handout.show.indent.ctd
+      span caused by occipital cortical damage 
+  .slide
+    p.notes.handout.show.ctd
+      span to detect, localize, and discriminate visual stimuli  
+  .slide
+    p.notes.handout.show.ctd
+      span despite being phenomenally visually unaware of them’ 
+  .notes.handout.ctd \citep[p.~3]{cowey:2010_blindsighta}
+  p.right.grey-text Cowey, 2010 p. 3 
+
+
++slide({bkg:'blindsight/slide08.jpg'})
+  .notes: :t
+    Blindsighted people have a region of their visual field in which they have
+    no conscious visual experience: to them it is as if they are blind. When
+    objects are presented to the affected area of their visual fields, they say
+    that they cannot see them. However, blindsighted people are able to act on
+    the basis of visual cues presented in this part of their visual field. For
+    example, here is a diagram of the complete visual field of a blindsighted
+    person.
+  .notes: :t
+    The grey area represents the region affected by blindsight. This person can
+    only consciously see the word ‘bank’. However, if we ask her to define
+    ‘bank’, she is very likely to think of bank as a financial institution
+    rather than as the kind of thing you find by a river: 
++slide({bkg:'blindsight/slide09.jpg'})
+  .notes: :t
+    this tendency is
+    reversed if we put the word ‘river’ in her blind field. Although she cannot
+    consciously see the word ‘money’, she does somehow discern the difference
+    between this word and the word ‘river’.
++slide({bkg:'blindsight/slide10.jpg'})
+  .notes: :t
+    Blindsighted people can also act on the basis of their blindsight, even
+    though they do not consciously see anything. For example, if you flash a
+    point of light somewhere in the affected part of their visual field, they
+    see nothing. But if you ask them to point at the light by guessing where
+    it is, they can point with surprising accuracy. With practice,
+    blindsighted people can also reach for and pick up objects of different
+    shapes and sizes. In fact, someone with blindsight can perform many
+    non-reflexive actions guided by various kinds of visual stimuli in her
+    region of apparent blindness. Blindsighted people can discern pattern,
+    orientation, light wavelength, and the direction of moving objects. This
+    is surprising because the blindsighted person does not consciously see
+    the things she can point to or reach for. To her, the pointing and
+    reaching seems just like guessing.
++slide({bkg:'blindsight/slide11.jpg'})
+  .notes: :t
+    So blindsight enables people to discriminate visual stimuli. But
+    consciousness is missing. To enjoy blindsight of objects is now a way of
+    being conscious of those objects.
+
++slide({bkg:'blindsight/slide12.jpg'})
+  .notes: :t
+    How is blindsight possible? From a purely neurological point of view,
+    there is no mystery. Blindsight is caused by damage to the striate cortex
+    (also known as V1), an area at the back of the brain. The striate cortex
+    contains a kind of map of the visual field, and damage to part of the
+    striate cortex causes blindsight in the corresponding part of the visual
+    field. Although the striate cortex is the largest and most important
+    region of the brain for visual processing, it isn’t the only target for
+    optic nerves. Other parts of the visual system remain intact, so it is to
+    be expected that damage to the striate cortex should leave some visual
+    functioning intact. The brain damage that causes blindsight is completely
+    different from damage to the retina or to the optic nerves.
++slide({bkg:'blindsight/slide13.jpg'})
+  .notes: :t
+    For this reason, the original puzzle about blindsight wasn’t that people with damage to the striate cortex could act on the basis of visual information; it was that damage to their striate cortices should have such a dramatic effect on their vision.  Research into the striate cortex was first done on monkeys and dogs.  Early experimenters looked at what happens when you remove this part of the brain.  At first they thought the striate cortex was not involved in vision at all, because when you remove this part of the brain animals recover the ability to make fine visual distinctions.  But around 1884, Luigi Luciani noticed that animals without a striate cortex suffer from what he called “psychic blindness”.  He observed that:
+    although “visual sensation becomes perfect again [and] they are able to see minute objects, what they want is the discernment of things and a right judgement concerning their properties and their nature; they are deficient, in a word, of visual perception.  For example, if small pieces of fig, mixed with pieces of sugar, are offered to them, they are incapable of choosing by sight alone but require to take the sugar in their hand and put it in their mouth in order to reassure themselves.” (Luciani 1884: 18)  
+    More recent experiments with monkeys have found the same thing: “After six years [one monkey] still does not know a carrot when she sees one, nor apparently can she recognise my face, despite an excellent ability to locate visual events in her environment and to avoid obstacles by vision alone” (Humphrey 1972: 684).
+  .notes: :t
+    It was therefore puzzling that humans with damage to the striate cortex
+    appeared to be completely blind in the affected regions of their visual
+    fields (Weiskrantz 1986: §1). Psychologists searched for residual visual
+    capacities in people with damaged striate cortex, and this led to the
+    discovery of the phenomenon called blindsight. They expected to find some
+    visual abilities, but they were surprised by what they found.
+  .notes: :t
+    So there’s no mystery about blindsight from a purely neurological point
+    of view. But blindsight is mysterious from the point of view of the
+    person affected. As far as she is concerned, she doesn’t see anything. It
+    comes as quite a surprise to her that she can point at and reach for
+    things she can’t see: it must be a bit like discovering you’ve always had
+    eyes in the back of your head.
+
++slide
+  .notes: :t
+    Same idea but with more pathways and visual areas
+    This is with V1 intact (V1 is top right)
+  .cowey-fig2
+    +img_clip('cowey_2010_fig2.jpg', 'rect(0px, 9000px, 9000px, 220px)')
+  +reset
+    .cowey-fig2-layer2.hide
+      +img_clip('cowey_2010_fig2.jpg', 'rect(0px, 220px, 9000px, 0px)')
+  +style('.cowey-fig2 img', {filter:'invert(1)'})
+  p.source Cowey, 2010 figure 2
+  .slide
+    +blur('.cowey-fig2')
+  .slide
+    .notes: :t
+      This is with V1 taken out
+    +show('.cowey-fig2-layer2')
+  .slide
+    +unblur('.cowey-fig2')
+
++slide_middle
+  p.center Show me some evidence!
+
++slide
+  .notes: :t
+    Ok, let’s look at some data
+  +img_clip('weiskrantz_1995_fig2a.jpg')
+  +style('img', {filter:'invert(1) contrast(2)'})
+  p.source Weiskrantz et al, figure 2
+
++slide
+  .notes: :t
+    Ok, let’s look at some data
+  +img_clip('weiskrantz_1995_fig2.jpg')
+  +style('img', {filter:'invert(1) contrast(2)'})
+  p.source Weiskrantz et al, figure 2
+  .notes: :t
+    Important thing here isn’t that we know the patient (G.Y.) is unaware;
+    in fact G.Y. reports awareness in many cases. The key is that whether
+    G.Y. reports awareness appears to be statistically unrelated to G.Y.’s 
+    discrimination performance.
+  .notes: :t
+    Two measures: 2AFC for orientation (vertical or horizontal).
+    And yes/no for awareness 
+  .notes: :t
+    G.Y. ‘was insistently instructed, and
+    frequently reminded, that he was to signal unaware only when
+    he had absolutely no sensation or feeling or experience of the
+    visual event, and he repeatedly confirmed his conformance
+    With this instruction’ \citep[p.~6122]{weiskrantz:1995_parameters}.
+  .notes: :t
+    caption: ‘FIG. 2. Discrimination of horizontal vs. vertical movement (FR
+    paradigm), as a function of stimulus contrast. The subject had to
+    indicate (by guessing if necessary) whether the presented stimulus was
+    moving horizontally or vertically by pressing the appropriate response
+    key. He also had two commentary keys to use on every trial. Awareness
+    refers to the percentage of trials on which the subject pressed the aware
+    key. Correct when unaware refers to performance during those trials
+    when the subject pressed the unaware key. The luminance of the test
+    stimulus was held constant at 131 cd/m2, and background luminance
+    in the blind hemifield was altered systematically thus changing the
+    contrast of the stimulus. Speed was 150/s, and displacement was 200.
+    Note the relative stability of the high level of performance indepen-
+    dent of contrast but with a steep decline in percentage of aware
+    responses at high background luminance level when the contrast
+    decreased’
+    \citep[p.~6123]{weiskrantz:1995_parameters}
+  .handout: :t
+    \citet{weiskrantz:1995_parameters} show that a blindsighted patient’s
+    visual discimination capacities are unaffected by whether the patient is
+    aware of stimuli.
+  .slide
+    +style('img', {filter:'invert(1) blur(3px)'})
+    +reset
+      +middle
+        p.center.huge-glow-50 Awareness makes no measurable difference to action.
+
+
+
++slide({bkg:'blindsight/slide02.jpg'})
+  .notes: :t
+    recall earlier when I asked you to point at the dot ...
+  .slide
+    .functions-q
+      +awarenessQ
+  .simplest-view.hide
+    .em-above
+      +awarenessAns1
+  .slide
+    .ex
+      p.em-above(style='margin-right:300px') Ex. You can point at the dot because you are visually aware of it.
+  .slide
+    +show('.simplest-view')
+  .slide
+    .objection
+      p.em-above Objection : Blindsight reveals that sometimes variations in perceptual awareness of the dot make no measurable difference to action.
+    .notes: :t
+      At this point I was going to do 
+      blindsight in normal subjects \citep{Kolb:1995vs}.
+      But there is a convicing failed replication of \citep{Kolb:1995vs}: 
+      \citep{robichaud:2003_inducing}!!!
+  .slide
+    +blur('.simplest-view, .ex, .objection')
+    p.notes.handout.show: :t
+      ‘there is no clear case of a task for which consciousness is required’
+    .notes.handout.ctd  [...] ‘It is misguided to think that the function of consciousness must consist in tasks that can only be performed with conscious representations’ \citep{shea:2016_dualprocess}.
+    p.right.grey-text Shea & Frith, 2016
+
+

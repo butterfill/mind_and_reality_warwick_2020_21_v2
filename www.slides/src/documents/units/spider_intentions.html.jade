@@ -1,0 +1,219 @@
+---cson
+layout: 'deck_unit'
+title: "Don’t Spiders Have Intentions?"
+tags: []
+description: """
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+
+
+
+
+
++slide_middle
+  p.center Sam’s Objection to Frankfurt’s Argument from Spiders
+
+
++slide_middle
+  p: :t
+    ‘... concepts which are inapplicable to spiders and their ilk.’
+  p.right.grey-text Frankfurt 1978, p. 162
+  .slide
+    p.notes.handout.show.em-above: :t
+      ‘Many animals that do not have conceptual intentions flexibly exercise agential control. 
+      [...] Spiders very likely do not have them’
+    .notes.handout.ctd \citep{buehler:2019_flexible}
+    p.right.grey-text Buehler, 2019 
+
+
++slide
+  +img_clip('jackson_cross_2011_fig3.jpg')
+  p.source Jackson & Cross, 2011 figure 3
+  .notes: :t
+    caption: 
+    ‘Portia labiata (left) from the Philippines stalking a spitting spider, Scytodes pallida (right). 
+    Approaching head on would bring Portia into Scytodes’ line of fire. Instead, 
+    Portia executes a planned detour by which it approaches this dangerous prey from the rear.’
+  .notes: :t
+    ‘Distances between Portia and the surrounding array are too far for
+    Portia to cross simply by leaping. The only way Portia can reach its
+    prey is to walk down to the floor and over to one of the two poles,
+    climb it and then follow the path to the prey. However, once on the
+    floor, Portia can no longer see the prey.’
+  .notes: :t
+    ‘P. labiata foregoes the detour and instead takes the shorter, faster head-on approach when the spider it sees in a web is a Scytodes female that is carrying eggs (Li and Jackson, 2003). This makes sense because Scytodes females carry their eggs around in their mouths. Egg-carrying females can still spit, but only by first releasing their eggs (Li et al., 1999). Being reluctant to release their eggs, egg-carrying females are, for P. labiata, less dangerous as prey.’
+  .notes: :t
+    But is this prey-specific activity really evidence of planning? No!
+
++slide
+  +img_clip('jackson_cross_2011_fig2.jpg')
+  p.source Jackson & Cross, 2011 figure 2
+  .notes: :t
+    caption: 
+    ‘Apparatus used for testing Portia fimbriata’s detour-planning
+    ability. Portia was on top of the central pole before each test
+    began. The prey item (lure made by mounting a dead spider in
+    life-like posture on a cork disc) (not shown) was on one of the two
+    ramps (whether on the left or the right ramp decided at random).
+    Portia viewed the prey while on top of the central pole but could not
+    see the prey when it went down the pole. By consistently taking the
+    route that leads to the prey, Portia demonstrates ability to plan
+    ahead.’
+  .notes: :t
+    ‘P. labiata foregoes the detour and instead takes the shorter, faster head-on approach when the spider it sees in a web is a Scytodes female that is carrying eggs (Li and Jackson, 2003). This makes sense because Scytodes females carry their eggs around in their mouths. Egg-carrying females can still spit, but only by first releasing their eggs (Li et al., 1999). Being reluctant to release their eggs, egg-carrying females are, for P. labiata, less dangerous as prey.’
+  .notes: :t
+    ‘Portia’s task always came down to choosing which one of two paths
+    would lead to the prey. Sometimes Portia had to walk past the wrong
+    pole before reaching the correct pole, and sometimes Portia had to
+    head directly away from the prey before accessing the correct pole.
+    Yet, regardless of the details and despite having no prior experi-
+    ence of taking or even seeing the paths available in the experiments,
+    Portia chose the correct pole significantly more often than the wrong
+    pole.’
+
+
+
++slide_middle
+  p: :t
+    ‘... concepts which are inapplicable to spiders and their ilk.’
+  p.right.grey-text Frankfurt 1978, p. 162
+  p.notes.show.em-above
+    span.blurme ‘Many animals that do not have conceptual 
+    span.intentions intentions
+    span.blurme  flexibly exercise 
+    span.control agential control
+    span.blurme .  
+    span.blurme [...] Spiders very likely do not have them’ 
+  .notes.ctd \citep{buehler:2019_flexible}
+  p.right.grey-text Buehler, 2019 
+  .slide
+    +reset
+      p.huge-glow(style='margin-top:-.5em; transform:rotate(-2deg)') never trust a philosopher
+
+
+
++slide_middle
+  p.center opinions
+  .notes: :t
+    There is the internet for that.
+
++slide_middle
+  p.center It’s not about you.
+
+
++slide_middle({bkg:'spider_web4.jpg', timer:true})
+  .slide
+    +fade('img.bkg')
+    p.one.hem-around: :t
+      1. There is a contrast between actions and mere happenings in the lives of spiders.
+  .slide
+    +blur('img.bkg')
+    p.two.hem-around: :t
+      2. The contrast in the lives of humans is the same.
+  .slide
+    p.three.hem-around: :t
+      3. Spiders do not have intentions, nor do they deliberate about what to do.
+  .slide
+    p.hem-around: :t
+      Therefore (from 1 & 3):
+    p.hem-around: :t
+      4. The contrast in the case of spiders cannot be explicated by appeal to intention.
+  .slide
+    p.hem-around: :t
+      Therefore (from 2 & 4):
+    p.hem-around: :t
+      5. The contrast in the case of humans cannot be explicated by appeal to intention.
+  .slide
+    +highlight-row('.three')
+  .slide
+    +unhighlight-row('.three')
+    +highlight-row('.three', 'orange')
+
+
+
+
++slide_middle({timer:true})
+  p Options:
+  p.indent.hem-around.two try a different line
+  p.indent.hem-around switch animals
+  p.indent.hem-around.one further explicate the notion of intention
+  .further.hide
+    p.hem-below.indent(style='margin-left:3em;') intentions as elements in plans
+    p.hem-below.indent(style='margin-left:3em;') vs
+    p.hem-below.indent(style='margin-left:3em;') representations which somehow guide actions
+  +show-timer
+    .notes Which would you choose at this point?
+  +start-timer
+  +hide-timer
+  .slide
+    +highlight-row('.one')
+  .slide
+    +show('.further')
+
+
+
++slide_middle
+  p.blur: :t
+    ‘... concepts which are inapplicable to spiders and their ilk.’
+  p.right.grey-text Frankfurt 1978, p. 162
+  p.notes.show.em-above
+    span.blurme ‘Many animals that do not have conceptual 
+    span.intentions intentions
+    span.blurme  flexibly exercise 
+    span.control agential control
+    span.blurme .  
+    span.blurme [...] Spiders very likely do not have them’ 
+  .notes.ctd \citep{buehler:2019_flexible}
+  p.right.grey-text Buehler, 2019 
+  .slide
+    +blur('span.blurme')
+    .notes: :t
+      Difficulty is going to be to able to combine the view that
+      spiders exercise agential control while holding that they
+      lack intentions.
+    .notes: :t
+      Later we might see that Bach’s notion of ‘executive representation’
+      allows us to do this.
+    .notes: :t
+      For what it’s worth (nothing), I have argued that just this
+      combination is possible. But doing that would take us too 
+      far away from the more basic issues.
+      (Generality vs depth.)
+
+
++slide_middle({timer:true})
+  p Options:
+  p.indent.hem-around.two try a different line
+  p.indent.hem-around switch animals
+  p.indent.hem-around.one further explicate the notion of intention
+  .further
+    p.hem-below.indent(style='margin-left:3em;') intentions as elements in plans
+    p.hem-below.indent(style='margin-left:3em;') vs
+    p.hem-below.indent(style='margin-left:3em;') representations which somehow guide actions
+  +highlight-row('.one')
+  .slide
+    +unhighlight-row('.one')
+    +blur('.further')
+
+
++slide_rh_white({step:true, timer:true})
+  +run_across
+    p.center What is the mark that distinguishes actions?
+  +left_half
+    p.center Davidson’s View
+    p.hem-around It is intention 
+      span.jr (or justifying reasons)
+      span .
+    p.em-above Objection: 
+    p.indent
+      span.arg Frankfurt’s Argument from Spiders
+    .slide
+      +highlight('.arg', 'red')
+    .slide
+      +line-through('.arg')
+    .slide
+      +unhighlight('.arg', 'red')

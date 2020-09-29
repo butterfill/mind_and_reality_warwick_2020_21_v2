@@ -1,0 +1,124 @@
+---cson
+layout: 'deck_unit'
+title: "Biological Continuity"
+tags: []
+description: """
+  
+  """
+exercises : [
+  "/ex/TorF/qq/Tom is morally responsible for the bank robbery.|Ayesha is morally responsible for the bank robbery.|Neither Tom nor Ayesha is morally responsible for the bank robbery.",
+  "/ex/q/What is the biological continuity view of personal identity? State the core idea in a single sentence. (Copy-paste is ok as long as you understand what you are pasting.)",
+]
+book: [
+  """Olson, E. T. (1997). The human animal: Personal identity without psychology. Oxford Uni- versity Press, Oxford."""
+]
+streamId:'089955fe-e21b-44e3-aece-1cf8c54bde42'
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/lecture_mixins
+include ../../../../fragments/central_themes_mixins
+
+
++slide_middle
+  p.center You and I are biological organisms.
+
++slide_middle
+  .question.hide
+    p.hem-around.show
+      span.of [Olson’s formulation]  
+      span: :t
+        If a person exists at one time and something exists at another time, 
+        under what possible circumstances is it the case that the person is the thing?
+  p.hem-around Answer 2: biological continuity
+  .slide
+    .notes.handout \emph{The Biological Criterion of Personal Identity:}
+    p.hem-around.notes.handout.show
+      span Necessarily, a 
+      span.person person
+      span   existing at one time is a 
+      span thing 
+      span   existing at  
+      span another time if and only if the first mentioned person’s biological organism
+      span  is continuous with the second thing’s biological organism.  
+  .slide
+    +show('.question')
+
++slide_middle
+  p.center Tom and Ayesha swapped brains for just one day.
+  .notes: :t
+    Each has always been curious what it would be like to inhabit the others’ body.
+
++slide_middle
+  p.hem-around: :t
+    On that day, a person we will call ‘Ayesha-body’ robs a bank.
+
++slide_middle
+  p.hem-around: :t
+    As night falls, Tom and Ayesha swap brains back, as agreed.
+
+
++slide_middle({timer:true})
+  p.hem-around
+    span Who is morally repsonsible for the bank robbery?
+    br
+    span Is it Tom?
+    br
+    span Or is it Ayesha?
+    br
+    span Or neither of them?
+  +show-timer
+  +start-timer
+
++slide_middle
+  p: :t
+    Tom is morally repsonsible for the bank robbery.
+  .slide
+    p.hem-around: :t
+      You are only responsible for actions performed by things numerically identical with you.
+  .slide
+    p.grey-text Therefore:
+    p.hem-around: :t
+      Tom was Ayesha-body.
+  .slide
+    p.grey-text But:
+    p.hem-around: :t
+      Tom’s biological organism is not continuous with Ayesha-body’s biological organism.
+  .slide
+    p.grey-text Therefore:
+    p.hem-around: :t
+      The Biological Continuity View of personal identity is false.
+
+
++slide_rh_white
+  +run_across
+    p.center Inconsistent Triads
+  +left_half
+    .hem-around-children
+      p Sam was an embryo; unless she recovers, Sam will be in a PVS.
+      p Person essentialism is true.
+      p: :t
+        Necessarily, a person x existing at one time is a person y existing at 
+        another time if and only if x can, at the first time, 
+        remember an experience y has at the second time, or vice versa. 
+  +right_half
+    .notes.handout: :t
+      Inconsistent Triad:
+      \begin{enumerate}
+      \item         If Sam and Ayesha were to swap brains for a day, 
+        Sam would later be morally responsible for actions involving
+        Ayesha-body.
+      \item   You are only responsible for the actions of things 
+        numerically identical with you.
+      \item  The Biological Continuity View of personal identity is true.
+      \end{enumerate}
+    .hem-around-children
+      p: :t
+        If Tom and Ayesha were to swap brains for a day, 
+        Tom would later be morally responsible for actions involving
+        Ayesha-body.
+      p: :t
+        You are only responsible for the actions of things 
+        numerically identical with you.
+      p The Biological Continuity View of personal identity is true.
+

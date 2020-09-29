@@ -1,0 +1,131 @@
+---cson
+layout: 'deck_unit'
+title: "Intention"
+tags: []
+description: """
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
++slide
+  .martian_clip1
+    video(width="720", height="300", controls, src="img/the_martian.clip1.mp4")
+  script: :coffee-script
+    getVideo = () -> $('.martian_clip1 video')[0]
+    addAction 
+      doit : () ->
+        screenfull.request( getVideo() )
+        getVideo().pause()
+      undoit : () -> 
+        screenfull.toggle( getVideo() ) if screenfull.isFullscreen
+  .slide
+    //- play video (and pause on next slide)
+    script: :coffee-script
+      getVideo = () -> $('.martian_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().play()
+        undoit : () -> 
+          getVideo().pause()
+  .slide
+    //- unfull screen
+    script: :coffee-script
+      getVideo = () -> $('.martian_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().pause()
+          screenfull.toggle( getVideo() )  if screenfull.isFullscreen
+        undoit : () -> 
+          screenfull.request( getVideo() )
+          getVideo().play()
+
+
+
++slide_rh_white({step:true})
+  +run_across
+    p.center Action is a function of belief and desire.
+  +left_half
+    .slide
+      p.hem-around I desire to bring the Martian home.
+      p.hem-around I believe I can bring him home by sending a rescue mission.
+  +right_half({step:true})
+    .slide
+      p.hem-around I desire to alleviate global poverty.
+      p.hem-around I believe I can alleviate global poverty by giving money directly.
+
+
+
+
++slide_rh_white({step:true})
+  +run_across
+    p.center Action is a function of belief and desire.
+  +left_half
+    .slide
+      p.hem-around I want to earn more money.
+      p.hem-around I believe I can earn more money by getting a new job.
+  +right_half({step:true})
+    .slide
+      p.hem-around I want to take it easy today.
+      p.hem-around I believe I can take it easy today by not getting a new job today.
+
++slide_middle
+  p.center Belief and desire alone are not sufficient for action.
+
++slide_middle
+  p Simple Idea
+  p.hem-around Your beliefs and desires shape deliberation about what to do.
+  p.hem-around Deliberation characteristically results in intention.
+  p.hem-around Intentions control action.
+  .slide
+    p.indent.em-above Ex
+    p.indent.hem-around I desire to nurture squirrels.
+    p.indent.hem-around I believe I can do so by building a squirrel house.
+    p.indent.hem-around therefore:
+    p.indent.hem-around.intention [Intention] I shall build a squirrel house next Tuesday.
+  .slide
+    +highlight-row('.intention')
+    .notes: :t
+      Claim: without the intention, belief and desire would not lead to action in this case.
+      (Intention is no guarantee, of course)
+  .slide
+    +unhighlight-row('.intention')
+
++slide_rh_white
+  .notes: :t
+    Unless I want to drift through my life,
+    at some point I just have to decide and make a plan.
+    Intention is the upshot of the plan.
+  +left_half
+    p.hem-around.desire I want to earn more money.
+    p.hem-around I believe I can earn more money by getting a new job.
+  +right_half
+    p.hem-around.desire I want to take it easy today.
+    p.hem-around I believe I can take it easy today by not getting a new job today.
+  .reset
+  +left_half
+    .slide
+      p.hem-around.intention [Intention] Get a new job (somewhen).
+  +right_half
+    .slide
+      p.hem-around.intention [Intention] Take it easy today.
+  .slide
+    +blur('p:not(.intention,.agglommeration)')
+    .notes: :t
+      What is wrong with this combination of intentions?
+  .slide
+    +run_across
+      p.center.agglommeration principle of agglommeration
+  .slide
+    +blur('p.intention')
+    +unblur('p.desire')
+    .notes: :t
+      Nothing irrational about not agglommerating desires ...
+  .slide
+    +unblur('p.intention')
+    +blur('p.desire')
+  

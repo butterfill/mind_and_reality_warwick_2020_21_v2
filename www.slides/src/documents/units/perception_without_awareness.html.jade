@@ -1,0 +1,90 @@
+---cson
+layout: 'deck_unit'
+title: "Perception without Awareness?"
+tags: []
+description: """
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘Here lies the fatal flaw in [...] the philosophy of mind, 
+  .slide
+    p.notes.handout.ctd.show: :t
+      for, in
+      using as evidence what seems reasonable or persuasive, philosophers 
+      ultimately rely on their own introspections. 
+  .slide
+    p.notes.handout.ctd.show: :t
+      They look inside themselves in 
+      an attempt to discover the design of the mind’
+  .notes.handout.ctd \citep[p.~380]{bridgeman2004philosophy}
+  p.right.grey-text Bridgeman, 2004 p. 380
+  .slide
+    +blur('p:lt(2)')
+    .notes: :t
+      We are not going to do that ...
+    
++slide_middle
+  .hem-around
+    +awarenessQ2
+  p.hem-around.sidis Yes : Sidis 
+  p.hem-around.blindsight Yes : blindsight
+  .slide
+    +highlight-row('.sidis')
+
+
++slide({bkg:'blindsight/slide03.jpg'})
+  p.indent Sidis’ subjects are not perceptually aware of the letter but can identify and report it.
+  p(style='font-size:96pt;margin-top:18px').letters.center
+    span.k k
+    span &nbsp;&nbsp;
+    span.k(style='filter:blur(4px)') k
+    span &nbsp;&nbsp;
+    span.k(style='filter:blur(8px)') k
+    span &nbsp;&nbsp;
+    span.k(style='filter:blur(16px)') k
+
+
++slide_middle
+  .hem-around
+    +awarenessQ2
+  p.hem-around.sidis Yes : Sidis 
+  p.hem-around.blindsight Yes : blindsight
+  +highlight-row('.sidis')
+  .slide
+    +unhighlight-row('.sidis')
+    +highlight-row('.blindsight')
+
++slide({bkg:'blindsight/slide09.jpg'})
++slide({bkg:'blindsight/slide10.jpg'})
++slide
+  +img_clip('weiskrantz_1995_fig2.jpg')
+  +style('img', {filter:'invert(1) contrast(2)'})
+  p.source Weiskrantz et al, figure 2
+  .slide
+    +style('img', {filter:'invert(1) blur(3px)'})
+    +reset
+      +middle
+        p.center.huge-glow-50 Awareness makes no measurable difference to action.
+
+
+
++slide_middle({timer:true})
+  .hem-around
+    +awarenessQ2
+  p.hem-around.sidis Yes : Sidis 
+  p.hem-around.blindsight Yes : blindsight
+  +highlight-row('.blindsight')
+  .slide
+    +unhighlight-row('.blindsight')
+  +show-timer('timer1')
+    .notes: :t
+      Are we convinced by this evidence?
+  +start-timer('timer1')

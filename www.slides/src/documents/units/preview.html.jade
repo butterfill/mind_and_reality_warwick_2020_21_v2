@@ -1,0 +1,396 @@
+---cson
+layout: 'deck_unit'
+title: "Preview"
+tags: []
+description: """
+  This module will cover six themes.
+  [Mind] What good is your perceptual awareness of the objects around you?
+  [Thought & Language] What’s special about having two names for one thing?
+  [Politics] Are you responsible for the harm of world poverty?
+  [Metaphysics] What is necessary for your personal survival?
+  [Action] Of the events involving you, what determines which are your actions?
+  [Ethics] Who, if anyone, has the right to determine whether you should die?
+
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle
+  .handout: :t
+    The six themes:
+    \begin{itemize}
+        \item Mind---What good is your perceptual awareness of the objects around you?
+      \item  Thought \& Language---What’s special about having two names for one thing?
+      \item Politics---Are you responsible for the harm of world poverty?
+      \item  Metaphysics---What is necessary for your personal survival?
+      \item Action---Of the events involving you, what determines which are your actions?
+      \item  Ethics---Who, if anyone, has the right to determine whether you should die?
+    \end{itemize}
+
+  +topicTable
+  +hide('.q', 0)
+  .slide
+    +show('.q:lt(2)')
+    +blur('tr:gt(1)')
+
+
+
++slide_middle
+  .functions-q
+    +awarenessQ
+  +hide('.functions-q span:not(.perceptual-awareness)', 0)
+  .notes: :t
+    There are different forms of consciousness. For example we sometimes
+    contrast being conscious with being comatose. That’s not the sort of
+    consciousness I’m concerned with. Instead I want to focus on perceptual
+    consciousness of objects. When I talk about consciousness, I mean the sort
+    of consciousness that is often involved when you see an apple’s shape and
+    location. This is perceptual consciousness of objects.
+  .slide
+    +show('.functions-q span:not(.perceptual-awareness)')
+  .slide
+    +invert('.functions')
+  .slide
+    .feathers
+      p.em-above What are the functions of feathers?
+      .slide
+        p.indent heat regulation
+        p.indent display
+        p.indent flight
+  .slide
+    +blur('.feathers')
+    +uninvert('.functions')
+
+
+
+//- +slide
+//-   .notes: :t
+//-     Same idea but with more pathways and visual areas
+//-     This is with V1 intact (V1 is top right)
+//-   .figure
+//-     .cowey-fig2
+//-       +img_clip('cowey_2010_fig2.jpg', 'rect(0px, 9000px, 9000px, 220px)')
+//-     +reset
+//-       .cowey-fig2-layer2.hide
+//-         +img_clip('cowey_2010_fig2.jpg', 'rect(0px, 220px, 9000px, 0px)')
+//-     +style('.cowey-fig2 img', {filter:'invert(1)'})
+//-     p.source Cowey, 2010 figure 2
+//-   +hide('.figure', 0)
+//-   +reset
+//-     +middle
+//-       p.center perception without awareness
+//-   .slide
+//-     +show('.figure')
+//-   .slide
+//-     +blur('.cowey-fig2')
+//-   .slide
+//-     .notes: :t
+//-       This is with V1 taken out
+//-     +show('.cowey-fig2-layer2')
+//-   .slide
+//-     +unblur('.cowey-fig2')
+
++slide_middle
+  p.notes.handout.show
+    span.step1b.hide ‘If psychologists can really identify something that deserves to be called 
+    span perception without awareness
+    span.step2.hide , 
+    br
+    span.step2.hide  they must have 
+    span.step2.operational.hide an operational grasp 
+    span.step2.hide  on 
+    span.step2b.hide  not only 
+    br
+    span.step2.to-perceive.hide.indent what it takes to perceive something
+    span.step2b.hide , 
+    br
+    span.step2b.hide  but on 
+    br
+    span.step2b.to-conscious.hide.indent what it takes to be conscious of it
+    span.step2b.hide .  
+    br
+    span.step3.hide If this is really so, philosophers have something to learn 
+    span.step3.hide from them [...] about 
+    span.step3.function.hide what consciousness [...] does
+    span.step3.hide ’ 
+  .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+  p.right.grey-text Dretske, 2006 p. 148
+  .slide
+    +show('.step1b')
+  .slide
+    +show('.step2')
+  .slide
+    +invert('.operational')
+  .slide
+    +uninvert('.operational')
+  .slide
+    +show('.step2b')
+  .slide
+    +show('.step3')
+  .slide
+    +blur('span:not(.function)')
+
+
++slideTopicTable({step:2})
+
+//- not doing a preview for topic 2
+//- +slide_middle
+//-   p [topic 2 preview]
+
++slideTopicTable({step:3})
+
+
++slide({bkg:'caplan_2019/00021.jpeg'})
+  .concision-layer.hide
+    +middle
+      p.center.huge-glow concision is a virtue
+  +reset-escape-inner
+    img.bkg.overlay(src='img/caplan_2019/00021.jpeg')
+  +style('img.bkg', {'height':'600px', 'width':'auto'})
+  +style('img.overlay', {clip:'rect(0px,230px,180px,0px)', filter:'blur(2px)'})
+  +hide('img.bkg', 0)
+  +reset
+    p(style='margin-left:400px;') Nationality is ethically irrelevant. 
+      span.step2.hide So what?
+    .slide
+      +show('.step2')
+    .notes: :t
+      Nationality is ethically irrelevant.
+      What follows?
+    .slide
+      +show('img.bkg')
+      p.source Caplan & Weinersmith, 2019 p. 13
+      .notes: :t
+        In this book,
+        Caplan & Weinersmith are arguing that it’s in citizens of rich countries interests
+        to have open borders. This is just fairly simple economics.
+        (Albeit revealling, for it shows citizens of rich world countries’ in-group loyalty,
+        their desire to keep ‘us’ and ‘them’ separate,
+        trumps their greed.)
+      .notes: :t
+        But here is a more philosophically interesting part of their argument.
+        Immigration laws are discriminatory in a way that is immoral unless you believe
+        nationality is ethically relevant.
+      .notes: :t
+        I would have taken this issue as a topic, but it seems to me so simple and obvious
+        that it can be delt with in a single page. In fact there are only 50 words on this page.
+        And personally, I find that excessive.
+        It could probably be written in 25 words.
+    .slide
+      +blur('img.bkg:not(.overlay)')
+      +show('.concision-layer')
+      .notes: :t
+        Aside: Bear this in mind when I give you 500 word assignments.
+    .slide
+      +hide('.concision-layer')
+    .slide
+      +fade('img.bkg')
+      p.em-above(style='margin-left:400px;').singer Singer: positive ethical duties (to aid)
+      .notes: :t
+        Peter Singer argues that 
+    .slide
+      +remove('img.overlay')
+      +blur('.singer')
+      p.em-above(style='margin-left:400px;') Pogge: negative ethical duties (not to harm)
+      .notes: :t
+        By contrast, Thomas Pogge is arguing that citizens of rich countries have a moral obligation
+        to
+      .notes.handout: :t
+        ‘The usual moral debates concern the stringency of our moral duties to
+        help the poor abroad. Most of us believe that these duties are rather
+        feeble, meaning that it isn’t very wrong of us to give no help at all.
+        Against this popular view, some (Peter Singer, Henry Shue, Peter Unger)
+        have argued that our positive duties are quite stringent and quite
+        demanding; and others (such as Liam Murphy) have defended an intermediate
+        view according to which our positive duties, insofar as they are quite
+        stringent, are not very demanding. Leaving this whole debate to one side,
+        I focus on what it ignores: our moral duties not to harm. We do, of
+        course, have positive duties to rescue people from life-threatening
+        poverty. But it can be misleading to focus on them when more stringent
+        negative duties are also in play: duties not to expose people to
+        life-threatening poverty and duties to shield them from harms for which
+        we would be actively responsible’
+        \citep[p.~5]{pogge:2005_world}.
+
++slide_middle
+  .qm.hide
+    +question_mark
+  p.notes.handout.show.quote
+    span ‘The common assumption [...] is that 
+    span.noblur reducing severe poverty
+    span   abroad at the 
+    span expense of our own affluence would be generous on our part, not something 
+    span we owe, and that 
+    span.noblur our failure to do this
+    span  is thus at most a lack of  
+    span generosity that 
+    span.noblur does not make us morally responsible for the continued 
+    span.noblur  deprivation of the poor
+    span ’ 
+  .notes.handout.ctd \citep[p.~2]{pogge:2005_world}
+  p.right.grey-text Pogge, 2005 p. 2
+  .slide
+    +blur('.quote span:not(.noblur)')
+  .slide
+    +show('.qm')  
+
++slideTopicTable({step:4})
+
++slide
+  .altered_carbon_clip1
+    video(width="720", height="300", controls, src="img/altered_carbon_clip1.mp4")
+  .notes: :t
+    scene from altered carbon where couple gets daughter back in old body
+  .notes: :t
+    Relevant because one is a familiar person in an unfamiliar body;
+    the other is an unfamiliar person in a familiar body (Ortega’s boyfriend’s).
+  script: :coffee-script
+    getVideo = () -> $('.altered_carbon_clip1 video')[0]
+    addAction 
+      doit : () ->
+        screenfull.request( getVideo() )
+        getVideo().pause()
+      undoit : () -> 
+        screenfull.toggle( getVideo() ) if screenfull.isFullscreen
+  .slide
+    //- play video (and pause on next slide)
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().play()
+        undoit : () -> 
+          getVideo().pause()
+  .slide
+    //- unfull screen
+    script: :coffee-script
+      getVideo = () -> $('.altered_carbon_clip1 video')[0]
+      addAction 
+        doit : () ->
+          getVideo().pause()
+          screenfull.toggle( getVideo() )  if screenfull.isFullscreen
+        undoit : () -> 
+          screenfull.request( getVideo() )
+          getVideo().play()
+
+
++slide_middle
+  .notes: :t
+    Introduce the task for the seminars ...
+  p.center
+    span.first.hide first 
+    span.st seminar task
+  .slide
+    +show('.first')
+    p.center (due Friday of this week or Monday of week 2)
+
+
++slide_middle
+  p.center yyrama + tablua
+
++slide_middle
+  p.center feedback
+
++slide_middle
+  p.center Do the lecture themes match the seminars?
+
+
++slideTopicTable({step:5})
+
+//- not doing a preview
+//- +slide_middle
+//-   p [topic 5 preview]
+
++slideTopicTable({step:6})
+
+
+
++slide_rh_white({step:true, timer:true})
+  +left_half
+    p.other.hem-around: :t
+      ‘there is a presumption in
+      favor of deferring to a person’s judgment on the subject of [her] own good’
+    .slide
+      p.other Therefore:
+    .slide
+      p.conclusion.other.hem-around: :t
+        ‘a person has the right to make [her] own life
+        shorter in order to make it better’
+    p.other.right.grey-text Velleman, 1999 p. 607
+    +show-timer('timer1')
+    +start-timer('timer1')
+    .slide
+      +hide('#timer1')
+    .slide
+      +blur('.left-half')
+      .notes: :t
+        Will consider another argument
+  +right_half({step:true})
+    p.hem-around A person’s good matters only insofar as she, the person, matters.
+    .notes: :t
+      ‘what’s good for a person is worth caring about only out of concern for the person, 
+      and hence only insofar as he is worth caring about’
+      \citep[p.~612]{velleman:1999_right}.
+    .slide
+      p.hem-around: :t
+        Each person matters only by virtue of being one of us, the people.
+      .notes: :t
+        In ‘Children of Ruin’, a tiny group of interstellar explorers function
+        quite happily light years (and a lifetime of travel) from the nearest 
+        humans until one day they discover that they are the last humans alive.
+        They experience a loss of value.
+    .slide
+      p Therefore:
+      p.conclusion.hem-around: :t
+        A person’s right to shorten her life would  be a right to destory 
+        that in virtue of which her own good matters.
+    p.right.grey-text Velleman, 1999; 2008
+    .slide
+      +unblur('.left-half')
+      +blur('p:not(.conclusion)')
+    .slide
+      +unblur('.first')
+      +highlight('.first', 'red')
+      .notes: :t
+        Velleman’s argument conflicts with this principle.
+    .slide
+      +unblur('.left-half p')
+    .slide
+      +unblur('p')
+      +unhighlight('.first', 'red')
+
+  .notes.handout: :t
+    ‘A Kant-inspired variant on this latter position has been advanced by
+    Velleman (1999). He considers that a person’s well-being can only matter if
+    she is of intrinsic value and so that it is impermissible to violate a
+    person’s rational nature (the source of her intrinsic value) for the sake
+    of her well-being. Accordingly, he holds that it is impermissible to assist
+    someone to die who judges that she would be better off dead and competently
+    requests assistance with dying. The only exception is when a person’s life
+    is so degraded as to call into question her rational nature, albeit he
+    thinks it unlikely that anyone in that position will remain competent to
+    request assistance with dying. This position appears to be at odds with the
+    well-established right of a competent patient to refuse life-prolonging
+    medical treatment, at least when further treatment is refused because she
+    considers that her life no longer has value for her and further treatment
+    will not restore its value to her’
+    \citep{young:2019_voluntary}.
+
++slide_middle
+  +topicTable
+  +blur('tbody tr:lt(5)', '2px', 0 )
+  .slide
+    +unblur('tbody tr')
+  
++slide_middle
+  p.hem-around Weekly exercises (yyrama) due Fridays or Mondays
+  p.indent first one due this week (or Monday next week)
+  p.hem-around 3x in-term assessments
+
+
++slide_middle
+  +topicTable

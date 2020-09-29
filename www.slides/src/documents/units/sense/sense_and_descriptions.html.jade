@@ -1,0 +1,279 @@
+---cson
+layout: 'deck_unit'
+title: "Sense and Descriptions"
+tags: []
+description: """
+  What are senses? Could they be decsriptions?
+  """
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide_middle({bkg:'long_kiss.jpg'})
+  .hem-around-children(style='margin-left:350px;')
+    p Samantha is Samantha
+    p Samantha is Charly
+
++slide({photo:'samantha.jpg'})
+  p Samantha Caine
+  p: :t
+    Suburban homemaker and the ideal mom to her 8 year old daughter Caitlin. She lives in a New England small town, teaches in a local school and makes the best Rice Krispie treats in town.
+
++slide_middle({bkg:'charly.jpg', photo:'samantha.jpg'})
+  +hide('.photo',0)
+  .about
+    p Charly Baltimore
+    p: :t
+      a highly trained secret agent and cold-blooded killer involved in the government's most unscrupulous affairs.
+
+
+
++sensesAreDescriptions
+  +hide('.samantha', 0)
+  .notes: :t
+    It is perhaps tempting to think of senses as descriptions ...
+    at least, this way you can see how sense fulfils the three functions given on the previous
+    slide
+  .slide
+    +show('.samantha')
+  .slide
+    +show('.q')
+
+
++slide_middle
+  p: :t
+    ‘all that anyone has been able to think of is that different [i.e. senses] 
+    are a matter of 
+    different descriptions being associated with the signs. 
+  p.slide: :t
+    Some other views have been tried ... But these ideas have not been found compelling’ 
+  p.right.grey-text Campbell, 2011 p. 340
+  .notes: :t
+    I wish someone had told me this before.
+    I have the sense that the answer was out there and I could not find it.
+  .notes.handout: :t
+    ‘all that anyone has been able to think of is that different modes of presentation [i.e. senses] 
+    are a matter of 
+    different descriptions being associated with the signs. Some other views have been tried, 
+    such as those that say all uses of co-referential terms in a single discourse must be anaphorically 
+    linked. But these ideas have not been found compelling’ \citep[p.~340]{campbell:2011_visual}.
+  .notes: :t
+    This isn’t an argument ... we can do better
+
+
+
++sensesAreDescriptions
+  .notes: :t
+    Is this correct?
+  +show('.q', 0)
+
++slide_middle
+  .hem-around-children
+    p Contrast that utterance of ‘Charly is Charly’ with the utterance ‘Charly is Samantha’
+    p.ftbe ftbe: These may differ in informativeness.
+    //- p idea: This difference is due to some difference in the meanings of the utterances of ‘Charly’ and of ‘Samantha’.
+    //- p There could be no such difference if the meaning of an utterance of a word were merely the thing it refers to.
+    //- p Conclusion: the meaning of an utterance of a word is not, or not only, the thing it refers to.
+    p Terminology: call whatever aspect of meaning explains the difference ‘sense’.
+  .slide
+    +highlight-row('.ftbe')
+    .notes: :t
+      If senses are descriptions, can they explain why one utterance is informative and the other not?
+    .notes: :t
+      Jein: Ja--we can see that the descriptions are different; Nein--what does this have to do with
+      informativeness?
+    .notes: :t
+      To understand sense, we need to link it to knowledge of reference (as I explained last time) ...
+    
+
+
+//- +slide_middle
+//-   p.center knowledge of reference
+
+//- +slide
+//-   p ftbe:
+//-   p.ftbe1 Communicators can know, sometimes, 
+//-     br
+//-     span whether they are understanding. 
+//-     br
+//-     span How?
+//-   p.ftbe2.slide.hem-above Utterers make rational, voluntary use of some regularites 
+//-     br
+//-     span while merely conforming to others. 
+//-     br
+//-     span How is this possible?
+//-   .slide
+//-     p.em-above ∴ there is a mental state of the utterer in virtue of which her utterance refers to ‘Earth’.
+//-     p.slide Call this mental state ‘knowledge of reference’.
+  
++slide_middle
+  p.claim
+    span The 
+    span.sense sense
+    span  of an utterance of a word (or phrase)
+    br
+    span is what you know when you 
+    br
+    span have 
+    span.k-of-r knowledge of reference
+    span .
+  .notes: :t
+    NB: sense isn’t knowledge of reference, but the think known.
+  +hide('span', 0)
+  +show('.k-of-r', 0)
+  .slide
+    +show('.sense', 0)
+  .notes How are these connected?
+  .slide
+    +show('.claim span:not(.sense, .k-of-r)')
+    +add-class('.sense, .k-of-r', 'invert')
+
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180.tick.hide ✓
+  +reset
+    +_slide_middle_inner
+      .hem-around-children
+        p Contrast that utterance of ‘Charly is Charly’ with the utterance ‘Charly is Samantha’
+        p.ftbe ftbe: These may differ in informativeness.
+        //- p idea: This difference is due to some difference in the meanings of the utterances of ‘Charly’ and of ‘Samantha’.
+        //- p There could be no such difference if the meaning of an utterance of a word were merely the thing it refers to.
+        //- p Conclusion: the meaning of an utterance of a word is not, or not only, the thing it refers to.
+        p Terminology: call whatever aspect of meaning explains the difference ‘sense’.
+      +highlight-row('.ftbe')
+      .notes: :t
+        So if senses are descriptions and if sense are what you know when you have 
+        knowledge of reference, can we explain the difference in informativeness?
+    .slide
+      +show('.tick')
+      .notes: :t
+        Yes, absolutely.
+
+
++sensesAreDescriptions
+  +show('.q')
+
+//- section.slide
+//-   +_slide_middle_inner
+//-     p.center.huge-glow-180.tick.hide ✓
+//-   +reset
+//-     +_slide_inner
+//-       .notes: :t
+//-         If we connect sense with knowledge of reference in this way,
+//-         then we have to ask whether descriptions can fulfil these functions ...
+//-       p ftbe:
+//-       p.ftbe1.hem-around Communicators can know, sometimes, 
+//-         br
+//-         span whether they are understanding. 
+//-         br
+//-         span How?
+//-       p.ftbe2.hem-around Utterers make rational, voluntary use of some regularites 
+//-         br
+//-         span while merely conforming to others. 
+//-         br
+//-         span How is this possible?
+//-       p.em-above ∴ there is a mental state of the utterer in virtue of which her utterance refers to ‘Earth’.
+//-       p Call this mental state ‘knowledge of reference’.
+//-       +highlight-row('.ftbe1')  
+//-       .slide
+//-         +unhighlight-row('.ftbe1')  
+//-         +highlight-row('.ftbe2')  
+//-       .slide
+//-         +unhighlight-row('.ftbe2')  
+//-         +show('.tick')
+
+//- //- +slide_middle
+//- //-   +senseIsKnowledgeOfReference
+
+//- +sensesAreDescriptions
+//-   +show('.q')
+
+//- //- section.slide
+//- //-   +_slide_middle_inner
+//- //-     p.center.huge-glow-180.tick.hide ✓
+//- //-   +reset
+//- //-     +_slide_middle_inner
+//- //-       .functions.hem-around-children
+//- //-         p What is sense supposed to do?
+//- //-         p.hem-around.indent 1. Sense explains the difference in informativeness between the utterance of ‘Charly is Charly’ and ‘Charly is Samantha’.
+//- //-         p.hem-around.indent 2. Sense determines reference.
+//- //-         p.hem-around.indent 3. A statement showing the sense of a name specifies what you need to know about the utterance of a name in order to understand it.
+//- //-       .slide
+//- //-         +highlight-row('.functions p:eq(1)')
+//- //-       .slide
+//- //-         +unhighlight-row('.functions p:eq(1)')
+//- //-         +highlight-row('.functions p:eq(2)')
+//- //-       .slide
+//- //-         +unhighlight-row('.functions p:eq(2)')
+//- //-         +highlight-row('.functions p:eq(3)')
+//- //-       .slide
+//- //-         +unhighlight-row('.functions p:eq(3)')
+//- //-         +show('.tick')
+
+//- +sensesAreDescriptions
+
+//- section.slide
+//-   +_slide_middle_inner
+//-     p.center.huge-glow-180.tick.hide ✓
+//-   +reset
+//-     +_slide_inner({photo:'campbell_john_bw.jpg'})
+//-       .notes recall campbell’s picture ...
+//-       p
+//-         span ‘There is a 
+//-         span.common-sense common-sense
+//-         span  picture of the relation between 
+//-         span.k-of-r knowledge of reference
+//-         span  and pattern of use.  
+//-       p: span: :t
+//-         ... you use the word the way you do because you know what it stands for’
+//-       p.right.grey-text Campbell, 2002 p. 4
+//-       .notes: :t
+//-         The definition: “‘Elmo’ refers to the oldest tree in this garden.” What does this
+//-         statement do? “By defining what has to be the case for a proposition involving
+//-         the name ‘Elmo’ to be true, this statement of reference defines the objective at which 
+//-         the introduction rule aims, and allows you to determine what we should take to be the 
+//-         implications of a statement using the name. In that sense, it justifies the use of those 
+//-         introduction and elimination rules above.” (25) Cf. #83 (p. 226) and especially #84 (p. 226)
+//-     .slide
+//-       +show('.tick')
+//- +sensesAreDescriptions
+
+//- +slide_middle
+//-   +timer-element('timer1','90s',{hide:true})
+//-     p.center Are senses descriptions?
+//-     .notes No because of the elephant (perceptual demonstratives ...)
+//-   +show-timer('timer1')
+//-   +start-timer('timer1')
+
+//- +slide_middle
+//-   p Example (use 1): “A bear is about to attack me”
+//-   .slide
+//-     p.em-above contrast: ‘A bear is about to attach Steve’
+//-   .slide
+//-     p.em-above The sense of ‘I’ cannot be the sense of ‘Steve’.
+
+//- +slide_middle
+//-   p Example (use 2): “A bear is about to attack me”
+//-   .slide
+//-     p.em-above “When you and I entertain the sense of "A bear is about to attack me," we behave  similarly. We both roll up in a ball and try to be as still as possible … 
+//-     .slide
+//-       p.em-above “When you and I both apprehend the thought that I am about to be attacked by a bear, we behave differently. I roll up in a ball, you run to get help.” 
+//-     p.grey-text.right Perry, 1977 p. 494
+//-   .slide
+//-     p.em-above Could the sense ‘I’ be a description?
+
+//- +slide({bkg:'elephant1.jpg'})
+//- +slide({bkg:'elephant2.jpg'})
+//- +slide({bkg:'elephant3.jpg'})
+
+//- +slide_middle
+//-   +timer-element('timer1','90s',{hide:false})
+//-     p.center Are senses descriptions?
+//-   +start-timer('timer1')
+//-   .notes: :t
+//-     I think senses are not descriptions and that we need to go back to 
+//-     what Rusell said about acquaintance ...
+

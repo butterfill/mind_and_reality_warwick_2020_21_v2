@@ -1,0 +1,153 @@
+---cson
+layout: 'deck_unit'
+title: "A Process Dissociation Approach to Perception without Awareness"
+tags: []
+description: """
+  
+  """
+---
+
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
++slide_middle
+  .notes \citep{debner:1994_unconscious}; see \citet{sandberg:2014_evidence} for criticism.
+  p: :t
+    Theoretical point: we shouldn’t expect conscious and nonconscious processes to dissociate cleanly,
+    every effect can be influenced by both.
+  p.right.grey-text Debner & Jacoby, 1994
+
++slide_middle
+  .notes \citep{debner:1994_unconscious}
+  p A Task
+  p.hem-above.indent Stem : tab
+  p.hem-above.indent Completions : table / taboo
+  .slide
+    p.em-above Inclusion task : if you see ‘table’ , use this as the completion for ‘tab’
+  .slide
+    p.em-above Exclusion task : if you see ‘table’ , DO NOT use this as the completion for ‘tab’
+
+
+
++slide_middle
+  .notes \citep{debner:1994_unconscious}
+  table.data
+    thead
+      tr
+        td task
+        td effect of perceptual awareness on performance
+        td effect of nonconscious perception on performance
+    tbody
+      tr.even
+        td Inclusion (use the word to complete the stem)
+        td facilitates
+        td facilitates
+      tr.odd
+        td Exclusion
+        td facilitates
+        td impairs
+  .slide
+    .notes: :t
+      Task fits Dretske’s idea perfectly ...
+  .slide
+    p.em-above: :t
+      How perceptual awareness  should be operationalised according to Dretske, 2006:
+    p.hem-above.indent we infer lack of awareness from information not being available to the subject as a reason  for action
+
+
++slide_middle
+  p: :t
+    dividing attention : 23 table 37
+  .slide
+    p.em-above Key finding: dividing attention impairs perceptual awareness without affecting nonconscious perception
+  .slide
+    p.em-above Conclusion: there is perception without awareness
+
+
++slide_rh_white({step:true})
+  .notes: :t
+    Recall this problem ...
+  +run_across
+    p.center a problem
+  +left_half
+    .step2.hide
+      p.em-above: :t
+        How perceptual awareness is actually operationalised in Weiskranz et al, 1995:
+      p.hem-above.indent we infer lack of awareness from the subject’s reports
+    .step3.hide
+      p.em-above: :t
+        How perceptual awareness is actually operationalised in Debner & Jacoby, 1994:
+      p.hem-above.indent see Dretske!
+  +right_half({step:true})
+    p.em-above: :t
+      How perceptual awareness  should be operationalised according to Dretske, 2006:
+    p.hem-above.indent we infer lack of awareness from information not being available to the subject as a reason  for action
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    +highlight('.step3', 'lime')
+
+//- +slide_middle
+//-   p: :t
+//-     a note on the logic
+//-   p: :t
+//-     “The fact that the immediately preceding words were used as responses despite the 
+//-     instructions not to use the words suggests that masked words were perceived without awareness, 
+//-     at least on some proportion of the trials. This interpretation follows from two critical 
+//-     assumptions. First, conscious perception of the immediately preceding word leads subjects 
+//-     not to use it to complete the stem. […] Second, responses are controlled by conscious 
+//-     influences whenever either conscious influences alone or both conscious and unconscious influences are present”
+//-     (Merikle and Joordens, 1997, p. 113).
+//-     \citep{sandberg:2014_evidence}
+
+//- +slide_middle
+//-   p: :t
+//-     criticism of the findings: \citep{sandberg:2014_evidence}
+//-   p: :t
+//-     ‘the results indicated that the criterion for reporting weak experiences was more liberal than the criterion for exclusion, and it is thus unlikely that exclusion tasks are less vulnerable to weak experience critiques than ratings on the PAS. Crucially, this means that exclusion failure should not be taken as evidence of the complete absence of awareness, thus indicating that the second assumption for the validity of exclusion tasks (Merikle and Joordens, 1997) is not true’
+//-     \citep{sandberg:2014_evidence}
+
+//- +slide_middle
+//-   p: :t
+//-     Interesting observations:
+//-     1. The  \citep{debner:1994_unconscious} method is a perfect fit for Dretske’s ‘reason’ criterion for awareness
+//-     (I should probably use it to illustrate thta)
+//-   p: :t
+//-     The \citep{sandberg:2014_evidence} essentially says that people can report some 
+//-     detection using the perceptual awareness scale (PAS).
+//-     Theoretically, they are rejecting Dretske’s crition.
+
+//- +slide_middle
+//-   p The PAS scale 
+//-   p: :t
+//-     The response options were: “1: No experience” (NE), “2: Weak glimpse” (WG),
+//-     “3: An almost clear experience” (ACE), and “4: A clear experience” (CE).
+//-     \citep{sandberg:2014_evidence}
+//-   p: :t
+//-     ‘participants were instructed that NE should be used when there is no
+//-     experience at all, not even a faint sensation. WG should be used when there
+//-     is a very weak/vague visual experience without any ability to specify what
+//-     was perceived. ACE should be is used when there is an experience of what
+//-     was perceived, yet unclear or blurry. CE should be used when there is a
+//-     clear experience of what is perceived.’
+//-     \citep{sandberg:2014_evidence}
+
+//- +slide_middle
+//-   p: :t
+//-     ‘we found that failure to exclude a primed word from report was observed
+//-     almost to the same extent when participants reported that they had “no
+//-     experience” of the prime (PAS1) as when they had “a vague experience” or
+//-     perceived “a weak glimpse” (PAS2), but not when they had “an almost clear
+//-     experience” (PAS3) or “a clear experience” (PAS4).’
+//-   p: :t
+//-     On Dretske’s criterion, 
+//-     this criticism looks wrong.
+//-     That ‘there
+//-     is a very weak/vague visual experience without any ability to specify what
+//-     was perceived’
+//-     does not show there was perceptual awareness of the stimulus.

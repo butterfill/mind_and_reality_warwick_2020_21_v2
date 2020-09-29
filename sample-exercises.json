@@ -1,0 +1,89 @@
+{
+  "_id": "SsfHkshBPS9KAWzFs",
+  "courseName": "warwick.ac.uk-MindAndReality",
+  "variant": "Mind and Reality (PH144) 2020-21",
+  "description": "For students taking Mind and Reality (PH144) in 2020-21",
+  "owner": "sBQPaqKE7mNtj3ReX",
+  "lectures": [
+    {
+      "type": "lecture",
+      "name": "Lecture 06",
+      "units": [
+        {
+          "type": "unit",
+          "name": "Action - Three Basic Principles",
+          "rawReading": [
+            "Davidson",
+            "D. (1971). Agency. In R. Binkley",
+            "R. Bronaugh",
+            "& A. Marras (Eds.)",
+            "Agent",
+            "Action",
+            "and Reason",
+            "(pp. 3–25). Toronto: University of Toronto Press. Reprinted in Davidson",
+            "D. (1980) Essays on Actions and Events. Oxford: Oxford University Press."
+          ],
+          "rawExercises": [
+            "/ex/TorF/qq/That actions are individuated by their outcomes is among the 'three basic principles' mentioned in the lecture?|That actions are events is among the 'three basic principles' mentioned in the lecture?|That actions have ontological structures is among the 'three basic principles' mentioned in the lecture?|That one action can have multiple descriptions is among the 'three basic principles' mentioned in the lecture?",
+            "/ex/q/What is the accordion effect?",
+            "/ex/q/Read page 49 of the text set. Copy and paste the sentence which states what it is for an act to be primitive."
+          ],
+          "handout": "https://central-themes.butterfill.com/handouts/lecture_13.handout.pdf",
+          "slides": "https://central-themes.butterfill.com/units/action_basic_principles.html"
+        },
+        {
+          "type": "unit",
+          "name": "Causes of Action - Belief and Desire",
+          "rawReading": [],
+          "rawExercises": [
+            "/ex/q/Ahmed is standing in front of a lever. He believes, correctly, that pulling it will earn him $10. What more, if anything, do you need to know to predict whether he will pull the lever?",
+            "/ex/TorF/qq/Action is a function of belief and desire|Beliefs most closely resemble subjective expectations in decision theory|Beliefs most closely resemble preferences in decision theory"
+          ],
+          "handout": "https://central-themes.butterfill.com/handouts/lecture_13.handout.pdf",
+          "slides": "https://central-themes.butterfill.com/units/causes_of_action.html#instructions"
+        },
+        {
+          "type": "unit",
+          "name": "Intention",
+          "rawReading": [],
+          "rawExercises": [
+            "/ex/q/This lecture suggests that what you do is not, or not always a consequence just of beliefs and desires. What considerations were offered in support of this suggestion?",
+            "/ex/TorF/qq/This part of the lecture was about intention|This part of the lecture was about social convention|This part of the lecture was about emotions",
+            "/ex/TorF/qq/The principle of agglomeration states that you should always keep in touch with you friends|The principle of agglomeration states that it is not rational to have one intention unless it would be rational to have another intention|The principle of agglomeration states that it is not rational to have several intentions simultaneously unless it would be rational to have one intention combining all of these|The principle of agglomeration states that it is not rational to have intentions unless you have corresponding beliefs and desires"
+          ],
+          "slides": "https://central-themes.butterfill.com/units/intention.html",
+          "handout": "https://central-themes.butterfill.com/handouts/lecture_13.handout.pdf"
+        }
+      ],
+      "slides": "https://central-themes.butterfill.com/lecture_13.html",
+      "handout": "https://central-themes.butterfill.com/handouts/lecture_13.handout.pdf"
+    },
+    {
+      "type": "lecture",
+      "name": "Lecture 07",
+      "units": [
+        {
+          "type": "unit",
+          "name": "Frankfurt’s Argument from Spiders",
+          "rawReading": [],
+          "rawExercises": [],
+          "handout": "https://central-themes.butterfill.com/handouts/lecture_14.handout.pdf",
+          "slides": "https://central-themes.butterfill.com/units/spiders.html"
+        },
+        {
+          "type": "unit",
+          "name": "Don’t Spiders Have Intentions",
+          "rawReading": [],
+          "rawExercises": []
+        },
+        {
+          "type": "unit",
+          "name": "Frankfurt’s Further Objections to Causal Theories of Action",
+          "rawReading": [],
+          "rawExercises": []
+        }
+      ]
+    }
+  ],
+  "created": ISODate("2020-06-24T10:43:16.833Z")
+}

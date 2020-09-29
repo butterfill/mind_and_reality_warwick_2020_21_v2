@@ -1,0 +1,97 @@
+---cson
+layout: 'deck_unit'
+title: "A Test for Perception?"
+tags: []
+description: """
+  What does it take to perceive something?
+  By what test could we measure whether someone has perceived a particular object?
+  According to Dretske, it would be enough to show that they had received information
+  about the object which is ‘available for the control and guidance of action’
+  and ‘extracted ... by accredited receptor systems’ (Dretske, 2006 p. 150).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
+
+
+
+
++slide_middle({bkg:'ragweed.jpg'})
+  +hide('img.bkg', 0)
+  .quote
+    p.em-above.notes.handout.show
+      span.step1.hide ‘If psychologists can really identify something 
+      span.step1.hide that deserves to be called 
+      span.p-wo-a perception without awareness
+      span.step2.hide , they must have an 
+      span.step2.hide.op operational grasp
+      span.step2.hide  on
+      span.step3.hide  not only 
+      span.perceive.step2.hide what it takes to perceive something
+      span.step3.hide , but on 
+      span.step3.hide.conscious what it takes to be conscious of it
+      span .
+    .notes.handout.ctd \citep[p.~148]{Dretske:2006fv}
+    p.right.grey-text Dretske, 2006 p. 148
+  +show('.quote .step1')
+  +show('.quote .step2')
+  +invert('.perceive')
+  .notes: :t
+    We have been clarifying what we mean by perceiving in terms of simple seeing.
+  .notes: :t
+    But can we go further and give a ‘test for perception’?
+  .slide
+    .blindsight
+      p.hem-around blindsight:
+      p.hem-around.indent.vision-criterion infer perception from discrimination of visual stimuli
+  .slide
+    +highlight-row('.vision-criterion')
+    .notes: :t
+      This was the point of talking about simple seeing.
+  .slide
+    +blur('.blindsight')
+  .slide
+    p.em-above You must have got information about the thing
+    .notes: :t
+      But: allergic reactions to ragweed
+    .handout: :t
+      What does it take to perceive something?
+      By what test could we measure whether someone has perceived a particular object?
+      According to Dretske, to perceive an object:
+      \begin{itemize}
+      \item you must have got information about the thing; and
+      \item  ‘the information in these states should be available for the control
+      and guidance of action’; and 
+      \item ‘the information should
+      be extracted from stimulation [...] by
+      accredited receptor systems’ \citep[p.~150]{Dretske:2006fv}.
+      \end{itemize}
+    .handout: :t
+      Note Dretske’s qualification:
+      ‘Even with the additional qualifications [not specified here], 
+      this ‘test’ for perception of an object is not going to withstand philosophical 
+      scrutiny---too many loose ends and philosophically troublesome qualifiers’
+      \citep[p.~151]{Dretske:2006fv}.
+  .slide
+    +show('img.bkg')
+  .slide
+    +style('img.bkg', {filter:'blur(3px) saturate(0) opacity(0.5)'})
+  .slide
+    p: :t
+      and ‘the information in these states should be available for the control
+      and guidance of action’
+  .slide
+    p: :t
+      and ‘the information should
+      be extracted from stimulation [...] by
+      accredited receptor systems.’
+    p.grey-text.right Dretske, 2006 p. 150
+  .slide
+    +unblur('.blindsight')
+
+
+
+

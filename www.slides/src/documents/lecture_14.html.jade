@@ -1,0 +1,37 @@
+---cson
+layout: 'default2'
+title: 'Lecture 14'
+subtitle: 'Mind & Reality'
+weburl: ''
+units: []
+lecture_date: '2020/11/25'
+recordings: []
+recordingUnitNames: []
+recordingStreamIds: []
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/words_things_mixins
+
+- var images = get_images('mix')
+
++title_slide({document:document, images:images})
+
+
+
+//- +insert_recording({unitName:'personal-identity/biological_continuity', streamId:'089955fe-e21b-44e3-aece-1cf8c54bde42'})
++insert_unit({unit:'personal-identity/biological_continuity', title_slide:true, images:images, handout:true})
+
+//- +insert_recording({unitName:'personal-identity/identity_matters', streamId:'8783c45c-9617-4edf-bab6-89a786616507'})
++insert_unit({unit:'personal-identity/identity_matters', title_slide:true, images:images, handout:true})
+
+
+//- +insert_recording({unitName:'personal-identity/psychological_fission', streamId:'aa6e65c8-8b2b-4c04-b32b-cfa06e472c88'})
++insert_unit({unit:'personal-identity/psychological_fission', title_slide:true, images:images, handout:true})
+
+
+//- +insert_recording({unitName:'personal-identity/conclusion', streamId:'633670df-034c-4b31-996d-8bd479cc4848'})
++insert_unit({unit:'personal-identity/conclusion', title_slide:false, images:images, handout:true})
+
