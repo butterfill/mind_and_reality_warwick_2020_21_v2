@@ -1,4 +1,14 @@
 mixin show_week(week)
+
+  if week.specialTasks
+    each st in week.specialTasks
+      h3 #{st.sectionHeading}
+      p !{st.preInstructions}
+      ul.ticks
+        for t in st.tasks
+          li !{t}
+      p !{st.postInstructions}
+
   h3#seminar-tasks Seminar Task on yyrama
   if week.seminar && week.seminar.length > 0
     ul.ticks
