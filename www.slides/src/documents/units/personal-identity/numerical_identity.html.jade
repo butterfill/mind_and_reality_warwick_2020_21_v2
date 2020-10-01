@@ -78,7 +78,7 @@ include ../../../../fragments/central_themes_mixins
 
 +slide
   .alig-clip
-    video(width="720", height="300", controls)
+    video(width="720", height="300", controls,  playsinline)
       source(src="alig2.mp4", type="video/mp4")
   script: :coffee-script
     getVideo = () -> $('.alig-clip video')[0]

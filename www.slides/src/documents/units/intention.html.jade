@@ -14,7 +14,7 @@ include ../../../fragments/central_themes_mixins
 
 +slide
   .martian_clip1
-    video(width="720", height="300", controls, src="img/the_martian.clip1.mp4")
+    video(width="720", height="300", controls, src="img/the_martian.clip1.mp4",  playsinline)
   script: :coffee-script
     getVideo = () -> $('.martian_clip1 video')[0]
     addAction 

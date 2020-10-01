@@ -91,7 +91,7 @@ html(lang="en")
               div(style="padding-left:2em;")
                 p #{unit.description}
 
-                video(width="800", height="450", controls)
+                video(width="800", height="450", controls, playsinline)
                   source(src="recordings/#{p.unitName}.mkv", type="video/mp4")
                   source(src="recordings/#{p.unitName}.webm", type="video/mp4")
                   track(label="English" kind="subtitles" srclang="en" src="recordings/#{p.unitName}.vtt" default)

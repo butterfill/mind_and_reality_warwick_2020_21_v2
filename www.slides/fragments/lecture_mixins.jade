@@ -173,6 +173,6 @@ mixin insert_recording(p)
     iframe(width="640", height="360", src="https://web.microsoftstream.com/embed/video/#{p.streamId}?autoplay=false&amp;showinfo=true", allowfullscreen, style="border:none;")
   //- the video
   +slide
-      video(width="720", height="300", controls)
+      video(width="720", height="300", controls,  playsinline)
         source(src="recordings/#{p.unitName}.mkv", type="video/mp4")
         track(label="English" kind="subtitles" srclang="en" src="recordings/#{p.unitName}.vtt" default)

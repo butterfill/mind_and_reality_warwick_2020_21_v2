@@ -645,3 +645,14 @@ mixin slide_timer(p)
     +reset
       +_slide_middle_inner(p)
         block
+mixin insert_video(p)
+  if p.name
+    video(width="800", height="450", controls,  playsinline)
+      source(src="recordings/#{p.name}.mkv", type="video/mp4")
+      source(src="recordings/#{p.name}.webm", type="video/mp4")
+      track(label="English" kind="subtitles" srclang="en" src="recordings/#{p.name}.vtt" default)
+  else
+    //- pass : todo, embed from streamId
+  if p.name && p.streamId
+    p If the video above doesn’t work, you could try 
+      a(href='https://web.microsoftstream.com/video/#{p.streamId}' target='_blank') watching it on streams.
