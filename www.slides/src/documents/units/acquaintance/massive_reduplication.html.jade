@@ -14,7 +14,8 @@ book: [
   """pages 20--22 of Strawson, P. F. (1959). Individuals. Meuthen, London."""
 ]
 exercises : [
-  "/ex/TorF/qq/Propositions can be true or false|Propositions are sentences|Logic makes your lecturer die inside",
+  "/ex/TorF/qq/Massive reduplication concerns the problem of duplicating large objects|Massive reduplication concerns the possibility that everything around here might be duplicated in a far-off part of the universe"
+  "/ex/q/Can you identify a potential objection to the objection from massive reduplication in this unit?"
 ]
 ---
 
@@ -41,7 +42,7 @@ include ../../../../fragments/words_things_mixins
   .slide
     +highlight('.the1', 'pink')
   .slide
-    +highlight('.the1', 'yellow')
+    +highlight('.the2', 'yellow')
 
 +slide_middle
   p: :t
@@ -67,20 +68,42 @@ include ../../../../fragments/words_things_mixins
 
 
 +slide_middle
-  p: :t
+  p.hem-around.one: :t
     1. Suppose you were not acquainted with anything at all.
-  p: :t
-    2. Then all your thoughts would be based on knowledge by description.
-  p: :t
-    3. But massive reduplication is possible for all we know.
-  p: :t
-    4. Then you might not ever be thinking about anything, for all we know.
-  p: :t
-    5. But we do know that you sometimes succeed in thinking about some things.
-  p: :t
-    6. Therefore you are acquainted with at least one thing.
+  .slide
+    p.hem-around.two: :t
+      2. Then all your thoughts would be based on knowledge by description.
+  .slide
+    p.hem-around.three: :t
+      3. But massive reduplication is possible for all we know.
+  .slide
+    p.hem-around.four: :t
+      4. Therefore: you might not ever be thinking about anything, for all we know.
+  .slide
+    +highlight-row('.two, .three')
+    .notes Do you see how it follows
+  .slide
+    +unhighlight-row('.two, .three')
+  .slide
+    p.hem-around.five: :t
+      5. But we do know that you sometimes succeed in thinking about some things.
+  .slide
+    p.hem-around: :t
+      6. Therefore you are acquainted with at least one thing.
+  .slide
+    +highlight-row('.four, .five', 'red')
+    .notes do you see how it follows (by contradiction)?
+  .slide
+    +highlight-row('.one', 'white')
+  .slide
+    +unhighlight-row('.four, .five', 'red')
+    +unhighlight-row('.one', 'white')
 
 +slide_middle
   p The possibility of massive reduplication provides us with
-  p an argument for Russell’s principle.
+  p an argument for 
+    span.closeto.hide (something close to)
+    span  Russell’s principle.
+  .slide
+    +show('.closeto')
     

@@ -14,7 +14,8 @@ book: [
   """Russell, B. (1910). Knowledge by Acquaintance and Knowledge by Description. Proceedings of the Aristotelian Society, 11:108–128"""
 ]
 exercises : [
-  "/ex/TorF/qq/Propositions can be true or false|Propositions are sentences|Logic makes your lecturer die inside",
+  "/ex/TorF/qq/You know Julius Caesar by acquaintance|You know Julius Caesar by description",
+  "/ex/q/What is the problem associated with Julius Caesar in this unit?"
 ]
 ---
 
@@ -23,25 +24,27 @@ include ../../../../fragments/words_things_mixins
 
 
 
-+slide({photo:'russell.jpg'})
-  +reset-escape-inner
-    +_slide_middle_inner
-        +timer-element('timer1','90s',{hide:true})
-          p.center.question.hide What is the objection an objection to?
-  +reset
-    p.em-above &nbsp;
-    p.em-above Russell’s objection to Russell
-    p.notes.handout.show: :t
++slide({photo:'russell.jpg', timer:true})
+  p.em-above Russell’s objection to Russell
+  .slide
+    p.hem-above.notes.handout.show: :t
       ‘Thus when, for example, we make a statement about Julius Caesar, 
       it is plain that Julius Caesar himself is not before our minds, 
       since we are not acquainted with him.’
     p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
     p.right.grey-text Russell, 1912 chapter 5
-    +show-timer('timer1')
-      +show('.question')
-    +start-timer('timer1')
+  +show-timer('timer1')
+    .notes: :t
+      What is the objection an objection to?
+  +start-timer('timer1')
 
-
++slide_middle
+  p.hem-around 1. We can think about Julius Caesar.
+  .slide
+    p.hem-around 2. We are not acquianted with Julius Caesar.
+  .slide
+    p.hem-around 3. Therefore it’s untrue that 
+    p.indent “All our knowledge, both knowledge of things and knowledge of truths, rests upon acquaintance as its foundation”
  
 +slide({photo:'russell.jpg'})
   .hem-around-children
@@ -52,11 +55,17 @@ include ../../../../fragments/words_things_mixins
     p.notes.handout.ctd.slide.show
       span We have 
       span.in-mind in mind
-      span  some description of 
+      span  some 
+      span.description description
+      span  of 
       span Julius Caesar: 'the man who was assassinated on the Ides of March', 
       span 'the founder of the Roman Empire'
   p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
   p.right.grey-text Russell, 1912 chapter 5
+  .slide
+    +invert('.description')
+    .notes: :t
+      And the description is what enables us to think about him.
 
 //- +slide({photo:'russell.jpg'})
 //-   //- Knowledge by description (ct acquaintance)
@@ -69,8 +78,11 @@ include ../../../../fragments/words_things_mixins
   
 
 +slide_rh_white
+  +run_across
+    p.center two ways of linking thoughts to objects
   +left_half
-    acq.hide
+    .acq.hide
+      p.hem-around acquaintance 
       p.notes.handout.show
         span ‘we have acquaintance with anything of which we are 
         span.directly directly
@@ -79,6 +91,7 @@ include ../../../../fragments/words_things_mixins
       p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
       p.right.grey-text Russell, 1912 chapter 5
   +right_half
+    p.hem-around knowledge by description
     p.notes.handout.show: :t
       ‘when we know that the property or properties in question belong to one object and 
       no more, we are said to have knowledge of that one object by description, whether 
@@ -87,3 +100,38 @@ include ../../../../fragments/words_things_mixins
     p.right.grey-text Russell, 1910 p. 220
   .slide
     +show('.acq')
+
+
++slide_middle({timer:true})
+  .notes: :t
+    So what was the problem this this argument?
+  p.hem-around 1. We can think about Julius Caesar.
+  p.hem-around 2. We are not acquianted with Julius Caesar.
+  p.hem-around 3. 
+    span.therefore Therefore
+    span  it’s untrue that 
+  p.indent “All our knowledge, both knowledge of things and knowledge of truths, 
+    span.foundation rests upon acquaintance as its foundation
+    span ”
+  +show-timer
+    .notes: :t
+      So what was the problem this this argument?
+  +start-timer
+  .slide
+    +highlight('.therefore', 'red')
+  .slide
+    +invert('.foundation')
+    .notes: :t
+      This mustn’t be read as saying that acquaintance is involved in every case 
+      because there is also knowledge by description.
+
++slide_middle
+  .summary
+    p.hem-around summary
+    p.hem-around.indent Russell’s principle of acquaintance
+    p.hem-around.indent The objection: Julius Caesar
+    p.hem-around.indent The reply: knowledge by description
+  .slide
+    +blur('.summary')
+    p.hem-around new problem
+    p.hem-around.indent Couldn’t it all be knowledge by description?

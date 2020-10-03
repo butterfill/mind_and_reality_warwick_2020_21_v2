@@ -4,9 +4,14 @@ title: "Russell’s Argument on Acquaintance"
 tags: []
 description: """
   ‘I hold that acquaintance is wholly a relation, 
-    not demanding any such constituent of the mind as is supposed by 
-    advocates of ‘ideas’’ (Russell, 1920 p. 212).
+  not demanding any such constituent of the mind as is supposed by 
+  advocates of ‘ideas’’ (Russell, 1910 p. 212).
   """
+exercises : [
+  "/ex/TorF/qq/It is usually good to write about yourself in a philosophy essay|The main point of a philosophy essay is to express your opinions",
+  "/ex/TorF/qq/In general, acquaintance is a relation between a thinker and a thing (such as a rock or a person, perhaps)|In general, acquaintance is a relation between a thinker and an idea",
+
+]
 ---
 include ../../../../fragments/unit_mixins
 include ../../../../fragments/words_things_mixins
@@ -29,15 +34,7 @@ include ../../../../fragments/words_things_mixins
   p.center What is Russell’s argument?
 
 +slide({photo:'russell.jpg'})
-  p.notes.handout.show.q1.hide: :t
-    ‘Whenever a relation of supposing or judging occurs, the terms to which the 
-    supposing or judging mind is related by the relation of supposing or judging 
-    //p. 211// must be terms with which the mind in question is acquainted. 
-    This is merely to say that 
-  p.notes.handout.ctd.show.q2: :t
-    we cannot make a judgement or a supposition 
-    without knowing what it is that we are making our judgement or supposition about. 
-  p.notes.handout.ctd.show.q3.hide
+  p.notes.handout.ctd.show.q3
     span It seems to 
     span.me me 
     span  that the truth of this principle is evident as soon as  
@@ -45,42 +42,42 @@ include ../../../../fragments/words_things_mixins
   .notes.handout.ctd \citep[pp.~210--11]{Russell:1910fa}.
   p.right.grey-text Russell, 2010 pp. 210-11
   .slide
-    +show('.q1')
-  .slide
-    +show('.q3')
-    +blur('.q1,.q2')  
-  .slide
     +invert('.me')
     .notes Never talk about yourself. It’s always irrelevant.
     .notes But a real argument does follow ...
 
 +slide({photo:'russell.jpg'})
   p
-    span ‘I think the theory that  
+    span ‘the theory that  
     span.judgements judgements
     span  consist of ideas ... is fundamentally mistaken. 
   .middle-part
-    p.slide: :t
-      The view seems to be that there is some mental existent which may be called the 
-      ‘idea’ of something outside the mind of the person who has the idea, and that, 
-      since judgement is a mental event, its constituents must be constituents of the 
-      mind of the person judging. 
-    p.slide
-      span But in this view ideas become a veil between us and 
-      span outside things
-      span.slide —we never really, in knowledge, attain //p. 212// to the things 
-        span we are supposed to be knowing about, but only to the ideas of those things. 
-  p.slide: :t
-    The relation of mind, idea, and object, on this view, is utterly obscure ... 
+    .slide
+      p.toblur: :t
+        The view seems to be that there is some mental existent which may be called the 
+        ‘idea’ of something outside the mind of the person who has the idea, and that, 
+        since judgement is a mental event, its constituents must be constituents of the 
+        mind of the person judging. 
+    .slide
+      p.toblur
+        span But in this view ideas become a veil between us and 
+        span outside things
+        span.slide --- we never really, in knowledge, attain //p. 212// to the things 
+          span we are supposed to be knowing about, but only to the ideas of those things. 
+  .slide
+    p.toblur: :t
+      The relation of mind, idea, and object, on this view, is utterly obscure ... 
   .slide
     +collapse('.middle-part')
-  p.slide: :t
-    I ... see no reason to believe that, when we are acquainted with an object, 
-    there is in us something which can be called the ‘idea’ of the object. 
-  p.slide: :t
-    On the contrary, I hold that acquaintance is wholly a relation, 
-    not demanding any such constituent of the mind as is supposed by 
-    advocates of ‘ideas’.’
+  .slide
+    p.toblur: :t
+      I ... see no reason to believe that, when we are acquainted with an object, 
+      there is in us something which can be called the ‘idea’ of the object. 
+  .slide
+    span.toblur On the contrary, I hold that 
+    span  acquaintance is wholly a relation, 
+    span not demanding any such constituent of the mind as is supposed by 
+    span advocates of ‘ideas’.’
   p.right.grey-text Russell, 1910 [1963] pp. 211–2
   .notes.handout: :t
     ‘I think the theory that  
@@ -99,7 +96,13 @@ include ../../../../fragments/words_things_mixins
     not demanding any such constituent of the mind as is supposed by 
     advocates of ‘ideas’’
     \citep[pp.~211--12]{Russell:1910fa}.
-  
+  .slide
+    +blur('.toblur')
+    .notes: :t
+      This is hardly on a part with ‘evident as soon as it is understood’.
+      Either the Principle of Acquaintance is compatible with the theory of ideas 
+      and so empty, or else it is not compatible with the theory of ideas and 
+      so stands in need of justification.
   
 
 
@@ -107,48 +110,45 @@ include ../../../../fragments/words_things_mixins
   p Reconstruction of Russell’s argument
   .hem-around-children
     p 
-      span.judgement Judgement
-      span s are about objects in the world. [intentionality]
+      span When things go well, our 
+      span.judgement thought
+      span s are about things in the world. [points of view]
     .slide
       p Any 
-        span.t-of-j theory of judgement
+        span.t-of-j theory of thought
         span  needs to elucidate the 
-        span.relation relation between a judgement and an object
+        span.relation relation between a thoughts and and things
         span .
     .slide
-      p Invoking ideas to do this makes intentionality more, not less, obscure.
+      p Invoking ideas to do this makes matters more, not less, obscure.
     .slide
       p 
         span.therefore Therefore
         span :
-      p The intentionality of judgement consists at bottom in a relation between a thinker and an object.
+      p The 
+        span.intentionality intentionality
+        span   of thought consists at bottom in a relation between a thinker and an object.
     .slide
       p Terminology: call this relation ‘acquaintance’.
   .slide
-    +invert('.therefore')
+    +invert('.intentionality')
     .notes: :t
       It’s not much of an argument, but it’s interesting.
   .slide
-    +uninvert('.therefore')
-    +highlight('.judgement', 'red')
-    .notes: :t
-      What’s this?
+    +uninvert('.intentionality')
+    +invert('.relation')
   .slide
-    +unhighlight('.judgement', 'red')
-    +highlight('.t-of-j')
-  .slide
-    +unhighlight('.t-of-j')
-    +highlight('.relation')
+    +uninvert('.relation')
 
 +slide_rh_white
   .notes: :t
     We have seen that Russell says two things. I don’t think they can both be true.
+  +run_across
+    p.center Can these both be true Mr R?
   +left_half
     p: :t
-      ‘It seems to 
-      span.me me 
-      span  that the truth of this principle is evident as soon as  
-      span the principle is understood’ 
+      ‘the truth of this principle is evident as soon as  
+      the principle is understood’ 
     .notes.handout.ctd \citep[pp.~210--11]{Russell:1910fa}.
     p.right.grey-text Russell, 2010 pp. 210-11
   +right_half
