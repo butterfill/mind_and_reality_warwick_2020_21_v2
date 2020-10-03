@@ -1,0 +1,89 @@
+---cson
+layout: 'deck_unit'
+title: "Knowledge by Description"
+tags: []
+description: """
+  There are things you can think about and others about which you cannot think it all.
+  What distinguishes the things you can think about?
+  Could it be that you are acquainted with the things you can think about?
+  No, because you can think about things that you know only by description,
+  like Julius Caesar.
+  """
+depends: ['']
+book: [
+  """Russell, B. (1910). Knowledge by Acquaintance and Knowledge by Description. Proceedings of the Aristotelian Society, 11:108–128"""
+]
+exercises : [
+  "/ex/TorF/qq/Propositions can be true or false|Propositions are sentences|Logic makes your lecturer die inside",
+]
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
+
++slide({photo:'russell.jpg'})
+  +reset-escape-inner
+    +_slide_middle_inner
+        +timer-element('timer1','90s',{hide:true})
+          p.center.question.hide What is the objection an objection to?
+  +reset
+    p.em-above &nbsp;
+    p.em-above Russell’s objection to Russell
+    p.notes.handout.show: :t
+      ‘Thus when, for example, we make a statement about Julius Caesar, 
+      it is plain that Julius Caesar himself is not before our minds, 
+      since we are not acquainted with him.’
+    p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+    p.right.grey-text Russell, 1912 chapter 5
+    +show-timer('timer1')
+      +show('.question')
+    +start-timer('timer1')
+
+
+ 
++slide({photo:'russell.jpg'})
+  .hem-around-children
+    p.notes.handout.show: :t
+      ‘Thus when, for example, we make a statement about Julius Caesar, 
+      it is plain that Julius Caesar himself is not before our minds, 
+      since we are not acquainted with him. 
+    p.notes.handout.ctd.slide.show
+      span We have 
+      span.in-mind in mind
+      span  some description of 
+      span Julius Caesar: 'the man who was assassinated on the Ides of March', 
+      span 'the founder of the Roman Empire'
+  p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+  p.right.grey-text Russell, 1912 chapter 5
+
+//- +slide({photo:'russell.jpg'})
+//-   //- Knowledge by description (ct acquaintance)
+//-   p.hem-around knowledge by description
+//-   p.hem-around: :t
+//-     ‘when we know that the property or properties in question belong to one object and 
+//-     no more, we are said to have knowledge of that one object by description, whether 
+//-     or not we are acquainted with the object.’
+//-   p.right.grey-text Russell, 2010 p. 220
+  
+
++slide_rh_white
+  +left_half
+    acq.hide
+      p.notes.handout.show
+        span ‘we have acquaintance with anything of which we are 
+        span.directly directly
+        span  aware, 
+        span.step2 without the intermediary of any process of inference or any knowledge of truths’
+      p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+      p.right.grey-text Russell, 1912 chapter 5
+  +right_half
+    p.notes.handout.show: :t
+      ‘when we know that the property or properties in question belong to one object and 
+      no more, we are said to have knowledge of that one object by description, whether 
+      or not we are acquainted with the object.’
+    p.notes.handout.ctd \citep[p.~220]{Russell:1910fa}
+    p.right.grey-text Russell, 1910 p. 220
+  .slide
+    +show('.acq')

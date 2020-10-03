@@ -1,0 +1,134 @@
+---cson
+layout: 'deck_unit'
+title: "Russell’s Principle of Acquaintance"
+tags: []
+description: """
+  What is Russell’s Principle of Acquaintance?
+  To which question is it supposed to be an answer?
+  """
+depends: ['']
+book: [
+  """Russell, B. (1910). Knowledge by Acquaintance and Knowledge by Description. Proceedings of the Aristotelian Society, 11:108–128"""
+]
+exercises : [
+  "/ex/TorF/qq/Propositions can be true or false|Propositions are sentences|Logic makes your lecturer die inside",
+]
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
++slide_middle
+  p.hem-around.q-v1
+    span How do our thoughts connect to the things about which we 
+    span.think think
+    span ?
+  .slide
+    +invert('.think')
+  .slide
+    +uninvert('.think')
+  .slide
+    p.hem-around.q-v2
+      span What sort of relation between a 
+      span.subject subject
+      span  and an object has to obtain if the subject is able to 
+      span.think think
+      span   about the object?
+  .slide
+    +blur('.q-v1')
+  .slide
+    +invert('.subject')
+  .slide
+    +uninvert('.subject')
+  .slide
+    p.hem-around.a Acquaintance!
+  .slide
+    p.hem-around.q2 But what is acquaintance?
+
++slide_middle({photo:'russell.jpg'})
+  .notes: :t
+    Start with it’s formal properties ...
+  p.notes.handout.show
+    span ‘Acquaintance ... essentially consists in a 
+    span.relation relation
+    span.step3.hide  between the mind and something other than the mind’
+  p.notes.handout.ctd \citep[chapter 4]{Russell:1912ln}
+  p.right.grey-text Russell, 1912 Chapter 4
+  .slide
+    +invert('.relation')
+  .slide
+    +show('.step3')
+    .notes But which relation is acquaintance? ...
+  .slide
+    +uninvert('.relation')
+    .notes What else can we say about acquaintance?
+
+  .slide
+    p.notes.handout.show
+      span ‘we have acquaintance with anything of which we are 
+      span.directly directly
+      span  aware, 
+      span.step2.hide without the intermediary of any process of inference or any knowledge of truths’
+    p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+    p.right.grey-text Russell, 1912 chapter 5
+  .slide
+    +invert('.directly')
+    .notes What does this mean? Nothing, by itself. But Russell goes on to explain what he means:
+  .slide
+    +show('.step2')
+    .notes: :t
+      Contrast: infer existence of a phone in your washing machine from the bumps vs opening it
+      and finding the phone.
+  .slide
+    +uninvert('.directly')
+
+  .slide
+    p.em-above Modes of acquaintance (?): 
+      br
+      span.indent perception?
+      br
+      span.indent memory?
+      br
+      span.indent self-awareness?
+      br
+      span.indent attention?
+
++slide_middle({photo:'russell.jpg'})
+  p.notes.handout.show
+    span ‘knowledge by acquaintance, is essentially simpler than any 
+    span.k-of-t knowledge of truths
+    span , and logically independent of knowledge of truths’
+  p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+  p.right.grey-text Russell, 1912 chapter 5
+  .slide
+      +invert('.k-of-t')
+      .notes So there's a contrast between K of things and K of truths.
+
+//- “I am acquainted with an object when I have a direct cognitive relation to that object, i.e. when I am directly aware of the object itself. When I speak of a cognitive relation here, I do not mean the sort of //p. 201// relation which constitutes judgement, but the sort which constitutes presentation”
+//- (Russell 1910 [1963]: 200–1).
+
++slide_middle
+  p.center What is Russell’s Principle of Acquaintance?
+
++slide_middle({photo:'russell.jpg'})
+  .quote1
+    .notes.handout \emph{The Principle of Acquaintance}:
+    p.notes.handout.ctd.show
+      span ‘Every proposition which we can understand must be composed wholly of constituents with which we are acquainted’
+      p.notes.handout.ctd \citep[p.~209]{Russell:1910fa}
+    p.right.grey-text Russell, 1910 [1963] p. 209
+  .slide
+    +fade('.photo', 0)
+    +blur('.photo, .quote1')
+    .quote2a
+      p.em-above.notes.handout.show
+        span
+          span ‘it is scarcely conceivable that we can make a judgement or entertain a supposition 
+          span without knowing what it is that we are judging or supposing about.’
+      p.notes.handout.ctd \citep[chapter 5]{Russell:1912ln}
+      p.right.grey-text Russell, 1912 chapter 5
+  .slide
+    +blur('.quote2a')
+    p.em-above: :t
+      “All our knowledge, both knowledge of things and knowledge of truths, rests upon acquaintance as its foundation”
+    p.right.grey-text Russell, 1912 chapter 5

@@ -1,0 +1,159 @@
+---cson
+layout: 'deck_unit'
+title: "Russell’s Argument on Acquaintance"
+tags: []
+description: """
+  ‘I hold that acquaintance is wholly a relation, 
+    not demanding any such constituent of the mind as is supposed by 
+    advocates of ‘ideas’’ (Russell, 1920 p. 212).
+  """
+---
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide_middle({photo:'russell.jpg'})
+  .notes Recall the Principle ...
+  .quote1
+    .notes.handout \emph{The Principle of Acquaintance}:
+    p.notes.handout.ctd.show
+      span ‘Every proposition which we can understand must be composed wholly of constituents with which we are acquainted’
+      p.notes.handout.ctd \citep[p.~209]{Russell:1910fa}
+    p.right.grey-text Russell, 1910 [1963] p. 209
+  .notes: :t
+    Structure of larger argument -- Russell’s own argument is interesting
+    but doesn’t go deep enough; we need to think more carefully about
+    why knowledge of reference is needed.
+
++slide_middle
+  p.center What is Russell’s argument?
+
++slide({photo:'russell.jpg'})
+  p.notes.handout.show.q1.hide: :t
+    ‘Whenever a relation of supposing or judging occurs, the terms to which the 
+    supposing or judging mind is related by the relation of supposing or judging 
+    //p. 211// must be terms with which the mind in question is acquainted. 
+    This is merely to say that 
+  p.notes.handout.ctd.show.q2: :t
+    we cannot make a judgement or a supposition 
+    without knowing what it is that we are making our judgement or supposition about. 
+  p.notes.handout.ctd.show.q3.hide
+    span It seems to 
+    span.me me 
+    span  that the truth of this principle is evident as soon as  
+    span the principle is understood’ 
+  .notes.handout.ctd \citep[pp.~210--11]{Russell:1910fa}.
+  p.right.grey-text Russell, 2010 pp. 210-11
+  .slide
+    +show('.q1')
+  .slide
+    +show('.q3')
+    +blur('.q1,.q2')  
+  .slide
+    +invert('.me')
+    .notes Never talk about yourself. It’s always irrelevant.
+    .notes But a real argument does follow ...
+
++slide({photo:'russell.jpg'})
+  p
+    span ‘I think the theory that  
+    span.judgements judgements
+    span  consist of ideas ... is fundamentally mistaken. 
+  .middle-part
+    p.slide: :t
+      The view seems to be that there is some mental existent which may be called the 
+      ‘idea’ of something outside the mind of the person who has the idea, and that, 
+      since judgement is a mental event, its constituents must be constituents of the 
+      mind of the person judging. 
+    p.slide
+      span But in this view ideas become a veil between us and 
+      span outside things
+      span.slide —we never really, in knowledge, attain //p. 212// to the things 
+        span we are supposed to be knowing about, but only to the ideas of those things. 
+  p.slide: :t
+    The relation of mind, idea, and object, on this view, is utterly obscure ... 
+  .slide
+    +collapse('.middle-part')
+  p.slide: :t
+    I ... see no reason to believe that, when we are acquainted with an object, 
+    there is in us something which can be called the ‘idea’ of the object. 
+  p.slide: :t
+    On the contrary, I hold that acquaintance is wholly a relation, 
+    not demanding any such constituent of the mind as is supposed by 
+    advocates of ‘ideas’.’
+  p.right.grey-text Russell, 1910 [1963] pp. 211–2
+  .notes.handout: :t
+    ‘I think the theory that  
+    judgements consist of ideas ... is fundamentally mistaken. 
+    The view seems to be that there is some mental existent which may be called the 
+    ‘idea’ of something outside the mind of the person who has the idea, and that, 
+    since judgement is a mental event, its constituents must be constituents of the 
+    mind of the person judging. 
+    But in this view ideas become a veil between us and 
+    outside things—--we never really, in knowledge, attain //p. 212// to the things 
+    we are supposed to be knowing about, but only to the ideas of those things. 
+    The relation of mind, idea, and object, on this view, is utterly obscure ... 
+    I ... see no reason to believe that, when we are acquainted with an object, 
+    there is in us something which can be called the ‘idea’ of the object. 
+    On the contrary, I hold that acquaintance is wholly a relation, 
+    not demanding any such constituent of the mind as is supposed by 
+    advocates of ‘ideas’’
+    \citep[pp.~211--12]{Russell:1910fa}.
+  
+  
+
+
++slide
+  p Reconstruction of Russell’s argument
+  .hem-around-children
+    p 
+      span.judgement Judgement
+      span s are about objects in the world. [intentionality]
+    .slide
+      p Any 
+        span.t-of-j theory of judgement
+        span  needs to elucidate the 
+        span.relation relation between a judgement and an object
+        span .
+    .slide
+      p Invoking ideas to do this makes intentionality more, not less, obscure.
+    .slide
+      p 
+        span.therefore Therefore
+        span :
+      p The intentionality of judgement consists at bottom in a relation between a thinker and an object.
+    .slide
+      p Terminology: call this relation ‘acquaintance’.
+  .slide
+    +invert('.therefore')
+    .notes: :t
+      It’s not much of an argument, but it’s interesting.
+  .slide
+    +uninvert('.therefore')
+    +highlight('.judgement', 'red')
+    .notes: :t
+      What’s this?
+  .slide
+    +unhighlight('.judgement', 'red')
+    +highlight('.t-of-j')
+  .slide
+    +unhighlight('.t-of-j')
+    +highlight('.relation')
+
++slide_rh_white
+  .notes: :t
+    We have seen that Russell says two things. I don’t think they can both be true.
+  +left_half
+    p: :t
+      ‘It seems to 
+      span.me me 
+      span  that the truth of this principle is evident as soon as  
+      span the principle is understood’ 
+    .notes.handout.ctd \citep[pp.~210--11]{Russell:1910fa}.
+    p.right.grey-text Russell, 2010 pp. 210-11
+  +right_half
+    p: :t
+      I hold that acquaintance is wholly a relation, 
+      not demanding any such constituent of the mind as is supposed by 
+      advocates of ‘ideas’.’
+    p.right.grey-text Russell, 1910 [1963] pp. 211–2

@@ -15,8 +15,14 @@ include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
 include ../../fragments/words_things_mixins
 
-- var images = get_images('mix')
+- var images = get_images('twins_2009')
+
 
 +title_slide({document:document, images:images})
 
 
++insert_unit({unit:'acquaintance/russells_principle', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'acquaintance/knowledge_by_description', title_slide:true, images:images, handout:true})
++insert_unit({unit:'acquaintance/russells_argument', title_slide:true, images:images, handout:true})
++insert_unit({unit:'acquaintance/massive_reduplication', title_slide:true, images:images, handout:true})
