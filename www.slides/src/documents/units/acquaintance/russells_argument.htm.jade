@@ -51,7 +51,7 @@ include ../../../../fragments/words_things_mixins
     span ‘the theory that  
     span.judgements judgements
     span  consist of ideas ... is fundamentally mistaken. 
-  .middle-part
+  .middlePart
     .slide
       p.toblur: :t
         The view seems to be that there is some mental existent which may be called the 
@@ -62,13 +62,23 @@ include ../../../../fragments/words_things_mixins
       p.toblur
         span But in this view ideas become a veil between us and 
         span outside things
-        span.slide --- we never really, in knowledge, attain //p. 212// to the things 
-          span we are supposed to be knowing about, but only to the ideas of those things. 
+        span.step2.hide  --- we never really, in knowledge, attain //p. 212// to the things 
+        span.step2.hide we are supposed to be knowing about, but only to the ideas of those things. 
+    .slide
+      +show('.step2')
   .slide
     p.toblur: :t
       The relation of mind, idea, and object, on this view, is utterly obscure ... 
   .slide
-    +collapse('.middle-part')
+    +collapse('.middlePart')
+
++slide({photo:'russell.jpg'})
+  p
+    span ‘the theory that  
+    span.judgements judgements
+    span  consist of ideas ... is fundamentally mistaken. 
+  p.toblur: :t
+    The relation of mind, idea, and object, on this view, is utterly obscure ... 
   .slide
     p.toblur: :t
       I ... see no reason to believe that, when we are acquainted with an object, 
@@ -78,7 +88,7 @@ include ../../../../fragments/words_things_mixins
     span  acquaintance is wholly a relation, 
     span not demanding any such constituent of the mind as is supposed by 
     span advocates of ‘ideas’.’
-  p.right.grey-text Russell, 1910 [1963] pp. 211–2
+    p.right.grey-text Russell, 1910 [1963] pp. 211–2
   .notes.handout: :t
     ‘I think the theory that  
     judgements consist of ideas ... is fundamentally mistaken. 
