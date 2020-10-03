@@ -51,7 +51,7 @@ mixin show_week(week)
     ul.ticks
       each lectureBasename in week.lectures
         - lecture = get_lecture(lectureBasename)
-        li Make us of the #{lecture.title} 
+        li Make use of the #{lecture.title} 
           a(target="_blank", href="/#{lectureBasename}_stream.html") recordings
           span  (or 
           a(target="_blank", href="/#{lectureBasename}_stream_backup.html") the backup recordings
