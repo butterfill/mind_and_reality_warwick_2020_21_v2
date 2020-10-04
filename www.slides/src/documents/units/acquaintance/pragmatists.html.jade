@@ -1,0 +1,165 @@
+---cson
+layout: 'deck_unit'
+title: "Pragmatists"
+tags: []
+description: """
+  A quick, superficial look at three approaches to identifying reference:
+  pragmatist, causal-historical (Kripke’s idea) and descriptions (as caricatured).
+  """
+---
+
+include ../../../../fragments/unit_mixins
+include ../../../../fragments/words_things_mixins
+
+
++slide_middle
+  p.center pragamtist idea about reference
++slide_middle
+  .handout \section{Pragmatists on Reference}
+  p.handout.notes.show
+    span ‘What the sign virtually has to do in order to indicate its object
+    span.slide —and make it its—
+    span.slide all it has to do  
+    br
+    span.slide is just to seize its interpreter’s eyes and forcibly turn them upon the object meant:  
+    br
+    span.slide it is what a knock at the door does, or an alarm or other bell, or a whistle, a cannon-shot, etc.
+    span ’ 
+  p.handout.notes.ctd \citep[p.~60/5.554]{Peirce:1931av}
+  p.right.grey-text Peirce, 1931 p. 60/5.554
+
+
++slide_middle
+  +questionAboutReference
+  p.em-around.prag A [Pragmatist]:
+    +pragmatistTheoryReference 
+  +highlight-row('.prag')
+  .notes: :t
+    Take a look at the same core pragmatist idea as expressed by William James ...
+
+
++slide_middle
+  p.handout.notes.show
+    span ‘I say that we know an object by means of an idea 
+    span.slide whenever we ambulate towards the object under the impulse which the idea communicates
+    span ’ 
+  p.handout.notes.ctd \citep[p.~140]{James:1909vm}
+  p.right.grey-text James, 1909 p. 140
+  .slide
+    p.em-above.handout.notes.show
+      span ‘The pointing of our thought to the tigers 
+      span.slide is known simply and solely as a procession of  
+        span mental associates and motor consequences that follow on the thought, 
+      span.slide and that would lead  
+        span harmoniously, if followed out, into some ideal or real context, or even into the immediate  
+        span presence, of the tigers. … 
+      span.slide It is even known, if we take the tigers very seriously, as  
+        span actions of ours which may terminate in directly intuited tigers, 
+      span.slide as they would if we  
+        span took a voyage to India for the purpose of tiger-hunting and brought back a lot of  
+        span skins of the striped rascals which we had laid low
+      span ’  
+    p.handout.notes.ctd   \citep[p.~44--5]{James:1909vm}
+    p.right.grey-text James, 1909 p. 44-5
+
++slide_middle
+  +questionAboutReference
+  p.em-around.prag A [Pragmatist]:
+    +pragmatistTheoryReference 
+  +highlight-row('.prag')
+
++slide_middle
+  +timer-element('timer1','90s',{hide:true})
+    p.center: :t
+      Pragmatist approach: right or wrong?
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .notes: :t
+    My sense (a) it’s a bit hard to grasp what they have in mind;
+    and (b) we’re not in a position to evaluate it.
+
++slide_middle
+  p.hem-around Kripke on reference
+  .slide.hem-around-children
+    p.indent a. initial baptism
+    p.indent b. causal chain
+  .slide
+    p.hem-above
+      +kripkeTheoryReference
+  .slide
+    +invert('.appropriate-way')
+
++slide_rh_white
+  +left_half
+    p.center pragmatist
+  +right_half
+    p.center Kripke
+  .clear
+  +left_half
+    p Reference is a matter of the
+      br
+      span.indent effects 
+      br
+      span.step2.hide.indent on the interpreter 
+      br
+      span.step3.hide of an utterance of the word.
+  +right_half
+    p Reference is a matter of the 
+      br
+      span.indent causes   
+      br
+      span.step2.hide.indent of the utterer
+      span.step3.hide ’s
+        br
+        span utterance of the word.
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .clear
+  .slide
+    +left_half
+      p 
+        +pragmatistTheoryReference
+  .slide
+    +right_half
+      p
+        +kripkeTheoryReference
+
++slide_middle
+  p.center description theories of reference
+
++slide_middle
+  .q.hide
+    +questionAboutReference
+  p.em-above: +descriptionTheoryReference
+  .slide
+    +show('.q')
+  .handout
+    p \section{Three Theories of Reference}
+    p \emph{These are very crude statements of the positions; they are useful at most for getting a handle on the core ideas.}
+    p Pragmatist:
+      +pragmatistTheoryReference
+    p Causal (Kripke):
+      +kripkeTheoryReference
+    p Description (not Russell, maybe no one):
+      +descriptionTheoryReference
+
++slide_middle
+  p Evans on the Description Theory of Reference
+  .quote
+    p ‘outrageous ... I have strong doubts as to whether anyone has ever seriously held this thesis’
+    p.right.grey-text Evans, 1985 p. 3
+  .notes: :t
+    This is interesting because a lot of books start with the theory, and philosophers
+    have spent a lot of time arguing against it.
+  .slide
+    +blur('.quote')
+    .notes So the Theory is false as I have stated it (no objections yet considered).
+    .notes But there is a question Evans does think is interesting:
+    p.em-above.notes.show For Steve’s utterance of ‘Earth’ to refer to Earth, is it 
+      span.necessary necessary
+      span  that Steve somehow descriptively identify Earth?
+  .slide
+    +invert('.necessary')
+
