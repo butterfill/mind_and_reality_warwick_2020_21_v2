@@ -38,9 +38,16 @@ mixin show_week(week)
       li Add messages with your questions before the meeting in the 
         a(href="https://teams.microsoft.com/l/channel/19%3a57791d74f59442efb07b0a18b88aeeab%40thread.tacv2/Live%2520Whole-Class%2520Meetings%252C%2520Thursdays%252012-12.30?groupId=344ce8cf-ca96-4f3d-93c0-4d8d48997b8d&tenantId=09bacfbd-47ef-4465-9265-3546f2eaf6bc" target="_blank") teams channel for the lectures
         span . 
-      li Attend the meeting on Thursday at 12 in the 
-        a(href="https://teams.microsoft.com/l/channel/19%3a57791d74f59442efb07b0a18b88aeeab%40thread.tacv2/Live%2520Whole-Class%2520Meetings%252C%2520Thursdays%252012-12.30?groupId=344ce8cf-ca96-4f3d-93c0-4d8d48997b8d&tenantId=09bacfbd-47ef-4465-9265-3546f2eaf6bc" target="_blank") teams channel for the lectures
-        span . 
+      if week.liveMeetingJoinLink
+        li Attend the 
+          a(href="#{week.liveMeetingJoinLink}" target="_blank") 
+            | meeting on Thursday at 12 (link to join)
+          span . 
+      else
+        li Attend the meeting on Thursday at 12 (join link to follow)
+          span . 
+
+      
   else
     p There is no live online whole-class meeting this week.
 
